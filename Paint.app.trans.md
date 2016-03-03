@@ -32,7 +32,10 @@ class MyPaintApp(App):
 
 
 if __name__ == '__main__':
-    MyPaintApp().run()```
+    MyPaintApp().run()
+    
+```
+
 
 ### 翻訳中
 
