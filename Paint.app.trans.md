@@ -17,8 +17,7 @@ Kivyアプリケーションをプログラミングする際、あなたが特�
 
 ### 翻訳中
 
-'''python:main.py
-from kivy.app import App
+'''from kivy.app import App
 from kivy.uix.widget import Widget
 
 
@@ -32,13 +31,11 @@ class MyPaintApp(App):
 
 
 if __name__ == '__main__':
-    MyPaintApp().run()
-'''
+    MyPaintApp().run()'''
 
 ### 翻訳中
 
-'''
-from kivy.app import App
+'''from kivy.app import App
 from kivy.uix.widget import Widget
 
 
@@ -53,6 +50,5 @@ class MyPaintApp(App):
 
 
 if __name__ == '__main__':
-    MyPaintApp().run()
-```
+    MyPaintApp().run()```
 
