@@ -1,11 +1,12 @@
 .. 翻訳者:Jun Okazaki
-このドキュメンテーションはKivyのシンプルなペイントアプリのチュートリアルを日本語訳したものです。  
-
-https://kivy.org/docs/gettingstarted/first_app.html
 
 ===========================
 入門
 ===========================
+このドキュメンテーションはKivyのシンプルなペイントアプリのチュートリアルを日本語訳したものです。  
+
+https://kivy.org/docs/gettingstarted/first_app.html
+
 
 概要
 ==========================
