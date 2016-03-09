@@ -1,4 +1,7 @@
 .. 翻訳者:Jun Okazaki
+このドキュメンテーションはKivyのシンプルなペイントアプリのチュートリアルを日本語訳したものです。  
+
+https://kivy.org/docs/gettingstarted/first_app.html
 
 ===========================
 入門
@@ -6,9 +9,6 @@
 
 概要
 ==========================
-
-このドキュメンテーションはKivyのシンプルなペイントアプリのチュートリアルを日本語訳したものです。  
-.. _https://kivy.org/docs/gettingstarted/first_app.html: https://kivy.org/docs/gettingstarted/first_app.html
 
 ---------------------------------------------
 シンプルなペイントアプリケーション
