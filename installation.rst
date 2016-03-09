@@ -25,7 +25,7 @@ http://kivy.org/#download
  .. code-block:: none 
      git clone http://github.com/kivy/kivy
  
- .. code-block:: python
+.. code-block:: python
 
     import sys
 
