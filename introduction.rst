@@ -16,9 +16,9 @@ Kivyアプリケーションを開発することは楽しさとやりがいが�
 
 あなたがPythonについての詳細な背景が必要な場合は、以下のチュートリアルに興味があるかもしれません。
 
- * `The Official Python Tutorial <http://docs.python.org/tutorial/>`_ 
- * `Learn Python in 10 minutes <http://www.korokithakis.net/tutorials/python/>`_ 
- * `Learn Python the hard way <http://learnpythonthehardway.org/>`_ 
+* `The Official Python Tutorial <http://docs.python.org/tutorial/>`_ 
+* `Learn Python in 10 minutes <http://www.korokithakis.net/tutorials/python/>`_ 
+* `Learn Python the hard way <http://learnpythonthehardway.org/>`_ 
 
 お使いのコンピュータでKivyを使用することで、以下の環境で動作するアプリケーションを開発することができます。
 
