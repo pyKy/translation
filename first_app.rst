@@ -3,8 +3,7 @@
 ===========================
 入門
 ===========================
-このドキュメンテーションはKivyのシンプルなペイントアプリのチュートリアルを日本語訳したものです。  
-
+このドキュメンテーションはKivyのGetting Started » A first Appを日本語訳したものです。  
 https://kivy.org/docs/gettingstarted/first_app.html
 
 
