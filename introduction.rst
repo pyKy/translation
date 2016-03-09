@@ -14,7 +14,7 @@ Kivyアプリケーションを開発することは楽しさとやりがいが�
 このガイドは、あなたがアプリケーションを開発する際に正しい方向に導くための最適な出発点です。
 あなたは、この導入を続けるためにはPythonの基本的な知識が必要です。 
 
-.. _image:: https://kivy.org/docs/_images/gs-introduction.png
+.. image:: https://kivy.org/docs/_images/gs-introduction.png
 
 あなたがPythonについての詳細な背景が必要な場合は、以下のチュートリアルに興味があるかもしれません。
 
