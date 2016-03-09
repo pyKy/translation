@@ -11,10 +11,6 @@ https://kivy.org/docs/gettingstarted/first_app.html
 概要
 ==========================
 
----------------------------------------------
-シンプルなペイントアプリケーション
----------------------------------------------
-
 Kivyの世界に浸る最初のアプリです。
 
 .. image:: https://kivy.org/docs/_images/gs-tutorial.png
