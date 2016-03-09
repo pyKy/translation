@@ -22,8 +22,8 @@ http://kivy.org/#download
 もし最新の情報をフレームワークに組み込むためにKivyの開発ヴァージョンは必要ならば、
 以下のgithubからのソースコードを取得してください。
 
-.. code-block:: none
-    git clone http://github.com/kivy/kivy
+ .. code-block:: none
+     git clone http://github.com/kivy/kivy
 
 
 インストラクションを参照いただき、開発ヴァージョンのインストールをお願いします。
