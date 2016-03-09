@@ -9,12 +9,11 @@
 
 Kivyをもってすれば、あなたのお気に入りの開発環境でアプリをコーディングすることが可能です。始めるには、最新版のkivyをダウンロードする必要があります。
 
-.. _http://kivy.org/#download: http://kivy.org/#download
+ .. _http://kivy.org/#download: http://kivy.org/#download
 
 ダウンロード後はインストールの流れを参照していただき、
 あなただけの特別のプラットフォーム作りにお役立てください。
 
-.. image:: https://kivy.org/docs/_images/macosx.png
 
 -----------------------
 開発のヴァージョン
@@ -23,7 +22,7 @@ Kivyをもってすれば、あなたのお気に入りの開発環境でアプ�
 もし最新の情報をフレームワークに組み込むためにKivyの開発ヴァージョンは必要ならば、
 以下のgithubからのソースコードを取得してください。
 
-.. code-block:: none
+ .. code-block:: none
     git clone http://github.com/kivy/kivy
 
 
