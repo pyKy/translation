@@ -15,11 +15,13 @@ Kivyアプリケーションを開発することは楽しさとやりがいが�
 あなたは、この導入を続けるためにはPythonの基本的な知識が必要です。 
 
 あなたがPythonについての詳細な背景が必要な場合は、以下のチュートリアルに興味があるかもしれません。
+
  * `The Official Python Tutorial <http://docs.python.org/tutorial/>`_ 
  * `Learn Python in 10 minutes <http://www.korokithakis.net/tutorials/python/>`_ 
  * `Learn Python the hard way <http://learnpythonthehardway.org/>`_ 
 
 お使いのコンピュータでKivyを使用することで、以下の環境で動作するアプリケーションを開発することができます。
+
  * デスクトップパソコン: OS X, Linux, Windows. 
  * iOSデバイス: iPad, iPhone. 
  * Androidデバイス: タブレット, スマートフォン 
@@ -35,9 +37,9 @@ Kivyアプリケーションを開発することは楽しさとやりがいが�
 各セクションの最後に提供されます。
 
 あなたは、Kivyを使用してガイドを進めます：  
-学習: Kivy言語でのプログラミングの基礎  
-探検: Kivyフレームワーク  
-作成: シンプルなクロスプラットフォーム  
+ | 学習: Kivy言語でのプログラミングの基礎  
+ | 探検: Kivyフレームワーク  
+ | 作成: シンプルなクロスプラットフォーム  
 パッケージ: あなたのプラットフォームの選択ために  
 
 最後に、あなたは選択したデバイスへの展開方法を学びます。
