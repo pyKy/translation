@@ -1,4 +1,7 @@
 .. 翻訳者: Daisuke Saito
+このドキュメンテーションはKivyのシンプルなペイントアプリのチュートリアルを日本語訳したものです。  
+
+https://kivy.org/docs/gettingstarted/intro.html
 
 ==================================
 入門
