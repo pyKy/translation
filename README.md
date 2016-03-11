@@ -6,6 +6,8 @@
 SphinxとSphinx Bootstrap Themeを使用  
 
 sourceに翻訳ファイル(rst)が格納されています。  
-buildは公開用のhtmlが格納されています
+buildは公開用のhtmlが格納されています。
 
+現在の翻訳メンバー
+https://github.com/orgs/pyKy/people
 
