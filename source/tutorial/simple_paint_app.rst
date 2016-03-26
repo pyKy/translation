@@ -36,8 +36,22 @@ Kivyでは、アプリケーションのユーザーインタフェースはウ�
 あなたの画面に表示されるすべてが何らかの形でウィジェットによって描かれています。
 しばしば、あなたは異なる文脈で書いたコードを再利用したいと思うでしょう。
 
-翻訳中
+.. A widget encapsulates data, defines the user’s interaction with that data and draws its visual representation. 
+ウィジェットはデータをカプセル化し、そのデータとユーザの対話を定義します。そしてその視覚的な表現を描画します。
+.. You can build anything from simple to complex user interfaces by nesting widgets. 
+あなたは、入れ子のウィジェットによって、単純なインターフェースから複雑なインタフェースまで、何でも構築することができます。
+.. There are many widgets built in, such as buttons, sliders and other common stuff. 
+これには、ボタン、スライダーや他の一般的なもの、として構築された多くのウィジェットがあります。
+.. In many cases, however, you need a custom widget that is beyond the scope of what is shipped with Kivy (e.g. a medical visualization widget).
+しかし、多くの場合、Kivyに同胞されているウィジェットの範囲を超えたカスタムウィジェット(例えば、医療を視覚化するためのウィジェット)が必要となります。
 
+.. So keep these three questions in mind when you design your widgets. 
+あなたは、ウィジェットを設計するときに念頭においた３つの質問の意識を続けます。
+
+Try to write them in a minimal and reusable manner 
+(i.e. a widget does exactly what its supposed to do and nothing more. 
+If you need more, write more widgets or compose other widgets of smaller widgets. 
+We try to adhere to the Single Responsibility Principle).
 .. code-block:: python
 
     from kivy.app import App
