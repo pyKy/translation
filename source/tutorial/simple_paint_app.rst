@@ -48,10 +48,15 @@ Kivyでは、アプリケーションのユーザーインタフェースはウ�
 .. So keep these three questions in mind when you design your widgets. 
 あなたは、ウィジェットを設計するときに念頭においた３つの質問の意識を続けます。
 
-Try to write them in a minimal and reusable manner 
+.. Try to write them in a minimal and reusable manner 
+最小限の再利用可能な方法でそれらを記述してみましょう。
+
 (i.e. a widget does exactly what its supposed to do and nothing more. 
 If you need more, write more widgets or compose other widgets of smaller widgets. 
 We try to adhere to the Single Responsibility Principle).
+
+
+
 .. code-block:: python
 
     from kivy.app import App
