@@ -9,20 +9,20 @@ https://kivy.org/docs/gettingstarted/layouts.html
 
 
 .. Layouts are containers used to arrange widgets in a particular manner.
-
+.. レイアウトは英語にする。
 レイアウトは特定の記法でウィジェットを配置するために用いられるコンテナです。::
 
     アンカーレイアウト<https://kivy.org/docs/api-kivy.uix.anchorlayout.html#module-kivy.uix.anchorlayout>:::
 
-        ウィジェットは、「トップ」、「底」、「左」、「右」または「センター」に固定することが可能です。
+        Widgetは、「top」、「bottom」、「left」、「right」または「センター」に固定することが可能です。
 
     ボックスレイアウト<https://kivy.org/docs/api-kivy.uix.boxlayout.html#module-kivy.uix.boxlayout>:::
 
-        ウィジェットは横向きでも縦向きでも順番に配置されます。
+        Widgetは横向きでも縦向きでも順番に配置されます。
 
     フロートレイアウト<https://kivy.org/docs/api-kivy.uix.floatlayout.html#module-kivy.uix.floatlayout>:::
 
-        ウィジェットの数に制限はありません。
+        Widgetの数に制限はありません。
 
     レラティブレイアウト<https://kivy.org/docs/api-kivy.uix.relativelayout.html#module-kivy.uix.relativelayout>:::
 

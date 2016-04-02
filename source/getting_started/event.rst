@@ -17,8 +17,8 @@ Kivyはイベントベースで、プログラムの流れを意味するイベ�
 クロックオブジェクトは、schedule_once()に将来的に一回限りのイベントをschedule_interval()に繰り返し行うイベントをスケジュールすることができます。
 
 .. You can also create Triggered events with create_trigger(). Triggers have the advantage of being called only once per frame, even if you have scheduled multiple triggers for the same callback.
-あなたは、create_trigger()を用いてトリガーイベントを作ることができます。トリガーは、同じコールバックのトリガーを複数スケジュールした場合でも各フレームごとに一度、呼び出されるという利点を有しています。
-、
+create_trigger()を用いてトリガーイベントを作ることができます。トリガーは、同じコールバックトリガーを複数スケジュールした場合でも各フレームごとに一度、コールされるという利点を有しています。
+
 
 入力イベント
 ----------------
@@ -30,7 +30,7 @@ Kivyはイベントベースで、プログラムの流れを意味するイベ�
 これらのイベントはWidgetにてon_touch_down()on_touch_move()とon_touch_up()イベントを生み出します。
 
 .. For an in-depth explanation, have a look at Input management.
-詳細な説明については、入力管理を見ます。。
+詳細な説明については、入力管理を見ます。
 
 クラスイベント
 ------------------
@@ -38,14 +38,15 @@ Kivyはイベントベースで、プログラムの流れを意味するイベ�
 ../_images/gs-events-class.png
 
 .. Our base class EventDispatcher, used by Widget, uses the power of our Properties for dispatching changes. This means when a widget changes its position or size, the corresponding event is automatically fired.
-Widgetにより用いられる私たちの基本クラスのEventDispatcherは変更を遅れるために、私たちのプロパティの力を使います。
-これは、ウィジェットがその位置やサイズを変更したときに、対応するイベントが自動的に発射されることを意味します。
+Widgetにより用いられるベースクラスのEventDispatcherは変更を送るために、プロパティを使います。
+これは、Widgetの位置やサイズを変更したときに、対応するイベントが自動的に発生します。
 
 .. In addition, you have the ability to create your own events using register_event_type(), as the on_press and on_release events in the Button widget demonstrate.
-加えて、Button widget内のon_pressとon_releaseのイベントが示すように、あなたは、register_event_type()を使用して、独自のイベントを作成する機能を持っています。
+加えて、Button widget内のon_pressとon_releaseのイベントが示すように、register_event_type()を使用して、独自のイベントを作成する機能を持っています。
 
-.. Another thing to note is that if you override an event, you become responsible for implementing all its behaviour previously handled by the base class. The easiest way to do this is to call super():
-注意すべきもう一つのこととして、あなたが、イベントを上書きした場合は、以前に基本クラスで処理されるすべての動作のふるまいの役割となることです。
+.. Another thing to note is that if you override an event,
+.. you become responsible for implementing all its behavior previously handled by the base class. The easiest way to do this is to call super():
+注意すべきもう一つのこととして、イベントを上書きした場合は、ベースクラスで以前処理されたビへイビアを実装しなければなりません。
 これを行う簡単な方法としてsuper()を呼び出すことです。
 
 .. code-block:python
