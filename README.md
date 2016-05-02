@@ -11,7 +11,7 @@ buildは公開用のhtmlが格納されています。
 翻訳の担当者などのタスクはTrelloにて管理しています。  
 https://trello.com/b/vUxSE4Ks/kivy
 
-以下のリンクから参加することが可能です。
+以下のリンクから参加することが可能です。 
  https://trello.com/invite/b/vUxSE4Ks/f7ddc4a749099c6854ba2cfca6b0620a/kivy-
  
  
