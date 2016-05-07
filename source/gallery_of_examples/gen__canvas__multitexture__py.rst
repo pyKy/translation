@@ -1,10 +1,10 @@
 .. 翻訳者: Jun Okazaki
 
 ------------------
-Gallery of Examples » Mesh test
+Gallery of Examples » Multitexture Example
 ------------------
 
-このドキュメンテーションはGallery of Examples » Mesh testを日本語訳したものです。  
+このドキュメンテーションはGallery of Examples » Multitexture Exampleを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__multitexture__py.html
 
 .. image:: https://kivy.org/docs/_images/canvas__multitexture__py1.png
