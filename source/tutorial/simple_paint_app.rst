@@ -54,7 +54,7 @@ Kivyでは、アプリケーションのユーザーインタフェースはウ�
 (i.e. a widget does exactly what its supposed to do and nothing more. 
 If you need more, write more widgets or compose other widgets of smaller widgets. 
 We try to adhere to the Single Responsibility Principle).
-
+(例えば、ウィジェットは
 
 
 .. code-block:: python
