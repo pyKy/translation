@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>入門 &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">入門</a><ul>
+<li><a class="reference internal" href="#id2">フィロソフィ</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <p>User’s Guide » Philosophy</p>
+<div class="section" id="id1">
+<h1>入門<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはKivyのUser’s Guide » Philosophyを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/philosophy.html">https://kivy.org/docs/philosophy.html</a></p>
+<div class="section" id="id2">
+<h2>フィロソフィ<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>この文章はもし別の他ソリューションから離れてKivyを導入することで迷っている人に送ります。</p>
+<p>フレッシュ（新鮮）</p>
+<p>Kivyは今日と明日のために作られています。マルチタッチのようなあらたな入力方法は、ますます重要になってきています。
+我々は、特にこの種のインタラクションのために、ゼロからKivyを作成しました</p>
+<p>古い（「古い」ではなく「十分に確立された」）ツールキットは、多くの場合、負担となっているレガシな機能を持っているのに対し、人間とコンピュータのインタラクションの観点から多くのことを我々は再考することができたことを意味します
+我々は、既存モデルのコルセット（シングルポインタマウス操作を言います）に、この新しいコンピュータを使用したアプローチを強制しようとしていまぜん。
+我々は新しいコンピュータを使用したアプローチを繁栄させ、あなたに可能性を探るようにしたいのです。これは本当にKivyを別にして設定するものです。</p>
+<p>ファスト（速さ）</p>
+<p>Kivyは高速です。これは、アプリケーションの開発とアプリケーションの実行速度の両方に適用されます。
+私たちは多くの方法でKivyを最適化しました。
+既存のコンパイラの能力を活用するためにC言語レベルで最優先で実行される機能を実装します。
+さらに重要なことは、我々はまた、コストのかかる動作を最小限にするために、インテリジェントなアルゴリズムを使用しています
+コンテキストで意味を成す場所ではGPUを使用しています。
+特に描画することに関しては、いくつかのタスクとアルゴリズムにより今日のグラフィックスカードの計算能力はCPUの性能を凌駕しています。
+したがって大幅にパフォーマンスを向上させるため、GPUに可能なかぎり多くの作業を行わせる理由です。</p>
+<p>フレキシブル（柔軟）</p>
+<p>Kivyには柔軟性があります。
+これは電源が入ったスマートフォンやタブレットなど、さまざまなデバイスをAndroid上で実行することができることを意味します。
+我々は、すべての主要なオペレーティングシステム（Windows、Linux、OS Xを）サポートしています。
+またここでのフレキシルブはKivyのペースの速い開発は、すぐに新しい技術に適応が可能であることも意味しています。
+時にはリリース前であっても、新しい外部デバイスとソフトウェア・プロトコルのサポートを再三追加しています。
+最後に、Kivyはまた、多くの別のサードパーティソリューションの組み合わせて使用することが可能であるという点で柔軟です。
+Windows上でWM_TOUCHをサポートしており、KivyでWindows 7のペン＆タッチドライバを持つ任意のデバイスで動作することを意味しています。
+OS Xの上では、Appleのマルチタッチに、トラックパッドやマウスなどの対応デバイスを使用することができます。
+Linuxでは、HIDカーネルの入力イベントを使用することができます。
+それに加えて、我々はTUIO（タンジブルユーザインタフェースオブジェクト※形のない情報に直接触れることが出来るようなインターフェイスのこと）と、いくつかの他の入力ソースをサポートします。</p>
+<p>フォーカス（集約）
+数行のコードで簡単なアプリケーションを書くことが出来ることにKivyはフォーカスしています。
+Kivyプログラムは、信じられないほど汎用性と強力な、使いやすいPythonプログラミング言語を使用して作成されます。
+また、私たちは、洗練されたユーザインタフェースを作成するため、私たち自身の記述言語、Kivy Languageを作成しました。
+この言語は、あなたが、セットアップし、すぐにあなたのアプリケーションの要素を接続して配置することができます。
+私たちは、コンパイラ設定をいじるすることを強制するよりもアプリケーションの本質に集中することが重要であると感じています。
+肩の負担を取り除きます。</p>
+<p>ファウンデット（提供）</p>
+<p>Kivyは積極的にその分野の専門家によって開発されています。
+Kivyは、コミュニティの影響を受け、専門的に開発され、商業的に裏打ちされたソリューションです。
+当社のコア開発者の中には、生活のためにKivyを開発しています。
+Kivyは定着しています。それは小さな、消失学生プロジェクトではありません。</p>
+<p>フリー（無料）
+Kivy利用はフリーです。
+あなたはKivyに支払う必要はありません。
+Kivyを使用したアプリケーションを販売しても、料金を支払う必要はありません。</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

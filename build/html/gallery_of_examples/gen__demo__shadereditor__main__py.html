@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Live Shader Editor &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Live Shader Editor</a></li>
+<li><a class="reference internal" href="#demo-shadereditor-main-py">demo/shadereditor/main.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-shadereditor-shadereditor-kv">demo/shadereditor/shadereditor.kv ファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-live-shader-editor">
+<h1>Gallery of Examples » Live Shader Editor<a class="headerlink" href="#gallery-of-examples-live-shader-editor" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Live Shader Editorを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__demo__shadereditor__main__py.html">https://kivy.org/docs/examples/gen__demo__shadereditor__main__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/demo__shadereditor__main__py1.png" src="https://kivy.org/docs/_images/demo__shadereditor__main__py1.png" />
+<p>頂点とフラグメントを編集するライブエディタを提供します。
+左側に編集可能なペインが2つ、右側に大きなkivyのロゴを持つウィンドウが表示されます。
+上部のペインには、バーテックスシェーダで、ボトムはフラグメントシェーダです。
+shadereditor.kvファイルは、インタフェースについて説明します。</p>
+<p>いずれかのシェーダへの各キーストロークで、宣言が追加され、シェーダがコンパイルされます。
+エラーがない場合は、画面を更新します。
+それ以外の場合、エラーは端末内のログメッセージとして表示します。</p>
+</div>
+<div class="section" id="demo-shadereditor-main-py">
+<h1>demo/shadereditor/main.py ファイル<a class="headerlink" href="#demo-shadereditor-main-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Live Shader Editor
+==================</p>
+<p>This provides a live editor for vertex and fragment editors.
+You should see a window with two editable panes on the left
+and a large kivy logo on the right.The top pane is the
+Vertex shader and the bottom is the Fragment shader. The file shadereditor.kv
+describes the interface.</p>
+<p>On each keystroke to either shader, declarations are added and the shaders
+are compiled. If there are no errors, the screen is updated. Otherwise,
+the error is visible as logging message in your terminal.
+&#8216;&#8217;&#8216;</p>
+<p>import sys
+import kivy
+kivy.require(&#8216;1.0.6&#8217;)</p>
+<p>from kivy.app import App
+from kivy.uix.floatlayout import FloatLayout
+from kivy.core.window import Window
+from kivy.factory import Factory
+from kivy.graphics import RenderContext
+from kivy.properties import StringProperty, ObjectProperty
+from kivy.clock import Clock
+from kivy.compat import PY2</p>
+<p>fs_header = &#8216;&#8217;&#8217;
+#ifdef GL_ES</p>
+<blockquote>
+<div>precision highp float;</div></blockquote>
+<p>#endif</p>
+<p>/* Outputs from the vertex shader <a href="#id1"><span class="problematic" id="id2">*</span></a>/
+varying vec4 frag_color;
+varying vec2 tex_coord0;</p>
+<p>/* uniform texture samplers <a href="#id3"><span class="problematic" id="id4">*</span></a>/
+uniform sampler2D texture0;</p>
+<p>/* custom one <a href="#id5"><span class="problematic" id="id6">*</span></a>/
+uniform vec2 resolution;
+uniform float time;
+&#8216;&#8217;&#8216;</p>
+<p>vs_header = &#8216;&#8217;&#8217;
+#ifdef GL_ES</p>
+<blockquote>
+<div>precision highp float;</div></blockquote>
+<p>#endif</p>
+<p>/* Outputs to the fragment shader <a href="#id7"><span class="problematic" id="id8">*</span></a>/
+varying vec4 frag_color;
+varying vec2 tex_coord0;</p>
+<p>/* vertex attributes <a href="#id9"><span class="problematic" id="id10">*</span></a>/
+attribute vec2     vPosition;
+attribute vec2     vTexCoords0;</p>
+<p>/* uniform variables <a href="#id11"><span class="problematic" id="id12">*</span></a>/
+uniform mat4       modelview_mat;
+uniform mat4       projection_mat;
+uniform vec4       color;
+&#8216;&#8217;&#8216;</p>
+<dl class="docutils">
+<dt>class ShaderViewer(FloatLayout):</dt>
+<dd><p class="first">fs = StringProperty(None)
+vs = StringProperty(None)</p>
+<dl class="last docutils">
+<dt>def __init__(self, <a href="#id13"><span class="problematic" id="id14">**</span></a>kwargs):</dt>
+<dd>self.canvas = RenderContext()
+super(ShaderViewer, self).__init__(<a href="#id15"><span class="problematic" id="id16">**</span></a>kwargs)
+Clock.schedule_interval(self.update_shader, 0)</dd>
+<dt>def update_shader(self, <a href="#id17"><span class="problematic" id="id18">*</span></a>args):</dt>
+<dd>s = self.canvas
+s[&#8216;projection_mat&#8217;] = Window.render_context[&#8216;projection_mat&#8217;]
+s[&#8216;time&#8217;] = Clock.get_boottime()
+s[&#8216;resolution&#8217;] = list(map(float, self.size))
+s.ask_update()</dd>
+<dt>def on_fs(self, instance, value):</dt>
+<dd>self.canvas.shader.fs = value</dd>
+<dt>def on_vs(self, instance, value):</dt>
+<dd>self.canvas.shader.vs = value</dd>
+</dl>
+</dd>
+</dl>
+<p>Factory.register(&#8216;ShaderViewer&#8217;, cls=ShaderViewer)</p>
+<p>class ShaderEditor(FloatLayout):</p>
+<blockquote>
+<div><p>source = StringProperty(&#8216;data/logo/kivy-icon-512.png&#8217;)</p>
+<p>fs = StringProperty(&#8216;&#8217;&#8216;</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>void main (void){</dt>
+<dd>gl_FragColor = frag_color * texture2D(texture0, tex_coord0);</dd>
+</dl>
+<p>}
+&#8216;&#8217;&#8216;)</p>
+<blockquote>
+<div>vs = StringProperty(&#8216;&#8217;&#8216;</div></blockquote>
+<dl class="docutils">
+<dt>void main (void) {</dt>
+<dd>frag_color = color;
+tex_coord0 = vTexCoords0;
+gl_Position = projection_mat * modelview_mat * vec4(vPosition.xy, 0.0, 1.0);</dd>
+</dl>
+<p>}
+&#8216;&#8217;&#8216;)</p>
+<blockquote>
+<div><p>viewer = ObjectProperty(None)</p>
+<dl class="docutils">
+<dt>def __init__(self, <a href="#id19"><span class="problematic" id="id20">**</span></a>kwargs):</dt>
+<dd>super(ShaderEditor, self).__init__(<a href="#id21"><span class="problematic" id="id22">**</span></a>kwargs)
+self.test_canvas = RenderContext()
+s = self.test_canvas.shader
+self.trigger_compile = Clock.create_trigger(self.compile_shaders, -1)
+self.bind(fs=self.trigger_compile, vs=self.trigger_compile)</dd>
+<dt>def compile_shaders(self, <a href="#id23"><span class="problematic" id="id24">*</span></a>largs):</dt>
+<dd><p class="first">print(&#8216;try compile&#8217;)
+if not self.viewer:</p>
+<blockquote>
+<div>return</div></blockquote>
+<p># we don&#8217;t use str() here because it will crash with non-ascii char
+if PY2:</p>
+<blockquote>
+<div>fs = fs_header + self.fs.encode(&#8216;utf-8&#8217;)
+vs = vs_header + self.vs.encode(&#8216;utf-8&#8217;)</div></blockquote>
+<dl class="docutils">
+<dt>else:</dt>
+<dd>fs = fs_header + self.fs
+vs = vs_header + self.vs</dd>
+</dl>
+<p class="last">print(&#8216;&#8211;&gt;&#8217;, fs)
+self.viewer.fs = fs
+print(&#8216;&#8211;&gt;&#8217;, vs)
+self.viewer.vs = vs</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>class ShaderEditorApp(App):</dt>
+<dd><dl class="first last docutils">
+<dt>def build(self):</dt>
+<dd><p class="first">kwargs = {}
+if len(sys.argv) &gt; 1:</p>
+<blockquote>
+<div>kwargs[&#8216;source&#8217;] = sys.argv[1]</div></blockquote>
+<p class="last">return ShaderEditor(<a href="#id25"><span class="problematic" id="id26">**</span></a>kwargs)</p>
+</dd>
+</dl>
+</dd>
+<dt>if __name__ == &#8216;__main__&#8217;:</dt>
+<dd>ShaderEditorApp().run()</dd>
+</dl>
+</div>
+<div class="section" id="demo-shadereditor-shadereditor-kv">
+<h1>demo/shadereditor/shadereditor.kv ファイル<a class="headerlink" href="#demo-shadereditor-shadereditor-kv" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>#:kivy 1.0
+#: import GLShaderLexer pygments.lexers.GLShaderLexer</p>
+<dl class="docutils">
+<dt>&lt;ShaderEditor&gt;:</dt>
+<dd><p class="first">viewer: viewer</p>
+<dl class="last docutils">
+<dt>BoxLayout:</dt>
+<dd><dl class="first last docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">orientation: &#8216;vertical&#8217;
+size_hint_x: None
+width: 350</p>
+<dl class="last docutils">
+<dt>Label:</dt>
+<dd>text: &#8216;Fragment Shader&#8217;
+size_hint_y: None
+height: self.texture_size[1] + 10</dd>
+<dt>CodeInput:</dt>
+<dd>text: root.fs
+lexer: GLShaderLexer()
+on_text: root.fs = args[1]</dd>
+<dt>Label:</dt>
+<dd>text: &#8216;Vertex Shader&#8217;
+size_hint_y: None
+height: self.texture_size[1] + 10</dd>
+<dt>CodeInput:</dt>
+<dd>text: root.vs
+lexer: GLShaderLexer()
+on_text: root.vs = args[1]</dd>
+</dl>
+</dd>
+<dt>ShaderViewer:</dt>
+<dd><p class="first">id: viewer
+canvas:</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>Color:</dt>
+<dd>rgb: 1, 1, 1</dd>
+<dt>Rectangle:</dt>
+<dd>size: self.size
+pos: self.pos
+source: root.source</dd>
+</dl>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Application from a .kv in a Template Directory &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Application from a .kv in a Template Directory</a></li>
+<li><a class="reference internal" href="#application-app-with-kv-in-template1-py">application/app_with_kv_in_template1.pyファイル</a></li>
+<li><a class="reference internal" href="#application-template1-test-kv">application/template1/test.kvファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-application-from-a-kv-in-a-template-directory">
+<h1>Gallery of Examples » Application from a .kv in a Template Directory<a class="headerlink" href="#gallery-of-examples-application-from-a-kv-in-a-template-directory" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはApplication from a .kv in a Template Directoryを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__application__app_with_kv_in_template1__py.html">https://kivy.org/docs/examples/gen__application__app_with_kv_in_template1__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/application__app_with_kv_in_template1__py1.png" src="https://kivy.org/docs/_images/application__app_with_kv_in_template1__py1.png" />
+<p>この例は、.kvファイルのディレクトリを変更する方法を示しています。
+「Hello from template1/test.ky」ボタンを参照する必要があります。</p>
+<p>kivyはのAppのサブクラスTestAppをインスタンス化するように、変数kv_directoryが設定されています。
+その後、Kivyはディレクトリ内のサブクラスの名前に一致する.kvファイルを暗黙的に検索し、template1/ test.kvファイルを見付けます。
+ファイルにはroot widgetが含まれています。</p>
+</div>
+<div class="section" id="application-app-with-kv-in-template1-py">
+<h1>application/app_with_kv_in_template1.pyファイル<a class="headerlink" href="#application-app-with-kv-in-template1-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Application from a .kv in a Template Directory
+==============================================</p>
+<p>This example shows how you can change the directory for the .kv file. You
+should see &#8220;Hello from template1/test.ky&#8221; as a button.</p>
+<p>As kivy instantiates the TestApp subclass of App, the variable kv_directory
+is set. Kivy then implicitly searches for a .kv file matching the name
+of the subclass in that directory, finding the file template1/test.kv. That
+file contains the root widget.</p>
+<p>&#8216;&#8217;&#8216;</p>
+<p>import kivy
+kivy.require(&#8216;1.0.7&#8217;)</p>
+<p>from kivy.app import App</p>
+<dl class="docutils">
+<dt>class TestApp(App):</dt>
+<dd>kv_directory = &#8216;template1&#8217;</dd>
+<dt>if __name__ == &#8216;__main__&#8217;:</dt>
+<dd>TestApp().run()</dd>
+</dl>
+</div>
+<div class="section" id="application-template1-test-kv">
+<h1>application/template1/test.kvファイル<a class="headerlink" href="#application-template1-test-kv" title="このヘッドラインへのパーマリンク">¶</a></h1>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

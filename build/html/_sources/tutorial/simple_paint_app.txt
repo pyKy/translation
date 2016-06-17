@@ -26,9 +26,36 @@ Kivyアプリケーションをプログラミングする際、あなたが特�
 
 たとえば、あなたが非常に単純な線画アプリケーションを記述したいのであれば、
 ユーザーは指でスクリーンに描画することをたぶん望みます。 
+それは、ユーザーがあなたのアプリケーションと対話する方法です。
+その一方で、あなたのアプリケーションは後からユーザーの指があった位置を記憶します。、
+そのため、あなたは後からそれらの位置の間に線を描くことができます。
+つまり、指のあった点はあなたのデータであり、あなたがそれらの間に描く線は
+あなたの視覚的な表現です。
 
+Kivyでは、アプリケーションのユーザーインタフェースはウィジェットから構成されています。
+あなたの画面に表示されるすべてが何らかの形でウィジェットによって描かれています。
+しばしば、あなたは異なる文脈で書いたコードを再利用したいと思うでしょう。
 
-翻訳中
+.. A widget encapsulates data, defines the user’s interaction with that data and draws its visual representation. 
+ウィジェットはデータをカプセル化し、そのデータとユーザの対話を定義します。そしてその視覚的な表現を描画します。
+.. You can build anything from simple to complex user interfaces by nesting widgets. 
+あなたは、入れ子のウィジェットによって、単純なインターフェースから複雑なインタフェースまで、何でも構築することができます。
+.. There are many widgets built in, such as buttons, sliders and other common stuff. 
+これには、ボタン、スライダーや他の一般的なもの、として構築された多くのウィジェットがあります。
+.. In many cases, however, you need a custom widget that is beyond the scope of what is shipped with Kivy (e.g. a medical visualization widget).
+しかし、多くの場合、Kivyに同胞されているウィジェットの範囲を超えたカスタムウィジェット(例えば、医療を視覚化するためのウィジェット)が必要となります。
+
+.. So keep these three questions in mind when you design your widgets. 
+あなたは、ウィジェットを設計するときに念頭においた３つの質問の意識を続けます。
+
+.. Try to write them in a minimal and reusable manner 
+最小限の再利用可能な方法でそれらを記述してみましょう。
+
+(i.e. a widget does exactly what its supposed to do and nothing more. 
+If you need more, write more widgets or compose other widgets of smaller widgets. 
+We try to adhere to the Single Responsibility Principle).
+(例えば、ウィジェットは
+
 
 .. code-block:: python
 

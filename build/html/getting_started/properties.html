@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>入門 &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">入門</a><ul>
+<li><a class="reference internal" href="#id2">プロパティ</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="id1">
+<h1>入門<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはKivyのGetting Started » Propertiesを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/gettingstarted/properties.html">https://kivy.org/docs/gettingstarted/properties.html</a></p>
+<div class="section" id="id2">
+<h2>プロパティ<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Kivyは、クラス内のプロパティを宣言するための新しい方法を紹介します。事前に以下を宣言します:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+                <span class="nb">super</span><span class="p">(</span><span class="n">MyClass</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">numeric_var</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>その後、Kivyプロパティを宣言します：</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="n">EventDispatcher</span><span class="p">):</span>
+<span class="n">numeric_var</span> <span class="o">=</span> <span class="n">NumericProperty</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>これらのプロパティはあなたを手助けするために`Observer パターン &lt;<a class="reference external" href="https://ja.wikipedia.org/wiki/Observer_%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3">https://ja.wikipedia.org/wiki/Observer_%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3</a>&gt;`を実装します。
+* Kv language で定義されたウィジェットを簡単に操作します。
+* ディスパッチ機能/コードのすべての変更を自動的に監視します。
+* チェックして、値を検証します。
+* メモリ管理を最適化します。</p>
+<p>それらを使用するには、** クラスレベルで宣言する必要があります。
+任意の他のメソッドではなく、直接クラスで宣言します。
+プロパティは、自動的にインスタンス属性を作成するクラス属性です。</p>
+<p>デフォルトでは、プロパティの状態/値が変化するさいに&lt;プロパティ名&gt;イベントを呼ぶことを各プロパティは提供します。</p>
+<dl class="docutils">
+<dt>Kivyは、次のプロパティが用意されています。</dt>
+<dd>NumericProperty, StringProperty, ListProperty, ObjectProperty, BooleanProperty, BoundedNumericProperty, OptionProperty, ReferenceListProperty, AliasProperty, DictProperty,</dd>
+</dl>
+<p>詳細な説明については、<a href="#id3"><span class="problematic" id="id4">`</span></a>Properties. &lt;<a class="reference external" href="https://kivy.org/docs/api-kivy.properties.html">https://kivy.org/docs/api-kivy.properties.html</a>&gt;`を見てみましょう。</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

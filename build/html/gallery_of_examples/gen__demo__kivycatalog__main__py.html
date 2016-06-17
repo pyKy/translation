@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Kivy Catalog &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Kivy Catalog</a></li>
+<li><a class="reference internal" href="#demo-kivycatalog-main-py">demo/kivycatalog/main.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-kivycatalog-kivycatalog-kv">demo/kivycatalog/kivycatalog.kv ファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-kivy-catalog">
+<h1>Gallery of Examples » Kivy Catalog<a class="headerlink" href="#gallery-of-examples-kivy-catalog" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Kivy Catalogを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__demo__kivycatalog__main__py.html">https://kivy.org/docs/examples/gen__demo__kivycatalog__main__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/demo__kivycatalog__main__py1.png" src="https://kivy.org/docs/_images/demo__kivycatalog__main__py1.png" />
+<p>Kivy CatalogビューアーはKivyで利用可能なウィジェットを表示し、即座にフィードバックを得るためにkivy言語コードのインタラクティブな編集をします。
+画面上にメニュースピナーボタンが、2つのパネル画面があり、その他のコントロール（ &#8216;Welcome&#8217;で始まる）が表示されます。
+左側のペインには、kivyコード（.kv）が含まれ、右側がレンダリングされるコードです。
+変更は、メニュースピナーボタンを使用する際に失われますが、左側のペインを編集できます。
+カタログには別のwidgets やレイアウトを制御する.kvの例が数十個表示されます。
+各メニューオプションのインタフェースがcontainers_kvsディレクトリに設定され、カタログのインタフェースは、kivycatalog.kvファイルに設定されています。
+Kivy Catalogに新しい.kvファイルを追加するには、kivycatalog.kvのScreenManagerファイルのセクションとcontainer_kvsディレクトリとリファレンス、.kvファイルを追加します。
+既知のバグは、ドロップといくつかの問題を含みます</p>
+</div>
+<div class="section" id="demo-kivycatalog-main-py">
+<h1>demo/kivycatalog/main.py ファイル<a class="headerlink" href="#demo-kivycatalog-main-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Kivy Catalog
+============</p>
+<p>The Kivy Catalog viewer showcases widgets available in Kivy
+and allows interactive editing of kivy language code to get immediate
+feedback. You should see a two panel screen with a menu spinner button
+(starting with &#8216;Welcome&#8217;) and other controls across the top.The left pane
+contains kivy (.kv) code, and the right side is that code rendered. You can
+edit the left pane, though changes will be lost when you use the menu
+spinner button. The catalog will show you dozens of .kv examples controlling
+different widgets and layouts.</p>
+<p>The catalog&#8217;s interface is set in the file kivycatalog.kv, while the
+interfaces for each menu option are set in containers_kvs directory. To
+add a new .kv file to the Kivy Catalog, add a .kv file into the container_kvs
+directory and reference that file in the ScreenManager section of
+kivycatalog.kv.</p>
+<p>Known bugs include some issue with the drop
+&#8216;&#8217;&#8217;
+import kivy
+kivy.require(&#8216;1.4.2&#8217;)
+import os
+import sys
+from kivy.app import App
+from kivy.factory import Factory
+from kivy.lang import Builder, Parser, ParserException
+from kivy.properties import ObjectProperty
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.codeinput import CodeInput
+from kivy.animation import Animation
+from kivy.clock import Clock</p>
+<p>CATALOG_ROOT = os.path.dirname(__file__)</p>
+<p>#Config.set(&#8216;graphics&#8217;, &#8216;width&#8217;, &#8216;1024&#8217;)
+#Config.set(&#8216;graphics&#8217;, &#8216;height&#8217;, &#8216;768&#8217;)</p>
+<p>&#8216;&#8217;&#8216;List of classes that need to be instantiated in the factory from .kv files.
+&#8216;&#8217;&#8217;
+CONTAINER_KVS = os.path.join(CATALOG_ROOT, &#8216;container_kvs&#8217;)
+CONTAINER_CLASSES = [c[:-3] for c in os.listdir(CONTAINER_KVS)</p>
+<blockquote>
+<div>if c.endswith(&#8216;.kv&#8217;)]</div></blockquote>
+<dl class="docutils">
+<dt>class Container(BoxLayout):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;A container is essentially a class that loads its root from a known
+.kv file.</p>
+<p>The name of the .kv file is taken from the Container&#8217;s class.
+We can&#8217;t just use kv rules because the class may be edited
+in the interface and reloaded by the user.
+See :meth: change_kv where this happens.
+&#8216;&#8217;&#8216;</p>
+<dl class="docutils">
+<dt>def __init__(self, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs):</dt>
+<dd>super(Container, self).__init__(<a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs)
+self.previous_text = open(self.kv_file).read()
+parser = Parser(content=self.previous_text)
+widget = Factory.get(parser.root.name)()
+Builder._apply_rule(widget, parser.root, parser.root)
+self.add_widget(widget)</dd>
+</dl>
+<p>&#64;property
+def kv_file(self):</p>
+<blockquote class="last">
+<div>&#8216;&#8217;&#8216;Get the name of the kv file, a lowercase version of the class
+name.
+&#8216;&#8217;&#8217;
+return os.path.join(CONTAINER_KVS, self.__class__.__name__ + &#8216;.kv&#8217;)</div></blockquote>
+</dd>
+<dt>for class_name in CONTAINER_CLASSES:</dt>
+<dd>globals()[class_name] = type(class_name, (Container,), {})</dd>
+<dt>class KivyRenderTextInput(CodeInput):</dt>
+<dd><dl class="first last docutils">
+<dt>def keyboard_on_key_down(self, window, keycode, text, modifiers):</dt>
+<dd><p class="first">is_osx = sys.platform == &#8216;darwin&#8217;
+# Keycodes on OSX:
+ctrl, cmd = 64, 1024
+key, key_str = keycode</p>
+<dl class="last docutils">
+<dt>if text and not key in (list(self.interesting_keys.keys()) + [27]):</dt>
+<dd><p class="first"># This allows <em>either</em> ctrl <em>or</em> cmd, but not both.
+if modifiers == [&#8216;ctrl&#8217;] or (is_osx and modifiers == [&#8216;meta&#8217;]):</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>if key == ord(&#8216;s&#8217;):</dt>
+<dd>self.catalog.change_kv(True)
+return</dd>
+</dl>
+</div></blockquote>
+</dd>
+<dt>return super(KivyRenderTextInput, self).keyboard_on_key_down(</dt>
+<dd>window, keycode, text, modifiers)</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>class Catalog(BoxLayout):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;Catalog of widgets. This is the root widget of the app. It contains
+a tabbed pain of widgets that can be displayed and a textbox where .kv
+language files for widgets being demoed can be edited.</p>
+<p>The entire interface for the Catalog is defined in kivycatalog.kv,
+although individual containers are defined in the container_kvs
+directory.</p>
+<p>To add a container to the catalog,
+first create the .kv file in container_kvs
+The name of the file (sans .kv) will be the name of the widget available
+inside the kivycatalog.kv
+Finally modify kivycatalog.kv to add an AccordionItem
+to hold the new widget.
+Follow the examples in kivycatalog.kv to ensure the item
+has an appropriate id and the class has been referenced.</p>
+<p>You do not need to edit any python code, just .kv language files!
+&#8216;&#8217;&#8217;
+language_box = ObjectProperty()
+screen_manager = ObjectProperty()</p>
+<dl class="last docutils">
+<dt>def __init__(self, <a href="#id5"><span class="problematic" id="id6">**</span></a>kwargs):</dt>
+<dd>self._previously_parsed_text = &#8216;&#8217;
+super(Catalog, self).__init__(<a href="#id7"><span class="problematic" id="id8">**</span></a>kwargs)
+self.show_kv(None, &#8216;Welcome&#8217;)
+self.carousel = None</dd>
+<dt>def show_kv(self, instance, value):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;Called when an a item is selected, we need to show the .kv language
+file associated with the newly revealed container.&#8217;&#8216;&#8217;</p>
+<p>self.screen_manager.current = value</p>
+<p>child = self.screen_manager.current_screen.children[0]
+with open(child.kv_file, &#8216;rb&#8217;) as file:</p>
+<blockquote>
+<div>self.language_box.text = file.read().decode(&#8216;utf8&#8217;)</div></blockquote>
+<p class="last">Clock.unschedule(self.change_kv)
+self.change_kv()
+# reset undo/redo history
+self.language_box.reset_undo()</p>
+</dd>
+<dt>def schedule_reload(self):</dt>
+<dd><dl class="first last docutils">
+<dt>if self.auto_reload:</dt>
+<dd><p class="first">txt = self.language_box.text
+child = self.screen_manager.current_screen.children[0]
+if txt == child.previous_text:</p>
+<blockquote>
+<div>return</div></blockquote>
+<p class="last">child.previous_text = txt
+Clock.unschedule(self.change_kv)
+Clock.schedule_once(self.change_kv, 2)</p>
+</dd>
+</dl>
+</dd>
+<dt>def change_kv(self, <a href="#id9"><span class="problematic" id="id10">*</span></a>largs):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;Called when the update button is clicked. Needs to update the
+interface for the currently active kv widget, if there is one based
+on the kv file the user entered. If there is an error in their kv
+syntax, show a nice popup.&#8217;&#8216;&#8217;</p>
+<p>txt = self.language_box.text
+kv_container = self.screen_manager.current_screen.children[0]
+try:</p>
+<blockquote>
+<div>parser = Parser(content=txt)
+kv_container.clear_widgets()
+widget = Factory.get(parser.root.name)()
+Builder._apply_rule(widget, parser.root, parser.root)
+kv_container.add_widget(widget)</div></blockquote>
+<dl class="last docutils">
+<dt>except (SyntaxError, ParserException) as e:</dt>
+<dd>self.show_error(e)</dd>
+<dt>except Exception as e:</dt>
+<dd>self.show_error(e)</dd>
+</dl>
+</dd>
+<dt>def show_error(self, e):</dt>
+<dd><p class="first">self.info_label.text = str(e).encode(&#8216;utf-8&#8217;)
+self.anim = Animation(top=190.0, opacity=1, d=2, t=&#8217;in_back&#8217;) +</p>
+<blockquote>
+<div>Animation(top=190.0, d=3) +Animation(top=0, opacity=0, d=2)</div></blockquote>
+<p class="last">self.anim.start(self.info_label)</p>
+</dd>
+</dl>
+</dd>
+<dt>class KivyCatalogApp(App):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;The kivy App that runs the main root. All we do is build a catalog
+widget into the root.&#8217;&#8216;&#8217;</p>
+<dl class="last docutils">
+<dt>def build(self):</dt>
+<dd>return Catalog()</dd>
+<dt>def on_pause(self):</dt>
+<dd>return True</dd>
+</dl>
+</dd>
+<dt>if __name__ == &#8220;__main__&#8221;:</dt>
+<dd>KivyCatalogApp().run()</dd>
+</dl>
+</div>
+<div class="section" id="demo-kivycatalog-kivycatalog-kv">
+<h1>demo/kivycatalog/kivycatalog.kv ファイル<a class="headerlink" href="#demo-kivycatalog-kivycatalog-kv" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>#:kivy 1.4
+#:import KivyLexer kivy.extras.highlight.KivyLexer</p>
+<dl class="docutils">
+<dt>[<a class="reference external" href="mailto:ContainerToggle&#37;&#52;&#48;ToggleButton">ContainerToggle<span>&#64;</span>ToggleButton</a>]:</dt>
+<dd>group: &#8220;container_toggle&#8221;
+text: ctx.text
+on_press: root.parent.parent.parent.show_kv(<a href="#id11"><span class="problematic" id="id12">*</span></a>args)
+state: ctx.state if hasattr(ctx, &#8220;state&#8221;) else &#8220;normal&#8221;</dd>
+<dt>&lt;Container&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas.before:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgb: 0, 0, 0</dd>
+<dt>Rectangle:</dt>
+<dd>pos: self.pos
+size: self.size</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>&lt;Catalog&gt;:</dt>
+<dd><p class="first">language_box: language_box
+screen_manager: screen_manager
+auto_reload: chkbx.active
+info_label: info_lbl
+orientation: &#8216;vertical&#8217;
+BoxLayout:</p>
+<blockquote>
+<div><p>padding: &#8216;2sp&#8217;
+canvas:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Color:</dt>
+<dd>rgba: 1, 1, 1, .6</dd>
+<dt>Rectangle:</dt>
+<dd>size: self.size
+pos: self.pos</dd>
+</dl>
+</div></blockquote>
+<p>size_hint: 1, None
+height: &#8216;45sp&#8217;
+Spinner:</p>
+<blockquote>
+<div>size_hint: None, 1
+width: &#8216;108sp&#8217;
+text: &#8216;Welcome&#8217;
+values: [screen.name for screen in screen_manager.screens]
+on_text: root.show_kv(<a href="#id13"><span class="problematic" id="id14">*</span></a>args)</div></blockquote>
+<p>Widget:
+BoxLayout:</p>
+<blockquote>
+<div><p>size_hint: None, 1
+width: &#8216;150sp&#8217;
+Label:</p>
+<blockquote>
+<div>text: &#8220;Auto Reload&#8221;</div></blockquote>
+<dl class="docutils">
+<dt>CheckBox:</dt>
+<dd>id: chkbx
+active: True
+size_hint_x: 1</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>Button:</dt>
+<dd>size_hint: None, 1
+width: &#8216;108sp&#8217;
+text: &#8216;Render Now&#8217;
+on_release: root.change_kv(<a href="#id15"><span class="problematic" id="id16">*</span></a>args)</dd>
+</dl>
+</div></blockquote>
+<dl class="last docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">id: reactive_layout
+orientation: &#8216;vertical&#8217; if self.width &lt; self.height else &#8216;horizontal&#8217;</p>
+<dl class="last docutils">
+<dt>Splitter:</dt>
+<dd><p class="first">id: editor_pane
+max_size: (reactive_layout.height if self.vertical else reactive_layout.width) - self.strip_size
+min_size: sp(30) + self.strip_size
+vertical: 1 if reactive_layout.width &lt; reactive_layout.height else 0
+sizable_from: &#8216;bottom&#8217; if self.vertical else &#8216;right&#8217;
+size_hint: (1, None) if self.vertical else (None, 1)
+size: 400, 400
+on_vertical:</p>
+<blockquote>
+<div>mid_size = self.max_size/2
+if args[1]: self.height = mid_size
+if not args[1]: self.width = mid_size</div></blockquote>
+<dl class="last docutils">
+<dt>ScrollView:</dt>
+<dd><p class="first">id: kr_scroll
+KivyRenderTextInput:</p>
+<blockquote class="last">
+<div>catalog: root
+id: language_box
+auto_indent: True
+lexer: KivyLexer()
+size_hint: 1, None
+height: max(kr_scroll.height, self.minimum_height)
+valign: &#8220;top&#8221;
+text: &#8220;This box will display the kivy language for whatever has been selected&#8221;
+on_text: root.schedule_reload()
+on_cursor: root.schedule_reload()</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>ScreenManager:</dt>
+<dd><p class="first">id: screen_manager
+Screen:</p>
+<blockquote>
+<div>name: &#8220;Welcome&#8221;
+PlaygroundContainer:</div></blockquote>
+<dl class="last docutils">
+<dt>Screen:</dt>
+<dd>name: &#8220;Float Layout&#8221;
+FloatLayoutContainer</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Box Layout&#8221;
+BoxLayoutContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Anchor Layout&#8221;
+AnchorLayoutContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Grid Layout&#8221;
+GridLayoutContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Stack Layout&#8221;
+StackLayoutContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Buttons&#8221;
+ButtonContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Labels&#8221;
+LabelContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Booleans&#8221;
+CheckBoxContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Progress Bar&#8221;
+ProgressBarContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Media&#8221;
+MediaContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Text&#8221;
+TextContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Popups&#8221;
+PopupContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Selectors&#8221;
+SelectorsContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;File Choosers&#8221;
+FileChooserContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;Scatter&#8221;
+ScatterContainer:</dd>
+<dt>Screen:</dt>
+<dd>name: &#8220;ReST&#8221;
+RestContainer:</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>FloatLayout:</dt>
+<dd><p class="first">size_hint: 1, None
+height: 0
+TextInput:</p>
+<blockquote class="last">
+<div>id:info_lbl
+readonly: True
+font_size: &#8216;14sp&#8217;
+background_color: (0, 0, 0, 1)
+foreground_color: (1, 1, 1, 1)
+opacity:0
+size_hint: 1, None
+text_size: self.size
+height: &#8216;150pt&#8217;
+top: 0</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

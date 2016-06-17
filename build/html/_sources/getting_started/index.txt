@@ -10,7 +10,17 @@
 
 .. toctree::
    :maxdepth: 2
-
-   introduction
+   
+   ntroduction
    installation
    first_app
+   properties
+   kv_language
+   event
+   Non-widget_stuff
+   layouts
+   drawing
+   packaging
+   example
+   diving_in
+   

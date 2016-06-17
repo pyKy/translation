@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Kivy Catalog &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Kivy Catalog</a></li>
+<li><a class="reference internal" href="#demo-pictures-main-py">demo/pictures/main.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-pictures-pictures-kv">demo/pictures/pictures.kv ファイル</a></li>
+<li><a class="reference internal" href="#demo-pictures-shadow32-png">画像demo/pictures/shadow32.png</a></li>
+<li><a class="reference internal" href="#demo-pictures-android-txt">demo/pictures/android.txt ファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-kivy-catalog">
+<h1>Gallery of Examples » Kivy Catalog<a class="headerlink" href="#gallery-of-examples-kivy-catalog" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Basic Picture Viewerを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__demo__pictures__main__py.html">https://kivy.org/docs/examples/gen__demo__pictures__main__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/demo__pictures__main__py1.png" src="https://kivy.org/docs/_images/demo__pictures__main__py1.png" />
+<p>シンプルな画像ブラウザは、scatter ウィジェットのデモです。
+背景に白縁がついた写真が表示されます。
+周りの写真をドラッグやクリックで、マルチタッチや、赤い点をドロップして写真の拡大縮小や回転ができます。</p>
+<p>kivyに同梱されたデータで、背景画像はkivy/data/images/background.jpgで、写真は、ローカルのimagesディレクトリからロードされます。
+pictures.kvファイルは、インタフェースについて説明し、shadow32.pngファイルは、画像がフレーム付き写真のように見えるようにするボーダーです。
+最後に、android.txtファイルはKivyランチャーAndroidのアプリケーションで使用するためのアプリケーションをパッケージ化するために使用されます。</p>
+<p>android.txtはKivyランチャーAndroidのアプリケーションで使用するためのアプリケーションをパッケージ化するために使用されます。</p>
+<p>Androidデバイスでは、あなたのAndroidデバイス上で /sdcard/kivy/showcase の中に、このディレクトリをコピー/ペーストすることができます</p>
+</div>
+<div class="section" id="demo-pictures-main-py">
+<h1>demo/pictures/main.py ファイル<a class="headerlink" href="#demo-pictures-main-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Basic Picture Viewer
+====================</p>
+<p>This simple image browser demonstrates the scatter widget. You should
+see three framed photographs on a background. You can click and drag
+the photos around, or multi-touch to drop a red dot to scale and rotate the
+photos.</p>
+<p>The photos are loaded from the local images directory, while the background
+picture is from the data shipped with kivy in kivy/data/images/background.jpg.
+The file pictures.kv describes the interface and the file shadow32.png is
+the border to make the images look like framed photographs. Finally,
+the file android.txt is used to package the application for use with the
+Kivy Launcher Android application.</p>
+<p>For Android devices, you can copy/paste this directory into
+/sdcard/kivy/pictures on your Android device.</p>
+<p>The images in the image directory are from the Internet Archive,
+<cite>https://archive.org/details/PublicDomainImages</cite>, and are in the public
+domain.</p>
+<p>&#8216;&#8217;&#8216;</p>
+<p>import kivy
+kivy.require(&#8216;1.0.6&#8217;)</p>
+<p>from glob import glob
+from random import randint
+from os.path import join, dirname
+from kivy.app import App
+from kivy.logger import Logger
+from kivy.uix.scatter import Scatter
+from kivy.properties import StringProperty</p>
+<dl class="docutils">
+<dt>class Picture(Scatter):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;Picture is the class that will show the image with a white border and a
+shadow. They are nothing here because almost everything is inside the
+picture.kv. Check the rule named &lt;Picture&gt; inside the file, and you&#8217;ll see
+how the Picture() is really constructed and used.</p>
+<p>The source property will be the filename to show.
+&#8216;&#8217;&#8216;</p>
+<p class="last">source = StringProperty(None)</p>
+</dd>
+</dl>
+<p>class PicturesApp(App):</p>
+<blockquote>
+<div><p>def build(self):</p>
+<blockquote>
+<div><p># the root is created in pictures.kv
+root = self.root</p>
+<p># get any files into images directory
+curdir = dirname(__file__)
+for filename in glob(join(curdir, &#8216;images&#8217;, &#8216;*&#8217;)):</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>try:</dt>
+<dd># load the image
+picture = Picture(source=filename, rotation=randint(-30, 30))
+# add to the main field
+root.add_widget(picture)</dd>
+<dt>except Exception as e:</dt>
+<dd>Logger.exception(&#8216;Pictures: Unable to load &lt;%s&gt;&#8217; % filename)</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<dl class="docutils">
+<dt>def on_pause(self):</dt>
+<dd>return True</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>if __name__ == &#8216;__main__&#8217;:</dt>
+<dd>PicturesApp().run()</dd>
+</dl>
+</div>
+<div class="section" id="demo-pictures-pictures-kv">
+<h1>demo/pictures/pictures.kv ファイル<a class="headerlink" href="#demo-pictures-pictures-kv" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>#:kivy 1.0
+#:import kivy kivy
+#:import win kivy.core.window</p>
+<dl class="docutils">
+<dt>FloatLayout:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgb: 1, 1, 1</dd>
+<dt>Rectangle:</dt>
+<dd>source: &#8216;data/images/background.jpg&#8217;
+size: self.size</dd>
+</dl>
+</dd>
+<dt>BoxLayout:</dt>
+<dd><p class="first">padding: 10
+spacing: 10
+size_hint: 1, None
+pos_hint: {&#8216;top&#8217;: 1}
+height: 44
+Image:</p>
+<blockquote>
+<div>size_hint: None, None
+size: 24, 24
+source: &#8216;data/logo/kivy-icon-24.png&#8217;</div></blockquote>
+<dl class="last docutils">
+<dt>Label:</dt>
+<dd>height: 24
+text_size: self.width, None
+color: (1, 1, 1, .8)
+text: &#8216;Kivy %s - Pictures&#8217; % kivy.__version__</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>&lt;Picture&gt;:</dt>
+<dd><p class="first"># each time a picture is created, the image can delay the loading
+# as soon as the image is loaded, ensure that the center is changed
+# to the center of the screen.
+on_size: self.center = win.Window.center
+size: image.size
+size_hint: None, None</p>
+<dl class="last docutils">
+<dt>Image:</dt>
+<dd><p class="first">id: image
+source: root.source</p>
+<p># create initial image to be 400 pixels width
+size: 400, 400 / self.image_ratio</p>
+<p># add shadow background
+canvas.before:</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>Color:</dt>
+<dd>rgba: 1,1,1,1</dd>
+<dt>BorderImage:</dt>
+<dd>source: &#8216;shadow32.png&#8217;
+border: (36,36,36,36)
+size:(self.width+72, self.height+72)
+pos: (-36,-36)</dd>
+</dl>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="demo-pictures-shadow32-png">
+<h1>画像demo/pictures/shadow32.png<a class="headerlink" href="#demo-pictures-shadow32-png" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<img alt="https://kivy.org/docs/_images/shadow32.png" src="https://kivy.org/docs/_images/shadow32.png" />
+</div>
+<div class="section" id="demo-pictures-android-txt">
+<h1>demo/pictures/android.txt ファイル<a class="headerlink" href="#demo-pictures-android-txt" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>title=Pictures
+author=Kivy team
+orientation=landscape</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
@@ -9,8 +9,8 @@
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
     <link rel="up" title="チュートリアル(Tutorial)" href="index.html" />
@@ -128,16 +128,12 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/introduction.html">導入</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/installation.html">インストール</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/installation.html#id2">開発のヴァージョン</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/first_app.html">概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">チュートリアル(Tutorial)</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">シンプルなペイントアプリケーション</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">シンプルなペイントアプリケーション</a></li>
 </ul>
 </li>
 </ul>
@@ -175,9 +171,29 @@ Kivyアプリケーションをプログラミングする際、あなたが特�
 <li>どのようにユーザーがそのデータと対話しますか？</li>
 </ul>
 <p>たとえば、あなたが非常に単純な線画アプリケーションを記述したいのであれば、
-ユーザーは指でスクリーンに描画することをたぶん望みます。</p>
-<p>翻訳中</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
+ユーザーは指でスクリーンに描画することをたぶん望みます。
+それは、ユーザーがあなたのアプリケーションと対話する方法です。
+その一方で、あなたのアプリケーションは後からユーザーの指があった位置を記憶します。、
+そのため、あなたは後からそれらの位置の間に線を描くことができます。
+つまり、指のあった点はあなたのデータであり、あなたがそれらの間に描く線は
+あなたの視覚的な表現です。</p>
+<p>Kivyでは、アプリケーションのユーザーインタフェースはウィジェットから構成されています。
+あなたの画面に表示されるすべてが何らかの形でウィジェットによって描かれています。
+しばしば、あなたは異なる文脈で書いたコードを再利用したいと思うでしょう。</p>
+<p>ウィジェットはデータをカプセル化し、そのデータとユーザの対話を定義します。そしてその視覚的な表現を描画します。
+.. You can build anything from simple to complex user interfaces by nesting widgets.
+あなたは、入れ子のウィジェットによって、単純なインターフェースから複雑なインタフェースまで、何でも構築することができます。
+.. There are many widgets built in, such as buttons, sliders and other common stuff.
+これには、ボタン、スライダーや他の一般的なもの、として構築された多くのウィジェットがあります。
+.. In many cases, however, you need a custom widget that is beyond the scope of what is shipped with Kivy (e.g. a medical visualization widget).
+しかし、多くの場合、Kivyに同胞されているウィジェットの範囲を超えたカスタムウィジェット(例えば、医療を視覚化するためのウィジェット)が必要となります。</p>
+<p>あなたは、ウィジェットを設計するときに念頭においた３つの質問の意識を続けます。</p>
+<p>最小限の再利用可能な方法でそれらを記述してみましょう。</p>
+<p>(i.e. a widget does exactly what its supposed to do and nothing more.
+If you need more, write more widgets or compose other widgets of smaller widgets.
+We try to adhere to the Single Responsibility Principle).
+(例えば、ウィジェットは</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
 <span class="kn">from</span> <span class="nn">kivy.uix.widget</span> <span class="kn">import</span> <span class="n">Widget</span>
 
 <span class="k">class</span> <span class="nc">MyPaintWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span>
@@ -207,7 +223,7 @@ Kivyアプリケーションをプログラミングする際、あなたが特�
     </p>
     <p>
         &copy; Copyright 2016, Daisuke Saito.<br/>
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.5 で生成しました。<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
     </p>
   </div>
 </footer>

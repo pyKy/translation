@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>&lt;no title&gt; &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="simple">
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <p>Concept behind the language¶
+言K語の背景にあるコンセプト</p>
+<p>As your application grow more complex, it’s common that the construction of widget trees and explicit declaration of bindings, becomes verbose and hard to maintain. The KV Language is a attempt to overcome these short-comings.
+アプリケーションが複雑になるつれて。ウィジェットや</p>
+<p>The KV language (sometimes called kvlang, or kivy language), allows you to create your widget tree in a declarative way and to bind widget properties to each other or to callbacks in a natural manner. It allows for very fast prototyping and agile changes to your UI. It also facilitates a good separation between the logic of your application and its User Interface.</p>
+<p>How to load KV¶</p>
+<p>There are two ways to load Kv code into your application:</p>
+<p>•By name convention:</p>
+<p>Kivy looks for a Kv file with the same name as your App class in lowercase, minus “App” if it ends with ‘App’. E.g:</p>
+<p>MyApp -&gt; my.kv.</p>
+<p>If this file defines a Root Widget it will be attached to the App’s root attribute and used as the base of the application widget tree.</p>
+<p>•Builder: You can tell Kivy to directly load a string or a file. If this string or file defines a root widget, it will be returned by the method:</p>
+<p>Builder.load_file(&#8216;path/to/file.kv&#8217;)</p>
+<p>or:</p>
+<p>Builder.load_string(kv_string)</p>
+<p>Rule context¶</p>
+<p>A Kv source constitutes of rules, which are used to describe the content of a Widget, you can have one root rule, and any number of class or template rules.</p>
+<p>The root rule is declared by declaring the class of your root widget, without any indentation, followed by : and will be set as the root attribute of the App instance:</p>
+<p>Widget:</p>
+<p>A class rule, declared by the name of a widget class between &lt; &gt; and followed by :, defines how any instance of that class will be graphically represented:</p>
+<p>&lt;MyWidget&gt;:</p>
+<p>Rules use indentation for delimitation, as python, indentation should be of four spaces per level, like the python good practice recommendations.</p>
+<p>There are three keywords specific to Kv language:
+•app: always refers to the instance of your application.
+•root: refers to the base widget/template in the current rule
+•self: always refer to the current widget</p>
+<p>Special syntaxes¶</p>
+<p>There are two special syntaxes to define values for the whole Kv context:</p>
+<p>To access python modules and classes from kv,</p>
+<p>#:import name x.y.z
+#:import isdir os.path.isdir
+#:import np numpy</p>
+<p>is equivalent to:</p>
+<p>from x.y import z as name
+from os.path import isdir
+import numpy as np</p>
+<p>in python.</p>
+<p>To set a global value,</p>
+<p>#:set name value</p>
+<p>is equivalent to:</p>
+<p>name = value</p>
+<p>in python.</p>
+<p>Instantiate children¶</p>
+<p>To declare the widget has a child widget, instance of some class, just declare this child inside the rule:</p>
+<dl class="docutils">
+<dt>MyRootWidget:</dt>
+<dd><dl class="first last docutils">
+<dt>BoxLayout:</dt>
+<dd>Button:
+Button:</dd>
+</dl>
+</dd>
+</dl>
+<p>The example above defines that our root widget, an instance of MyRootWidget, which has a child that is an instance of the BoxLayout. That BoxLayout further has two children, instances of the Button class.</p>
+<p>A python equivalent of this code could be:</p>
+<p>root = MyRootWidget()
+box = BoxLayout()
+box.add_widget(Button())
+box.add_widget(Button())
+root.add_widget(box)</p>
+<p>Which you may find less nice, both to read and to write.</p>
+<p>Of course, in python, you can pass keyword arguments to your widgets at creation to specify their behaviour. For example, to set the number of columns of a gridlayout, we would do:</p>
+<p>grid = GridLayout(cols=3)</p>
+<p>To do the same thing in kv, you can set properties of the child widget directly in the rule:</p>
+<dl class="docutils">
+<dt>GridLayout:</dt>
+<dd>cols: 3</dd>
+</dl>
+<p>The value is evaluated as a python expression, and all the properties used in the expression will be observed, that means that if you had something like this in python (this assume self is a widget with a data ListProperty):</p>
+<p>grid = GridLayout(cols=len(self.data))
+self.bind(data=grid.setter(&#8216;cols&#8217;))</p>
+<p>To have your display updated when your data change, you can now have just:</p>
+<dl class="docutils">
+<dt>GridLayout:</dt>
+<dd>cols: len(root.data)</dd>
+</dl>
+<p>Note</p>
+<p>Widget names should start with upper case letters while property names should start with lower case ones. Following the PEP8 Naming Conventions is encouraged.</p>
+<p>Event Bindings¶</p>
+<p>You can bind to events in Kv using the ”:” syntax, that is, associating a callback to an event:</p>
+<dl class="docutils">
+<dt>Widget:</dt>
+<dd>on_size: my_callback()</dd>
+</dl>
+<p>You can pass the values dispatched by the signal using the args keyword:</p>
+<dl class="docutils">
+<dt>TextInput:</dt>
+<dd>on_text: app.search(args[1])</dd>
+</dl>
+<p>More complex expressions can be used, like:</p>
+<p>pos: self.center_x - self.texture_size[0] / 2., self.center_y - self.texture_size[1] / 2.</p>
+<p>This expression listens for a change in center_x, center_y, and texture_size. If one of them changes, the expression will be re-evaluated to update the pos field.</p>
+<p>You can also handle <a href="#id1"><span class="problematic" id="id2">on_</span></a> events inside your kv language. For example the TextInput class has a focus property whose auto-generated on_focus event can be accessed inside the kv language like so:</p>
+<dl class="docutils">
+<dt>TextInput:</dt>
+<dd>on_focus: print(args)</dd>
+</dl>
+<p>Extend canvas¶</p>
+<p>Kv lang can be used to define the canvas instructions of your widget like this:</p>
+<dl class="docutils">
+<dt>MyWidget:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: 1, .3, .8, .5</dd>
+<dt>Line:</dt>
+<dd>points: zip(self.data.x, self.data.y)</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>And they get updated when properties values change.</p>
+<p>Of course you can use canvas.before and canvas.after.</p>
+<p>Referencing Widgets¶</p>
+<p>In a widget tree there is often a need to access/reference other widgets. The Kv Language provides a way to do this using id’s. Think of them as class level variables that can only be used in the Kv language. Consider the following:</p>
+<dl class="docutils">
+<dt>&lt;MyFirstWidget&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>Button:</dt>
+<dd>id: f_but</dd>
+<dt>TextInput:</dt>
+<dd>text: f_but.state</dd>
+</dl>
+</dd>
+<dt>&lt;MySecondWidget&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>Button:</dt>
+<dd>id: s_but</dd>
+<dt>TextInput:</dt>
+<dd>text: s_but.state</dd>
+</dl>
+</dd>
+</dl>
+<p>An id is limited in scope to the rule it is declared in, so in the code above s_but can not be accessed outside the &lt;MySecondWidget&gt; rule.</p>
+<p>An id is a weakref to the widget and not the widget itself. As a consequence, storing the id is not sufficient to keep the widget from being garbage collected. To demonstrate:</p>
+<dl class="docutils">
+<dt>&lt;MyWidget&gt;:</dt>
+<dd><p class="first">label_widget: label_widget
+Button:</p>
+<blockquote>
+<div>text: &#8216;Add Button&#8217;
+on_press: root.add_widget(label_widget)</div></blockquote>
+<dl class="last docutils">
+<dt>Button:</dt>
+<dd>text: &#8216;Remove Button&#8217;
+on_press: root.remove_widget(label_widget)</dd>
+<dt>Label:</dt>
+<dd>id: label_widget
+text: &#8216;widget&#8217;</dd>
+</dl>
+</dd>
+</dl>
+<p>Although a reference to label_widget is stored in MyWidget, it is not sufficient to keep the object alive once other references have been removed because it’s only a weakref. Therefore, after the remove button is clicked (which removes any direct reference to the widget) and the window is resized (which calls the garbage collector resulting in the deletion of label_widget), when the add button is clicked to add the widget back, a ReferenceError: weakly-referenced object no longer exists will be thrown.</p>
+<p>To keep the widget alive, a direct reference to the label_widget widget must be kept. This is achieved using id.__self__ or label_widget.__self__ in this case. The correct way to do this would be:</p>
+<dl class="docutils">
+<dt>&lt;MyWidget&gt;:</dt>
+<dd>label_widget: label_widget.__self__</dd>
+</dl>
+<p>Accessing Widgets defined inside Kv lang in your python code¶</p>
+<p>Consider the code below in my.kv:</p>
+<dl class="docutils">
+<dt>&lt;MyFirstWidget&gt;:</dt>
+<dd><p class="first"># both these variables can be the same name and this doesn&#8217;t lead to
+# an issue with uniqueness as the id is only accessible in kv.
+txt_inpt: txt_inpt
+Button:</p>
+<blockquote>
+<div>id: f_but</div></blockquote>
+<dl class="last docutils">
+<dt>TextInput:</dt>
+<dd>id: txt_inpt
+text: f_but.state
+on_text: root.check_status(f_but)</dd>
+</dl>
+</dd>
+</dl>
+<p>In myapp.py:</p>
+<p>...
+class MyFirstWidget(BoxLayout):</p>
+<blockquote>
+<div><p>txt_inpt = ObjectProperty(None)</p>
+<dl class="docutils">
+<dt>def check_status(self, btn):</dt>
+<dd>print(&#8216;button state is: {state}&#8217;.format(state=btn.state))
+print(&#8216;text input text is: {txt}&#8217;.format(txt=self.txt_inpt))</dd>
+</dl>
+</div></blockquote>
+<p>...</p>
+<p>txt_inpt is defined as a ObjectProperty initialized to None inside the Class.</p>
+<p>txt_inpt = ObjectProperty(None)</p>
+<p>At this point self.txt_inpt is None. In Kv lang this property is updated to hold the instance of the TextInput referenced by the id txt_inpt.:</p>
+<p>txt_inpt: txt_inpt</p>
+<p>From this point onwards, self.txt_inpt holds a reference to the widget identified by the id txt_input and can be used anywhere in the class, as in the function check_status. In contrast to this method you could also just pass the id to the function that needs to use it, like in case of f_but in the code above.</p>
+<p>There is a simpler way to access objects with id tags in Kv using the ids lookup object. You can do this as follows:</p>
+<dl class="docutils">
+<dt>&lt;Marvel&gt;</dt>
+<dd><dl class="first last docutils">
+<dt>Label:</dt>
+<dd>id: loki
+text: &#8216;loki: I AM YOUR GOD!&#8217;</dd>
+<dt>Button:</dt>
+<dd>id: hulk
+text: &#8220;press to smash loki&#8221;
+on_release: root.hulk_smash()</dd>
+</dl>
+</dd>
+</dl>
+<p>In your python code:</p>
+<p>class Marvel(BoxLayout):</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>def hulk_smash(self):</dt>
+<dd>self.ids.hulk.text = &#8220;hulk: puny god!&#8221;
+self.ids[&#8220;loki&#8221;].text = &#8220;loki: &gt;_&lt;!!!&#8221;  # alternative syntax</dd>
+</dl>
+</div></blockquote>
+<p>When your kv file is parsed, kivy collects all the widgets tagged with id’s and places them in this self.ids dictionary type property. That means you can also iterate over these widgets and access them dictionary style:</p>
+<dl class="docutils">
+<dt>for key, val in self.ids.items():</dt>
+<dd>print(&#8220;key={0}, val={1}&#8221;.format(key, val))</dd>
+</dl>
+<p>Note</p>
+<p>Although the self.ids method is very concise, it is generally regarded as ‘best practise’ to use the ObjectProperty. This creates a direct reference, provides faster access and is more explicit.</p>
+<p>Dynamic Classes¶</p>
+<p>Consider the code below:</p>
+<dl class="docutils">
+<dt>&lt;MyWidget&gt;:</dt>
+<dd><dl class="first docutils">
+<dt>Button:</dt>
+<dd>text: &#8220;Hello world, watch this text wrap inside the button&#8221;
+text_size: self.size
+font_size: &#8216;25sp&#8217;
+markup: True</dd>
+<dt>Button:</dt>
+<dd>text: &#8220;Even absolute is relative to itself&#8221;
+text_size: self.size
+font_size: &#8216;25sp&#8217;
+markup: True</dd>
+<dt>Button:</dt>
+<dd>text: &#8220;Repeating the same thing over and over in a comp = fail&#8221;
+text_size: self.size
+font_size: &#8216;25sp&#8217;
+markup: True</dd>
+</dl>
+<p class="last">Button:</p>
+</dd>
+</dl>
+<p>Instead of having to repeat the same values for every button, we can just use a template instead, like so:</p>
+<dl class="docutils">
+<dt>&lt;<a class="reference external" href="mailto:MyBigButt&#37;&#52;&#48;Button">MyBigButt<span>&#64;</span>Button</a>&gt;:</dt>
+<dd>text_size: self.size
+font_size: &#8216;25sp&#8217;
+markup: True</dd>
+<dt>&lt;MyWidget&gt;:</dt>
+<dd><dl class="first docutils">
+<dt>MyBigButt:</dt>
+<dd>text: &#8220;Hello world, watch this text wrap inside the button&#8221;</dd>
+<dt>MyBigButt:</dt>
+<dd>text: &#8220;Even absolute is relative to itself&#8221;</dd>
+<dt>MyBigButt:</dt>
+<dd>text: &#8220;repeating the same thing over and over in a comp = fail&#8221;</dd>
+</dl>
+<p class="last">MyBigButt:</p>
+</dd>
+</dl>
+<p>This class, created just by the declaration of this rule, inherits from the Button class and allows us to change default values and create bindings for all its instances without adding any new code on the Python side.</p>
+<p>Re-using styles in multiple widgets¶</p>
+<p>Consider the code below in my.kv:</p>
+<dl class="docutils">
+<dt>&lt;MyFirstWidget&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>Button:</dt>
+<dd>on_press: self.text(txt_inpt.text)</dd>
+<dt>TextInput:</dt>
+<dd>id: txt_inpt</dd>
+</dl>
+</dd>
+<dt>&lt;MySecondWidget&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>Button:</dt>
+<dd>on_press: self.text(txt_inpt.text)</dd>
+<dt>TextInput:</dt>
+<dd>id: txt_inpt</dd>
+</dl>
+</dd>
+</dl>
+<p>In myapp.py:</p>
+<p>class MyFirstWidget(BoxLayout):</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>def text(self, val):</dt>
+<dd>print(&#8216;text input text is: {txt}&#8217;.format(txt=val))</dd>
+</dl>
+</div></blockquote>
+<p>class MySecondWidget(BoxLayout):</p>
+<blockquote>
+<div><p>writing = StringProperty(&#8216;&#8217;)</p>
+<dl class="docutils">
+<dt>def text(self, val):</dt>
+<dd>self.writing = val</dd>
+</dl>
+</div></blockquote>
+<p>Because both classes share the same .kv style, this design can be simplified if we reuse the style for both widgets. You can do this in .kv as follows. In my.kv:</p>
+<dl class="docutils">
+<dt>&lt;MyFirstWidget,MySecondWidget&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>Button:</dt>
+<dd>on_press: self.text(txt_inpt.text)</dd>
+<dt>TextInput:</dt>
+<dd>id: txt_inpt</dd>
+</dl>
+</dd>
+</dl>
+<p>By separating the class names with a comma, all the classes listed in the declaration will have the same kv properties.</p>
+<p>Designing with the Kivy Language¶</p>
+<p>One of aims of the Kivy language is to Separate the concerns of presentation and logic. The presentation (layout) side is addressed by your kv file and the logic by your py file.</p>
+<p>The code goes in py files¶</p>
+<p>Let’s start with a little example. First, the Python file named main.py:</p>
+<p>import kivy
+kivy.require(&#8216;1.0.5&#8217;)</p>
+<p>from kivy.uix.floatlayout import FloatLayout
+from kivy.app import App
+from kivy.properties import ObjectProperty, StringProperty</p>
+<dl class="docutils">
+<dt>class Controller(FloatLayout):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;Create a controller that receives a custom widget from the kv lang file.</p>
+<p>Add an action to be called from the kv lang file.
+&#8216;&#8217;&#8217;
+label_wid = ObjectProperty()
+info = StringProperty()</p>
+<dl class="last docutils">
+<dt>def do_action(self):</dt>
+<dd>self.label_wid.text = &#8216;My label after button press&#8217;
+self.info = &#8216;New info text&#8217;</dd>
+</dl>
+</dd>
+</dl>
+<p>class ControllerApp(App):</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>def build(self):</dt>
+<dd>return Controller(info=&#8217;Hello world&#8217;)</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>if __name__ == &#8216;__main__&#8217;:</dt>
+<dd>ControllerApp().run()</dd>
+</dl>
+<p>In this example, we are creating a Controller class with 2 properties:</p>
+<p>•info for receving some text
+•label_wid for receving the label widget</p>
+<p>In addition, we are creating a do_action() method that will use both of these properties. It will change the info text and change text in the label_wid widget.</p>
+<p>The layout goes in controller.kv¶</p>
+<p>Executing this application without a corresponding .kv file will work, but nothing will be shown on the screen. This is expected, because the Controller class has no widgets in it, it’s just a FloatLayout. We can create the UI around the Controller class in a file named controller.kv, which will be loaded when we run the ControllerApp. How this is done and what files are loaded is described in the kivy.app.App.load_kv() method.</p>
+<blockquote>
+<div>1
+2
+3
+4
+5
+6
+7
+8
+9</div></blockquote>
+<p>10
+11
+12
+13
+14
+15
+16</p>
+<p>#:kivy 1.0</p>
+<dl class="docutils">
+<dt>&lt;Controller&gt;:</dt>
+<dd><p class="first">label_wid: my_custom_label</p>
+<dl class="last docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">orientation: &#8216;vertical&#8217;
+padding: 20</p>
+<dl class="last docutils">
+<dt>Button:</dt>
+<dd>text: &#8216;My controller info is: &#8216; + root.info
+on_press: root.do_action()</dd>
+<dt>Label:</dt>
+<dd>id: my_custom_label
+text: &#8216;My label before button press&#8217;</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>One label and one button in a vertical BoxLayout. Seems very simple. There are 3 things going on here:</p>
+<p>1.Using data from the Controller. As soon as the info property is changed in the controller, the expression text: &#8216;My controller info is: &#8216; + root.info will automatically be re-evaluated, changing the text in the Button.</p>
+<p>2.Giving data to the Controller. The expression id: my_custom_label is assigning the created Label the id of my_custom_label. Then, using my_custom_label in the expression label_wid: my_custom_label gives the instance of that Label widget to your Controller.</p>
+<p>3.Creating a custom callback in the Button using the Controller‘s on_press method.</p>
+<p>◦root and self are reserved keywords, useable anywhere. root represents the top widget in the rule and self represents the current widget.
+◦You can use any id declared in the rule the same as root and self. For example, you could do this in the on_press():</p>
+<dl class="docutils">
+<dt>Button:</dt>
+<dd>on_press: root.do_action(); my_custom_label.font_size = 18</dd>
+</dl>
+<p>And that’s that. Now when we run main.py, controller.kv will be loaded so that the Button and Label will show up and respond to our touch events.</p>
+<p>« Graphics</p>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

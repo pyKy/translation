@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Texture Wrapping and Coordinates Example &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Texture Wrapping and Coordinates Example</a></li>
+<li><a class="reference internal" href="#canvas-texture-py">canvas/texture.py</a></li>
+<li><a class="reference internal" href="#canvas-texture-example-image-png">画像ファイル　canvas/texture_example_image.png</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-texture-wrapping-and-coordinates-example">
+<h1>Gallery of Examples » Texture Wrapping and Coordinates Example<a class="headerlink" href="#gallery-of-examples-texture-wrapping-and-coordinates-example" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Texture Wrapping and Coordinates Exampleを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__canvas__texture__py.html">https://kivy.org/docs/examples/gen__canvas__texture__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/canvas__texture__py1.png" src="https://kivy.org/docs/_images/canvas__texture__py1.png" />
+<p>この例では、テクスチャ特性とそれを含む四角形のプロパティを変更します。
+画面には色とりどりのいくつかのテクスチャと下部分にスライダー、と左にいくつかのボタンが表示されます。
+画像texture_example_image.pngは矩形にレンダリングされます。
+ボタンが複数のコピーが長方形（texture_wrap）にある場合、スライダーはテクスチャがレンダリングされる方法を変更しながら、テクスチャ（tex_coords）のコピー数を変更します。</p>
+</div>
+<div class="section" id="canvas-texture-py">
+<h1>canvas/texture.py<a class="headerlink" href="#canvas-texture-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Texture Wrapping and Coordinates Example
+========================================</p>
+<p>This example changes texture properties and the properties
+of its containing rectangle. You should see some a multicolored
+texture with sliders to the left and below and buttons at the
+bottom of the screen. The image texture_example_image.png is
+rendered into the rectangle. Sliders change the number of copies of the
+texture (the tex_coords), the size of enclosing rectangle (the taw_height
+and taw_width) while the buttons change how the texture is rendered when more
+than one copy is in the rectangle (the
+texture_wrap).</p>
+<p>&#8216;&#8217;&#8216;</p>
+<p>from kivy.uix.widget import Widget
+from kivy.properties import ObjectProperty, ListProperty, StringProperty
+from kivy.lang import Builder
+from kivy.clock import Clock
+from kivy.base import runTouchApp</p>
+<dl class="docutils">
+<dt>class TextureAccessibleWidget(Widget):</dt>
+<dd><p class="first">texture = ObjectProperty(None)
+tex_coords = ListProperty([0, 0, 1, 0, 1, 1, 0, 1])
+texture_wrap = StringProperty(&#8216;clamp_to_edge&#8217;)</p>
+<dl class="last docutils">
+<dt>def __init__(self, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs):</dt>
+<dd>super(TextureAccessibleWidget, self).__init__(<a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs)
+Clock.schedule_once(self.texture_init, 0)</dd>
+<dt>def texture_init(self, <a href="#id5"><span class="problematic" id="id6">*</span></a>args):</dt>
+<dd>self.texture = self.canvas.children[-1].texture</dd>
+<dt>def on_texture_wrap(self, instance, value):</dt>
+<dd>self.texture.wrap = value</dd>
+</dl>
+</dd>
+</dl>
+<p>root = Builder.load_string(&#8216;&#8217;&#8217;
+&lt;TextureAccessibleWidget&gt;:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Rectangle:</dt>
+<dd>pos: self.pos
+size: self.size
+source: &#8216;texture_example_image.png&#8217;
+tex_coords: root.tex_coords</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>&lt;<a class="reference external" href="mailto:SliderWithValue&#37;&#52;&#48;BoxLayout">SliderWithValue<span>&#64;</span>BoxLayout</a>&gt;:</dt>
+<dd><p class="first">min: 0.0
+max: 1.0
+value: slider.value
+Slider:</p>
+<blockquote>
+<div>id: slider
+orientation: root.orientation
+min: root.min
+max: root.max
+value: 1.0</div></blockquote>
+<dl class="last docutils">
+<dt>Label:</dt>
+<dd>size_hint: None, None
+size: min(root.size), min(root.size)
+text: str(slider.value)[:4]</dd>
+</dl>
+</dd>
+<dt>BoxLayout:</dt>
+<dd><p class="first">orientation: &#8216;vertical&#8217;
+BoxLayout:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>SliderWithValue:</dt>
+<dd>orientation: &#8216;vertical&#8217;
+size_hint_x: None
+width: dp(40)
+min: 0
+max: 5
+value: 1
+on_value: taw.tex_coords[5] = self.value
+on_value: taw.tex_coords[7] = self.value</dd>
+<dt>SliderWithValue:</dt>
+<dd>orientation: &#8216;vertical&#8217;
+size_hint_x: None
+width: dp(40)
+min: 0
+max: taw_container.height
+value: 0.5*taw_container.height
+on_value: taw.height = self.value</dd>
+<dt>AnchorLayout:</dt>
+<dd><p class="first">id: taw_container
+anchor_x: &#8216;left&#8217;
+anchor_y: &#8216;bottom&#8217;
+TextureAccessibleWidget:</p>
+<blockquote class="last">
+<div>id: taw
+size_hint: None, None</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="last docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">size_hint_y: None
+height: dp(80)
+BoxLayout:</p>
+<blockquote>
+<div><p>orientation: &#8216;vertical&#8217;
+size_hint_x: None
+width: dp(80)
+Label:</p>
+<blockquote>
+<div>text: &#8216;size&#8217;
+text_size: self.size
+halign: &#8216;right&#8217;
+valign: &#8216;middle&#8217;</div></blockquote>
+<dl class="docutils">
+<dt>Label:</dt>
+<dd>text: &#8216;tex_coords&#8217;
+text_size: self.size
+halign: &#8216;left&#8217;
+valign: &#8216;middle&#8217;</dd>
+</dl>
+</div></blockquote>
+<dl class="last docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">orientation: &#8216;vertical&#8217;
+SliderWithValue:</p>
+<blockquote>
+<div>min: 0
+max: taw_container.width
+value: 0.5*taw_container.width
+on_value: taw.width = self.value</div></blockquote>
+<dl class="last docutils">
+<dt>SliderWithValue:</dt>
+<dd>min: 0.
+max: 5.
+value: 1.
+on_value: taw.tex_coords[2] = self.value
+on_value: taw.tex_coords[4] = self.value</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>BoxLayout:</dt>
+<dd><p class="first">size_hint_y: None
+height: dp(50)
+Label:</p>
+<blockquote>
+<div>text: &#8216;texture wrap:&#8217;
+text_size: self.size
+valign: &#8216;middle&#8217;
+halign: &#8216;center&#8217;</div></blockquote>
+<dl class="last docutils">
+<dt>Button:</dt>
+<dd>text: &#8216;clamp_to_edge&#8217;
+on_press: taw.texture_wrap = &#8216;clamp_to_edge&#8217;</dd>
+<dt>Button:</dt>
+<dd>text: &#8216;repeat&#8217;
+on_press: taw.texture_wrap = &#8216;repeat&#8217;</dd>
+<dt>Button:</dt>
+<dd>text: &#8216;mirrored_repeat&#8217;
+on_press: taw.texture_wrap = &#8216;mirrored_repeat&#8217;</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>&#8216;&#8217;&#8216;)</p>
+<p>runTouchApp(root)</p>
+</div>
+<div class="section" id="canvas-texture-example-image-png">
+<h1>画像ファイル　canvas/texture_example_image.png<a class="headerlink" href="#canvas-texture-example-image-png" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<img alt="https://kivy.org/docs/_images/texture_example_image.png" src="https://kivy.org/docs/_images/texture_example_image.png" />
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

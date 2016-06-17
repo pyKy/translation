@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Showcase of Kivy Features &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Showcase of Kivy Features</a></li>
+<li><a class="reference internal" href="#demo-showcase-main-py">demo/showcase/main.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-showcase-showcase-kv">demo/showcase/showcase.kv ファイル</a></li>
+<li><a class="reference internal" href="#demo-showcase-data-background-png">demo/showcase/data/background.png</a></li>
+<li><a class="reference internal" href="#demo-showcase-data-faust-github-jpg">demo/showcase/data/faust_github.jpg</a></li>
+<li><a class="reference internal" href="#demo-showcase-android-txt">demo/showcase/android.txt ファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-showcase-of-kivy-features">
+<h1>Gallery of Examples » Showcase of Kivy Features<a class="headerlink" href="#gallery-of-examples-showcase-of-kivy-features" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Showcase of Kivy Featuresを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__demo__showcase__main__py.html">https://kivy.org/docs/examples/gen__demo__showcase__main__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/demo__showcase__main__py1.png" src="https://kivy.org/docs/_images/demo__showcase__main__py1.png" />
+<p>ここではKivyの多くの機能を紹介しています。
+上部分にメニューバーが下部分にデモンストレーションエリアが表示されます。
+最初のデモは、アコーディオンのレイアウトです。
+参照はできますが、バグや「ショー・ソース」アイコンを押して、任意の画面用のKV Languageコードは編集できません。
+右上の左右のアイコンを使用するか、メニューバーを選択してデモンストレーションをスクロールします。</p>
+<p>各デモペインが別々に記載されているが、ファイルshowcase.kvは、メインコンテナ（main container）を説明しています。
+KVファイルはdata/screensディレクト 内に配置してます。
+画像はdata/backgroundディレクトリに配置してます。
+data/icon ディレクトリ内のアイコンがコントロールバーで使用されている間は、PNGはグラデーションの背景を提供します。
+data/faust_github.jpgファイルをScatter ペインに使用されています。
+アイコンは&#8221;<a class="reference external" href="http://www.gentleface.com/free_icon_set.html">http://www.gentleface.com/free_icon_set.html</a>&#8220;から取得しており、
+クリエイティブ・コモンズのライセンスは - 帰属(Attribution) 非商用(Noncommercial) で商用の場合はライセンスを販売をしています。
+android.txtはKivyランチャーAndroidのアプリケーションで使用するためのアプリケーションをパッケージ化するために使用されます。
+Androidデバイスでは、あなたのAndroidデバイス上で /sdcard/kivy/showcase の中に、このディレクトリをコピー/ペーストすることができます</p>
+</div>
+<div class="section" id="demo-showcase-main-py">
+<h1>demo/showcase/main.py ファイル<a class="headerlink" href="#demo-showcase-main-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Showcase of Kivy Features
+=========================</p>
+<p>This showcases many features of Kivy. You should see a
+menu bar across the top with a demonstration area below. The
+first demonstration is the accordion layout. You can see, but not
+edit, the kv language code for any screen by pressing the bug or
+&#8216;show source&#8217; icon. Scroll through the demonstrations using the
+left and right icons in the top right or selecting from the menu
+bar.</p>
+<p>The file showcase.kv describes the main container, while each demonstration
+pane is described in a separate .kv file in the data/screens directory.
+The image data/background.png provides the gradient background while the
+icons in data/icon directory are used in the control bar. The file
+data/faust_github.jpg is used in the Scatter pane. The icons are
+from <cite>http://www.gentleface.com/free_icon_set.html</cite> and licensed as
+Creative Commons - Attribution and Non-commercial Use Only; they
+sell a commercial license.</p>
+<p>The file android.txt is used to package the application for use with the
+Kivy Launcher Android application. For Android devices, you can
+copy/paste this directory into /sdcard/kivy/showcase on your Android device.</p>
+<p>&#8216;&#8217;&#8216;</p>
+<p>from time import time
+from kivy.app import App
+from os.path import dirname, join
+from kivy.lang import Builder
+from kivy.properties import NumericProperty, StringProperty, BooleanProperty,</p>
+<blockquote>
+<div>ListProperty</div></blockquote>
+<p>from kivy.clock import Clock
+from kivy.animation import Animation
+from kivy.uix.screenmanager import Screen</p>
+<dl class="docutils">
+<dt>class ShowcaseScreen(Screen):</dt>
+<dd><p class="first">fullscreen = BooleanProperty(False)</p>
+<dl class="last docutils">
+<dt>def add_widget(self, <a href="#id1"><span class="problematic" id="id2">*</span></a>args):</dt>
+<dd><dl class="first docutils">
+<dt>if &#8216;content&#8217; in self.ids:</dt>
+<dd>return self.ids.content.add_widget(<a href="#id3"><span class="problematic" id="id4">*</span></a>args)</dd>
+</dl>
+<p class="last">return super(ShowcaseScreen, self).add_widget(<a href="#id5"><span class="problematic" id="id6">*</span></a>args)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>class ShowcaseApp(App):</p>
+<blockquote>
+<div><p>index = NumericProperty(-1)
+current_title = StringProperty()
+time = NumericProperty(0)
+show_sourcecode = BooleanProperty(False)
+sourcecode = StringProperty()
+screen_names = ListProperty([])
+hierarchy = ListProperty([])</p>
+<dl class="docutils">
+<dt>def build(self):</dt>
+<dd><p class="first">self.title = &#8216;hello world&#8217;
+Clock.schedule_interval(self._update_clock, 1 / 60.)
+self.screens = {}
+self.available_screens = sorted([</p>
+<blockquote>
+<div>&#8216;Buttons&#8217;, &#8216;ToggleButton&#8217;, &#8216;Sliders&#8217;, &#8216;ProgressBar&#8217;, &#8216;Switches&#8217;,
+&#8216;CheckBoxes&#8217;, &#8216;TextInputs&#8217;, &#8216;Accordions&#8217;, &#8216;FileChoosers&#8217;,
+&#8216;Carousel&#8217;, &#8216;Bubbles&#8217;, &#8216;CodeInput&#8217;, &#8216;DropDown&#8217;, &#8216;Spinner&#8217;,
+&#8216;Scatter&#8217;, &#8216;Splitter&#8217;, &#8216;TabbedPanel + Layouts&#8217;, &#8216;RstDocument&#8217;,
+&#8216;Popups&#8217;, &#8216;ScreenManager&#8217;])</div></blockquote>
+<p>self.screen_names = self.available_screens
+curdir = dirname(__file__)
+self.available_screens = [join(curdir, &#8216;data&#8217;, &#8216;screens&#8217;,</p>
+<blockquote>
+<div>&#8216;{}.kv&#8217;.format(fn)) for fn in self.available_screens]</div></blockquote>
+<p class="last">self.go_next_screen()</p>
+</dd>
+<dt>def on_pause(self):</dt>
+<dd>return True</dd>
+<dt>def on_resume(self):</dt>
+<dd>pass</dd>
+<dt>def on_current_title(self, instance, value):</dt>
+<dd>self.root.ids.spnr.text = value</dd>
+<dt>def go_previous_screen(self):</dt>
+<dd>self.index = (self.index - 1) % len(self.available_screens)
+screen = self.load_screen(self.index)
+sm = self.root.ids.sm
+sm.switch_to(screen, direction=&#8217;right&#8217;)
+self.current_title = screen.name
+self.update_sourcecode()</dd>
+<dt>def go_next_screen(self):</dt>
+<dd>self.index = (self.index + 1) % len(self.available_screens)
+screen = self.load_screen(self.index)
+sm = self.root.ids.sm
+sm.switch_to(screen, direction=&#8217;left&#8217;)
+self.current_title = screen.name
+self.update_sourcecode()</dd>
+<dt>def go_screen(self, idx):</dt>
+<dd>self.index = idx
+self.root.ids.sm.switch_to(self.load_screen(idx), direction=&#8217;left&#8217;)
+self.update_sourcecode()</dd>
+<dt>def go_hierarchy_previous(self):</dt>
+<dd><p class="first">ahr = self.hierarchy
+if len(ahr) == 1:</p>
+<blockquote>
+<div>return</div></blockquote>
+<dl class="last docutils">
+<dt>if ahr:</dt>
+<dd>ahr.pop()</dd>
+<dt>if ahr:</dt>
+<dd>idx = ahr.pop()
+self.go_screen(idx)</dd>
+</dl>
+</dd>
+<dt>def load_screen(self, index):</dt>
+<dd><dl class="first docutils">
+<dt>if index in self.screens:</dt>
+<dd>return self.screens[index]</dd>
+</dl>
+<p class="last">screen = Builder.load_file(self.available_screens[index].lower())
+self.screens[index] = screen
+return screen</p>
+</dd>
+<dt>def read_sourcecode(self):</dt>
+<dd><p class="first">fn = self.available_screens[self.index].lower()
+with open(fn) as fd:</p>
+<blockquote class="last">
+<div>return fd.read()</div></blockquote>
+</dd>
+<dt>def toggle_source_code(self):</dt>
+<dd><p class="first">self.show_sourcecode = not self.show_sourcecode
+if self.show_sourcecode:</p>
+<blockquote>
+<div>height = self.root.height * .3</div></blockquote>
+<dl class="docutils">
+<dt>else:</dt>
+<dd>height = 0</dd>
+<dt>Animation(height=height, d=.3, t=&#8217;out_quart&#8217;).start(</dt>
+<dd>self.root.ids.sv)</dd>
+</dl>
+<p class="last">self.update_sourcecode()</p>
+</dd>
+<dt>def update_sourcecode(self):</dt>
+<dd><dl class="first docutils">
+<dt>if not self.show_sourcecode:</dt>
+<dd>self.root.ids.sourcecode.focus = False
+return</dd>
+</dl>
+<p class="last">self.root.ids.sourcecode.text = self.read_sourcecode()
+self.root.ids.sv.scroll_y = 1</p>
+</dd>
+</dl>
+<p>def showcase_floatlayout(self, layout):</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>def add_button(<a href="#id7"><span class="problematic" id="id8">*</span></a>t):</dt>
+<dd><dl class="first docutils">
+<dt>if not layout.get_parent_window():</dt>
+<dd>return</dd>
+<dt>if len(layout.children) &gt; 5:</dt>
+<dd>layout.clear_widgets()</dd>
+</dl>
+<p class="last">layout.add_widget(Builder.load_string(&#8216;&#8217;&#8216;</p>
+</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<p>#:import random random.random
+Button:</p>
+<blockquote>
+<div><p>size_hint: random(), random()
+pos_hint: {&#8216;x&#8217;: random(), &#8216;y&#8217;: random()}
+text:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>&#8216;size_hint x: {} y: {}\n pos_hint x: {} y: {}&#8217;.format(</dt>
+<dd>self.size_hint_x, self.size_hint_y, self.pos_hint[&#8216;x&#8217;],self.pos_hint[&#8216;y&#8217;])</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<dl class="docutils">
+<dt>&#8216;&#8217;&#8216;))</dt>
+<dd><blockquote class="first">
+<div><blockquote>
+<div>Clock.schedule_once(add_button, 1)</div></blockquote>
+<p>Clock.schedule_once(add_button)</p>
+</div></blockquote>
+<p>def showcase_boxlayout(self, layout):</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>def add_button(<a href="#id9"><span class="problematic" id="id10">*</span></a>t):</dt>
+<dd><dl class="first docutils">
+<dt>if not layout.get_parent_window():</dt>
+<dd>return</dd>
+<dt>if len(layout.children) &gt; 5:</dt>
+<dd><dl class="first docutils">
+<dt>layout.orientation = &#8216;vertical&#8217;</dt>
+<dd>if layout.orientation == &#8216;horizontal&#8217; else &#8216;horizontal&#8217;</dd>
+</dl>
+<p class="last">layout.clear_widgets()</p>
+</dd>
+</dl>
+<p class="last">layout.add_widget(Builder.load_string(&#8216;&#8217;&#8216;</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd>
+<dt>Button:</dt>
+<dd>text: self.parent.orientation if self.parent else &#8216;&#8217;</dd>
+<dt>&#8216;&#8217;&#8216;))</dt>
+<dd><blockquote class="first">
+<div><blockquote>
+<div>Clock.schedule_once(add_button, 1)</div></blockquote>
+<p>Clock.schedule_once(add_button)</p>
+</div></blockquote>
+<p>def showcase_gridlayout(self, layout):</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>def add_button(<a href="#id11"><span class="problematic" id="id12">*</span></a>t):</dt>
+<dd><dl class="first docutils">
+<dt>if not layout.get_parent_window():</dt>
+<dd>return</dd>
+<dt>if len(layout.children) &gt; 15:</dt>
+<dd>layout.rows = 3 if layout.rows is None else None
+layout.cols = None if layout.rows == 3 else 3
+layout.clear_widgets()</dd>
+</dl>
+<p class="last">layout.add_widget(Builder.load_string(&#8216;&#8217;&#8216;</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd>
+<dt>Button:</dt>
+<dd><dl class="first last docutils">
+<dt>text:</dt>
+<dd>&#8216;rows: {}\ncols: {}&#8217;.format(self.parent.rows, self.parent.cols)if self.parent else &#8216;&#8217;</dd>
+</dl>
+</dd>
+<dt>&#8216;&#8217;&#8216;))</dt>
+<dd><blockquote class="first">
+<div><blockquote>
+<div>Clock.schedule_once(add_button, 1)</div></blockquote>
+<p>Clock.schedule_once(add_button)</p>
+</div></blockquote>
+<dl class="last docutils">
+<dt>def showcase_stacklayout(self, layout):</dt>
+<dd><dl class="first last docutils">
+<dt>orientations = (&#8216;lr-tb&#8217;, &#8216;tb-lr&#8217;,</dt>
+<dd>&#8216;rl-tb&#8217;, &#8216;tb-rl&#8217;,
+&#8216;lr-bt&#8217;, &#8216;bt-lr&#8217;,
+&#8216;rl-bt&#8217;, &#8216;bt-rl&#8217;)</dd>
+<dt>def add_button(<a href="#id13"><span class="problematic" id="id14">*</span></a>t):</dt>
+<dd><dl class="first docutils">
+<dt>if not layout.get_parent_window():</dt>
+<dd>return</dd>
+<dt>if len(layout.children) &gt; 11:</dt>
+<dd>layout.clear_widgets()
+cur_orientation = orientations.index(layout.orientation)
+layout.orientation = orientations[cur_orientation - 1]</dd>
+</dl>
+<p class="last">layout.add_widget(Builder.load_string(&#8216;&#8217;&#8216;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>Button:</dt>
+<dd>text: self.parent.orientation if self.parent else &#8216;&#8217;
+size_hint: .2, .2</dd>
+<dt>&#8216;&#8217;&#8216;))</dt>
+<dd><blockquote class="first">
+<div><blockquote>
+<div>Clock.schedule_once(add_button, 1)</div></blockquote>
+<p>Clock.schedule_once(add_button)</p>
+</div></blockquote>
+<p>def showcase_anchorlayout(self, layout):</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>def change_anchor(self, <a href="#id15"><span class="problematic" id="id16">*</span></a>l):</dt>
+<dd><dl class="first docutils">
+<dt>if not layout.get_parent_window():</dt>
+<dd>return</dd>
+</dl>
+<p>anchor_x = (&#8216;left&#8217;, &#8216;center&#8217;, &#8216;right&#8217;)
+anchor_y = (&#8216;top&#8217;, &#8216;center&#8217;, &#8216;bottom&#8217;)
+if layout.anchor_x == &#8216;left&#8217;:</p>
+<blockquote>
+<div>layout.anchor_y = anchor_y[anchor_y.index(layout.anchor_y) - 1]</div></blockquote>
+<p>layout.anchor_x = anchor_x[anchor_x.index(layout.anchor_x) - 1]</p>
+<p class="last">Clock.schedule_once(change_anchor, 1)</p>
+</dd>
+</dl>
+<p>Clock.schedule_once(change_anchor, 1)</p>
+</div></blockquote>
+<dl class="last docutils">
+<dt>def _update_clock(self, dt):</dt>
+<dd>self.time = time()</dd>
+</dl>
+</dd>
+<dt>if __name__ == &#8216;__main__&#8217;:</dt>
+<dd>ShowcaseApp().run()</dd>
+</dl>
+</div>
+<div class="section" id="demo-showcase-showcase-kv">
+<h1>demo/showcase/showcase.kv ファイル<a class="headerlink" href="#demo-showcase-showcase-kv" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>#:kivy 1.8.0
+#:import KivyLexer kivy.extras.highlight.KivyLexer
+#:import Factory kivy.factory.Factory</p>
+<dl class="docutils">
+<dt>&lt;<a class="reference external" href="mailto:ActionSpinnerOptions&#37;&#52;&#48;SpinnerOption">ActionSpinnerOptions<span>&#64;</span>SpinnerOption</a>&gt;</dt>
+<dd>background_color: .4, .4, .4, 1</dd>
+<dt>&lt;<a class="reference external" href="mailto:ActionSpinner&#37;&#52;&#48;Spinner+ActionItem">ActionSpinner<span>&#64;</span>Spinner+ActionItem</a>&gt;</dt>
+<dd><dl class="first docutils">
+<dt>canvas.before:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: 0.128, 0.128, 0.128, 1</dd>
+<dt>Rectangle:</dt>
+<dd>size: self.size
+pos: self.pos</dd>
+</dl>
+</dd>
+</dl>
+<p class="last">border: 27, 20, 12, 12
+background_normal: &#8216;atlas://data/images/defaulttheme/action_group&#8217;
+option_cls: Factory.ActionSpinnerOptions</p>
+</dd>
+<dt>&lt;ActionDropdown&gt;:</dt>
+<dd>on_size: self.width = &#8216;220dp&#8217;</dd>
+<dt>&lt;ShowcaseScreen&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>ScrollView:</dt>
+<dd><p class="first">do_scroll_x: False
+do_scroll_y: False if root.fullscreen else (content.height &gt; root.height - dp(16))
+AnchorLayout:</p>
+<blockquote class="last">
+<div><p>size_hint_y: None
+height: root.height if root.fullscreen else max(root.height, content.height)
+GridLayout:</p>
+<blockquote>
+<div>id: content
+cols: 1
+spacing: &#8216;8dp&#8217;
+padding: &#8216;8dp&#8217;
+size_hint: (1, 1) if root.fullscreen else (.8, None)
+height: self.height if root.fullscreen else self.minimum_height</div></blockquote>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>BoxLayout:</dt>
+<dd><p class="first">orientation: &#8216;vertical&#8217;</p>
+<dl class="docutils">
+<dt>canvas.before:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgb: .6, .6, .6</dd>
+<dt>Rectangle:</dt>
+<dd>size: self.size
+source: &#8216;data/background.png&#8217;</dd>
+</dl>
+</dd>
+</dl>
+<p>ActionBar:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>ActionView:</dt>
+<dd><p class="first">id: av
+ActionPrevious:</p>
+<blockquote>
+<div>with_previous: (False if sm.current_screen.name == &#8216;button&#8217; else True) if sm.current_screen else False
+title: &#8216;Showcase&#8217; + (&#8216;&#8217; if not app.current_title else &#8216; - {}&#8217;.format(app.current_title))
+on_release: app.go_hierarchy_previous()</div></blockquote>
+<dl class="last docutils">
+<dt>ActionSpinner:</dt>
+<dd><p class="first">id: spnr
+important: True
+text: &#8216;Jump to Screen&#8217;
+values: app.screen_names
+on_text:</p>
+<blockquote class="last">
+<div>if sm.current != args[1]:idx = app.screen_names.index(args[1]);app.go_screen(idx)</div></blockquote>
+</dd>
+<dt>ActionToggleButton:</dt>
+<dd>text: &#8216;Toggle sourcecode&#8217;
+icon: &#8216;data/icons/sourcecode.png&#8217;
+on_release: app.toggle_source_code()</dd>
+<dt>ActionButton:</dt>
+<dd>text: &#8216;Previous screen&#8217;
+icon: &#8216;data/icons/prev.png&#8217;
+on_release: app.go_previous_screen()</dd>
+<dt>ActionButton:</dt>
+<dd>text: &#8216;Next screen&#8217;
+icon: &#8216;data/icons/next.png&#8217;
+on_release: app.go_next_screen()
+important: True</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="last docutils">
+<dt>ScrollView:</dt>
+<dd><p class="first">id: sv
+size_hint_y: None
+height: 0</p>
+<dl class="last docutils">
+<dt>CodeInput:</dt>
+<dd>id: sourcecode
+lexer: KivyLexer()
+text: app.sourcecode
+readonly: True
+size_hint_y: None
+font_size: &#8216;12sp&#8217;
+height: self.minimum_height</dd>
+</dl>
+</dd>
+<dt>ScreenManager:</dt>
+<dd><p class="first">id: sm
+on_current_screen:</p>
+<blockquote class="last">
+<div>spnr.text = args[1].name
+idx = app.screen_names.index(args[1].name)
+if idx &gt; -1: app.hierarchy.append(idx)</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="demo-showcase-data-background-png">
+<h1>demo/showcase/data/background.png<a class="headerlink" href="#demo-showcase-data-background-png" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<img alt="https://kivy.org/docs/_images/background.png" src="https://kivy.org/docs/_images/background.png" />
+</div>
+<div class="section" id="demo-showcase-data-faust-github-jpg">
+<h1>demo/showcase/data/faust_github.jpg<a class="headerlink" href="#demo-showcase-data-faust-github-jpg" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<img alt="https://kivy.org/docs/_images/faust_github.jpg" src="https://kivy.org/docs/_images/faust_github.jpg" />
+</div>
+<div class="section" id="demo-showcase-android-txt">
+<h1>demo/showcase/android.txt ファイル<a class="headerlink" href="#demo-showcase-android-txt" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>title=Showcase
+author=Kivy team
+orientation=landscape</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

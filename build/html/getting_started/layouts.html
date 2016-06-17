@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>導入 &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">導入</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="id1">
+<h1>導入<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはKivyのGetting Started » Layoutsを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/gettingstarted/layouts.html">https://kivy.org/docs/gettingstarted/layouts.html</a></p>
+<p>レイアウトは特定の記法でウィジェットを配置するために用いられるコンテナです。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>アンカーレイアウト&lt;https://kivy.org/docs/api-kivy.uix.anchorlayout.html#module-kivy.uix.anchorlayout&gt;:::
+
+    Widgetは、「top」、「bottom」、「left」、「right」または「センター」に固定することが可能です。
+
+ボックスレイアウト&lt;https://kivy.org/docs/api-kivy.uix.boxlayout.html#module-kivy.uix.boxlayout&gt;:::
+
+    Widgetは横向きでも縦向きでも順番に配置されます。
+
+フロートレイアウト&lt;https://kivy.org/docs/api-kivy.uix.floatlayout.html#module-kivy.uix.floatlayout&gt;:::
+
+    Widgetの数に制限はありません。
+
+レラティブレイアウト&lt;https://kivy.org/docs/api-kivy.uix.relativelayout.html#module-kivy.uix.relativelayout&gt;:::
+
+    子に当たるウィジェットはレイアウトと比較して配置されます。
+
+グリッドレイアウト&lt;https://kivy.org/docs/api-kivy.uix.gridlayout.html#module-kivy.uix.gridlayout&gt;:::
+
+    ウィジェットは、行と列のプロパティによって定義されるグリッドに配置されます。
+
+ページレイアウト&lt;https://kivy.org/docs/api-kivy.uix.pagelayout.html#module-kivy.uix.pagelayout&gt;:::
+
+    単純な複数ページのレイアウトをつくるのに用いられます。現在のページから他ページへの即時移動を可能にします。
+
+スキャッターレイアウト&lt;https://kivy.org/docs/api-kivy.uix.scatterlayout.html#module-kivy.uix.scatterlayout&gt;:::
+
+    ウィジェットは変換、回転・リサイズすることができます。&quot;レラティブレイアウト&quot;同様、子に当たるウィジェットはレイアウトと比較して配置されます。
+
+スタックレイアウト&lt;https://kivy.org/docs/api-kivy.uix.stacklayout.html#module-kivy.uix.stacklayout&gt;:::
+
+    ウィジェットは、lr-tb(左上から右下へ)またはtb-lr(右下から左上へ)の順序で配置されます。
+</pre></div>
+</div>
+<p>ウィジェットをレイアウトに加える時、レイアウトのタイプによって以下の特性が装置のサイズと位置を決定するのに用いられます:</p>
+<blockquote>
+<div><p><strong>サイズヒント</strong> :親に当たるスペースでウィジェットのサイズをパーセンテージとして定義します。その値は、範囲0.0 から 1.0（0.01 = 1%、1.=100%）に制限されます。</p>
+<p><strong>ポジションヒント</strong> :親と比較してウィジェットを置くのに用いられます。</p>
+</div></blockquote>
+<p><strong>サイズヒント</strong> と <strong>ポジションヒント</strong> は値が何らかに決まるときのみはウィジェットのサイズと位置を計算するのに用いられます。値を設定しない場合は、レイアウトはウィジェットの位置・大きさを設定しません。その場合、直接、画面を見て値（x、y、幅、高さ）を指定することができます。</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

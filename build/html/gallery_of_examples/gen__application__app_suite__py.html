@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Suite of Application Builders &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Suite of Application Builders</a></li>
+<li><a class="reference internal" href="#application-app-suite-py">application/app_suite.pyファイル</a></li>
+<li><a class="reference internal" href="#application-testkvfile-kv">application/testkvfile.kvファイル</a></li>
+<li><a class="reference internal" href="#application-app-suite-data-testkvdir-kv">application/app_suite_data/testkvdir.kvファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-suite-of-application-builders">
+<h1>Gallery of Examples » Suite of Application Builders<a class="headerlink" href="#gallery-of-examples-suite-of-application-builders" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはSuite of Application Buildersを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__application__app_suite__py.html">https://kivy.org/docs/examples/gen__application__app_suite__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/application__app_suite__py1.png" src="https://kivy.org/docs/_images/application__app_suite__py1.png" />
+<p>アプリケーションを起動するさまざまな方法を探ります。
+マンドラインパラメータなしで実行する場合は、端末のメニューが表示されます。
+また、&#8217;r&#8217;パラメータでランダムな選択を実行します。
+ログオプションの多くは、デバッグ作業を簡単にするためにあります：実行順序は明らかではないかもしれません。
+コマンドを実行するたびに、一つだけkivyアプリケーションが作成されます。</p>
+<p>testkvfile.kvファイルとapp_suite_data/ testkvdir.kvファイルを使用しています。</p>
+</div>
+<div class="section" id="application-app-suite-py">
+<h1>application/app_suite.pyファイル<a class="headerlink" href="#application-app-suite-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Suite of Application Builders
+=============================</p>
+<p>This explores different methods of starting an application. If you run
+this without a command line parameter, you should see a menu in your terminal.
+You can also run this with a &#8216;r&#8217; parameter to pick a random method.
+There are lots of logging options to make this easier to debug: the execution
+order may not be obvious. Each time you run the command, only one kivy
+application is created.</p>
+<p>This uses the file testkvfile.kv and the file app_suite_data/testkvdir.kv.</p>
+<p>&#8216;&#8217;&#8216;</p>
+<p>from __future__ import print_function
+import sys
+import re
+from random import choice</p>
+<p>import kivy
+kivy.require(&#8216;1.8.0&#8217;)  # 1.8 is when kv_directory became part of app.
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.lang import Builder</p>
+<p>from kivy.uix.floatlayout import FloatLayout
+# Note that importing FloatLayout causes Kivy to execute, including
+# starting up the Logger and some other messages.
+print(&#8220;** In main program, done with imports&#8221;)</p>
+<dl class="docutils">
+<dt>class TestBuildApp(App):</dt>
+<dd><p class="first">&#8220;&#8221;&#8221; Use build() function to return a widget. &#8220;&#8221;&#8221;
+def build(self):</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>&#8220;&#8221;&#8221;   Build called by kivy when an App is started.</dt>
+<dd>Called after trying to load a .kv file.
+Returns a new Button as a root widget.
+&#8220;&#8221;&#8220;</dd>
+</dl>
+<p>print(&#8220;** inside build()&#8221;)
+return Button(text=&#8217;hello from TestBuildApp&#8217;)</p>
+</div></blockquote>
+</dd>
+<dt>class TestKVFileApp(App):</dt>
+<dd>&#8220;&#8221;&#8221;
+Empty class, but name used to find .kv file. The filename is the lowercase
+version of the class, i.e., &#8216;testkvfileapp.kv&#8217;. If not found, it strips
+off the final &#8216;app&#8217;, i.e., &#8216;testkvfile.kv&#8217;. If not file is found, and no
+other method sets the self.root, the program will run with an empty screen.
+&#8220;&#8221;&#8221;
+pass</dd>
+<dt>class TestKVDirApp(App):</dt>
+<dd>&#8220;&#8221;&#8221;
+Empty class except for setting class variable kv_directory.
+This directory sets the directory in which to search for the .kv file.
+The name of the kv file is still governed by the class name and the .kv
+file should still have one root widget.
+&#8220;&#8221;&#8221;
+kv_directory = &#8216;app_suite_data&#8217;</dd>
+<dt>class TestKVStringApp(App):</dt>
+<dd><p class="first">&#8220;&#8221;&#8221;
+Use a build() function and use the kivy.lang.Builder function to parse up a
+Kivy language string.
+&#8220;&#8221;&#8221;
+def build(self):</p>
+<blockquote class="last">
+<div><p>&#8220;&#8221;&#8221;   Called by kivy run().  &#8220;&#8221;&#8221;
+print(&#8220;** inside build()&#8221;)
+widget = Builder.load_string(</p>
+<blockquote>
+<div>&#8220;Button:n  text: &#8216;hello from TestKVStringApp&#8217;&#8221;)</div></blockquote>
+<p>print(&#8220;** widget built&#8221;)
+return widget</p>
+</div></blockquote>
+</dd>
+<dt>class TestPrebuiltApp(App):</dt>
+<dd><p class="first">&#8220;&#8221;&#8221; Use the Builder to create a top level widget at the beginning
+of the Python program, then use a dummy class for that widget.
+This costs a bit more in start-up time. &#8220;&#8221;&#8221;
+kv = &#8220;&lt;Prebuilt&gt;n  Button:n    text:&#8217;hello from TestPrebuiltApp&#8217;&#8221;
+Builder.load_string(kv)
+print(&#8220;** in TestPrebuiltApp, class initialization built &lt;Prebuilt&gt;&#8221;)</p>
+<dl class="last docutils">
+<dt>class Prebuilt(FloatLayout):</dt>
+<dd>&#8220;&#8221;&#8221; Empty class to cause setting root to &lt;Prebuilt&gt; tag and
+set inheritence &#8220;&#8221;&#8221;
+pass</dd>
+<dt>def build(self):</dt>
+<dd>&#8220;&#8221;&#8221; called, returns instance matching tag . &#8220;&#8221;&#8221;
+return self.Prebuilt()</dd>
+</dl>
+</dd>
+<dt>def print_class(class_name):</dt>
+<dd><p class="first">&#8220;&#8221;&#8221; Read this file and print the section with the class name specified.) &#8220;&#8221;&#8221;
+filename = sys.argv[0]
+with open(filename) as f:</p>
+<blockquote class="last">
+<div><p>data = f.read()
+regex = &#8220;^(class &#8221; + class_name + &#8220;\b.*?)^\S&#8221;
+match = re.search(regex, data, flags=re.MULTILINE | re.DOTALL)
+if match:</p>
+<blockquote>
+<div>print(match.group(1))</div></blockquote>
+</div></blockquote>
+</dd>
+</dl>
+<p># the __name__ idiom executes when run from command line but not from import.
+if __name__ == &#8216;__main__&#8217;:</p>
+<blockquote>
+<div><p>dash = &#8220;-&#8221; * 40</p>
+<p>arg = sys.argv[1][0].lower() if len(sys.argv) &gt; 1 else &#8220;h&#8221;
+print(dash)</p>
+<dl class="docutils">
+<dt>if arg == &#8216;r&#8217;:</dt>
+<dd>arg = choice(&#8216;bfds&#8217;)</dd>
+<dt>if arg == &#8216;b&#8217;:</dt>
+<dd>print_class(&#8220;TestBuildApp&#8221;)
+TestBuildApp().run()</dd>
+<dt>elif arg == &#8216;f&#8217;:</dt>
+<dd>print_class(&#8220;TestKVFileApp&#8221;)
+TestKVFileApp().run()</dd>
+<dt>elif arg == &#8216;d&#8217;:</dt>
+<dd>print_class(&#8220;TestKVDirApp&#8221;)
+TestKVDirApp().run()</dd>
+<dt>elif arg == &#8216;s&#8217;:</dt>
+<dd>print_class(&#8220;TestKVStringApp&#8221;)
+TestKVStringApp().run()</dd>
+<dt>elif arg == &#8216;p&#8217;:</dt>
+<dd>print_class(&#8220;TestPrebuiltApp&#8221;)
+TestPrebuiltApp().run()</dd>
+<dt>else:   # help</dt>
+<dd>print(&#8220;&#8221;&#8220;</dd>
+</dl>
+</div></blockquote>
+<p>This demo runs different application windows based on a command line argument.</p>
+<dl class="docutils">
+<dt>Try using one of these:</dt>
+<dd><blockquote class="first">
+<div><p>b - Use build() method to return a widget
+d - Use a kv file from a different directory
+f - Use a kv file with the widget object
+p - Use prebuilt widget inside a layout
+s - Use a kivy language string to create the widget
+r - pick one of the options at random.</p>
+<p>h - show this help message.</p>
+<p>After closing the application window, this program will exit.
+While the run() method does return, kivy cannot run another
+application window after one has been closed.</p>
+</div></blockquote>
+<p>&#8220;&#8221;&#8221;)</p>
+<blockquote class="last">
+<div>print(dash)
+print(&#8220;This program is gratified to be of use.&#8221;)</div></blockquote>
+</dd>
+</dl>
+</div>
+<div class="section" id="application-testkvfile-kv">
+<h1>application/testkvfile.kvファイル<a class="headerlink" href="#application-testkvfile-kv" title="このヘッドラインへのパーマリンク">¶</a></h1>
+</div>
+<div class="section" id="application-app-suite-data-testkvdir-kv">
+<h1>application/app_suite_data/testkvdir.kvファイル<a class="headerlink" href="#application-app-suite-data-testkvdir-kv" title="このヘッドラインへのパーマリンク">¶</a></h1>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

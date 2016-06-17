@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Multistroke Recognition Database Demonstration &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Multistroke Recognition Database Demonstration</a></li>
+<li><a class="reference internal" href="#demo-multistroke-main-py">demo/multistroke/main.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-multistroke-helpers-py">demo/multistroke/helpers.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-multistroke-historymanager-py">demo/multistroke/historymanager.py ファイル</a></li>
+<li><a class="reference internal" href="#id51">demo/multistroke/historymanager.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-multistroke-gesturedatabase-py">demo/multistroke/gestureDatabase.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-multistroke-gesturedatabase-kv">demo/multistroke/gestureDatabase.kv ファイル</a></li>
+<li><a class="reference internal" href="#demo-multistroke-settings-py">demo/multistroke/settings.py ファイル</a></li>
+<li><a class="reference internal" href="#demo-multistroke-multistroke-py">demo/multistroke/multistroke.py ファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-multistroke-recognition-database-demonstration">
+<h1>Gallery of Examples » Multistroke Recognition Database Demonstration<a class="headerlink" href="#gallery-of-examples-multistroke-recognition-database-demonstration" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Multistroke Recognition Database Demonstrationを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__demo__multistroke__main__py.html">https://kivy.org/docs/examples/gen__demo__multistroke__main__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/demo__multistroke__main__py1.png" src="https://kivy.org/docs/_images/demo__multistroke__main__py1.png" />
+<p>このアプリケーションは、ジェスチャーを記録し、一致させようとします。
+黒色の描画面と下部分にいくつかのボタンとが表示されます。
+描画面上でジェスチャーを行うと、ジェスチャーが履歴に追加され、一致が試みられます。
+履歴タブに移動しジェスチャーに名前を付けてデータベースに追加した場合、将来的に同様のジェスチャーが認識されます。
+.kgファイルのジェスチャーのデータベースにロードと保存ができます。</p>
+<p>デモのコードは、プライマリファイルであることで、多くのファイルにまたがっています。
+ポップアップ情報は、（「いいえマッチ &#8216;）ファイルhelpers.pyから来ています。</p>
+<p>履歴ペインは、historymanager.pyファイルで管理され、historymanager.kvファイルに記載されています。
+データベースペインとストレージは、gestureDatabase.pyファイルで管理され、gestureDatabase.kvファイルに記載されています。
+スライダーやボタンの一般的なロジックは、settings.pyファイルにあり、settings.kvで説明します。
+実際の設定ペインは、multistroke.kvファイルに記載されており、このファイルから管理されています。</p>
+</div>
+<div class="section" id="demo-multistroke-main-py">
+<h1>demo/multistroke/main.py ファイル<a class="headerlink" href="#demo-multistroke-main-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Multistroke Recognition Database Demonstration
+==============================================</p>
+<p>This application records gestures and attempts to match them. You should
+see a black drawing surface with some buttons across the bottom. As you
+make a gesture on the drawing surface, the gesture will be added to
+the history and a match will be attempted. If you go to the history tab,
+name the gesture, and add it to the database, then simliar gestures in the
+future will be recognized. You can load and save databases of gestures
+in .kg files.</p>
+<p>This demonstration code spans many files, with this being the primary file.
+The information pop-up (&#8216;No match&#8217;) comes from the file helpers.py.
+The history pane is managed in the file historymanager.py and described
+in the file historymanager.kv. The database pane and storage is managed in
+the file gestureDatabase.py and the described in the file gestureDatabase.kv.
+The general logic of the sliders and buttons are in the file
+settings.py and described in settings.kv. but the actual settings pane is
+described in the file multistroke.kv and managed from this file.</p>
+<p>&#8216;&#8217;&#8217;
+from kivy.app import App
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.gesturesurface import GestureSurface
+from kivy.uix.screenmanager import ScreenManager, Screen, SlideTransition
+from kivy.uix.label import Label
+from kivy.multistroke import Recognizer</p>
+<p># Local libraries
+from historymanager import GestureHistoryManager
+from gesturedatabase import GestureDatabase
+from settings import MultistrokeSettingsContainer</p>
+<dl class="docutils">
+<dt>class MainMenu(GridLayout):</dt>
+<dd>pass</dd>
+<dt>class MultistrokeAppSettings(MultistrokeSettingsContainer):</dt>
+<dd>pass</dd>
+</dl>
+<p>class MultistrokeApp(App):</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>def goto_database_screen(self, <a href="#id1"><span class="problematic" id="id2">*</span></a>l):</dt>
+<dd>self.database.import_gdb()
+self.manager.current = &#8216;database&#8217;</dd>
+<dt>def handle_gesture_cleanup(self, surface, g, <a href="#id3"><span class="problematic" id="id4">*</span></a>l):</dt>
+<dd><dl class="first last docutils">
+<dt>if hasattr(g, &#8216;_result_label&#8217;):</dt>
+<dd>surface.remove_widget(g._result_label)</dd>
+</dl>
+</dd>
+<dt>def handle_gesture_discard(self, surface, g, <a href="#id5"><span class="problematic" id="id6">*</span></a>l):</dt>
+<dd><p class="first"># Don&#8217;t bother creating Label if it&#8217;s not going to be drawn
+if surface.draw_timeout == 0:</p>
+<blockquote>
+<div>return</div></blockquote>
+<p>text = &#8216;[b]Discarded:[/b] Not enough input&#8217;
+g._result_label = Label(text=text, markup=True, size_hint=(None, None),</p>
+<blockquote>
+<div>center=(g.bbox[&#8216;minx&#8217;], g.bbox[&#8216;miny&#8217;]))</div></blockquote>
+<p class="last">self.surface.add_widget(g._result_label)</p>
+</dd>
+<dt>def handle_gesture_complete(self, surface, g, <a href="#id7"><span class="problematic" id="id8">*</span></a>l):</dt>
+<dd>result = self.recognizer.recognize(g.get_vectors())
+result._gesture_obj = g
+result.bind(on_complete=self.handle_recognize_complete)</dd>
+<dt>def handle_recognize_complete(self, result, <a href="#id9"><span class="problematic" id="id10">*</span></a>l):</dt>
+<dd><p class="first">self.history.add_recognizer_result(result)</p>
+<p># Don&#8217;t bother creating Label if it&#8217;s not going to be drawn
+if self.surface.draw_timeout == 0:</p>
+<blockquote>
+<div>return</div></blockquote>
+<p>best = result.best
+if best[&#8216;name&#8217;] is None:</p>
+<blockquote>
+<div>text = &#8216;[b]No match[/b]&#8217;</div></blockquote>
+<dl class="docutils">
+<dt>else:</dt>
+<dd><dl class="first last docutils">
+<dt>text = &#8216;Name: [b]%s[/b]nScore: [b]%f[/b]nDistance: [b]%f[/b]&#8217; % (</dt>
+<dd>best[&#8216;name&#8217;], best[&#8216;score&#8217;], best[&#8216;dist&#8217;])</dd>
+</dl>
+</dd>
+</dl>
+<p>g = result._gesture_obj
+g._result_label = Label(text=text, markup=True, size_hint=(None, None),</p>
+<blockquote>
+<div>center=(g.bbox[&#8216;minx&#8217;], g.bbox[&#8216;miny&#8217;]))</div></blockquote>
+<p class="last">self.surface.add_widget(g._result_label)</p>
+</dd>
+<dt>def build(self):</dt>
+<dd><p class="first"># Setting NoTransition breaks the &#8220;history&#8221; screen! Possibly related
+# to some inexplicable rendering bugs on my particular system
+self.manager = ScreenManager(transition=SlideTransition(</p>
+<blockquote>
+<div>duration=.15))</div></blockquote>
+<p>self.recognizer = Recognizer()</p>
+<p># Setup the GestureSurface and bindings to our Recognizer
+surface = GestureSurface(line_width=2, draw_bbox=True,</p>
+<blockquote>
+<div>use_random_color=True)</div></blockquote>
+<p>surface_screen = Screen(name=&#8217;surface&#8217;)
+surface_screen.add_widget(surface)
+self.manager.add_widget(surface_screen)</p>
+<p>surface.bind(on_gesture_discard=self.handle_gesture_discard)
+surface.bind(on_gesture_complete=self.handle_gesture_complete)
+surface.bind(on_gesture_cleanup=self.handle_gesture_cleanup)
+self.surface = surface</p>
+<p># History is the list of gestures drawn on the surface
+history = GestureHistoryManager()
+history_screen = Screen(name=&#8217;history&#8217;)
+history_screen.add_widget(history)
+self.history = history
+self.manager.add_widget(history_screen)</p>
+<p># Database is the list of gesture templates in Recognizer
+database = GestureDatabase(recognizer=self.recognizer)
+database_screen = Screen(name=&#8217;database&#8217;)
+database_screen.add_widget(database)
+self.database = database
+self.manager.add_widget(database_screen)</p>
+<p># Settings screen
+app_settings = MultistrokeAppSettings()
+ids = app_settings.ids</p>
+<p>ids.max_strokes.bind(value=surface.setter(&#8216;max_strokes&#8217;))
+ids.temporal_win.bind(value=surface.setter(&#8216;temporal_window&#8217;))
+ids.timeout.bind(value=surface.setter(&#8216;draw_timeout&#8217;))
+ids.line_width.bind(value=surface.setter(&#8216;line_width&#8217;))
+ids.draw_bbox.bind(value=surface.setter(&#8216;draw_bbox&#8217;))
+ids.use_random_color.bind(value=surface.setter(&#8216;use_random_color&#8217;))</p>
+<p>settings_screen = Screen(name=&#8217;settings&#8217;)
+settings_screen.add_widget(app_settings)
+self.manager.add_widget(settings_screen)</p>
+<p class="last"># Wrap in a gridlayout so the main menu is always visible
+layout = GridLayout(cols=1)
+layout.add_widget(self.manager)
+layout.add_widget(MainMenu())
+return layout</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>if __name__ in (&#8216;__main__&#8217;, &#8216;__android__&#8217;):</dt>
+<dd>MultistrokeApp().run()</dd>
+</dl>
+</div>
+<div class="section" id="demo-multistroke-helpers-py">
+<h1>demo/multistroke/helpers.py ファイル<a class="headerlink" href="#demo-multistroke-helpers-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>__all__ = (&#8216;InformationPopup&#8217;, )</p>
+<p>from kivy.uix.popup import Popup
+from kivy.properties import StringProperty
+from kivy.factory import Factory
+from kivy.lang import Builder
+from kivy.clock import Clock</p>
+<p>Builder.load_string(&#8216;&#8217;&#8217;
+&lt;InformationPopup&gt;:</p>
+<blockquote>
+<div><p>auto_dismiss: True
+size_hint: None, None
+size: 400, 200
+on_open: root.dismiss_trigger()
+title: root.title
+Label:</p>
+<blockquote>
+<div>text: root.text</div></blockquote>
+</div></blockquote>
+<p>&#8216;&#8217;&#8216;)</p>
+<dl class="docutils">
+<dt>class InformationPopup(Popup):</dt>
+<dd><p class="first">title = StringProperty(&#8216;Information&#8217;)
+text = StringProperty(&#8216;&#8217;)</p>
+<dl class="last docutils">
+<dt>def __init__(self, time=1.5, <a href="#id11"><span class="problematic" id="id12">**</span></a>kwargs):</dt>
+<dd>super(InformationPopup, self).__init__(<a href="#id13"><span class="problematic" id="id14">**</span></a>kwargs)
+self.dismiss_trigger = Clock.create_trigger(self.dismiss, time)</dd>
+</dl>
+</dd>
+</dl>
+<p>Factory.register(&#8216;InformationPopup&#8217;, cls=InformationPopup)</p>
+</div>
+<div class="section" id="demo-multistroke-historymanager-py">
+<h1>demo/multistroke/historymanager.py ファイル<a class="headerlink" href="#demo-multistroke-historymanager-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>__all__ = (&#8216;GestureHistoryManager&#8217;, &#8216;GestureVisualizer&#8217;)</p>
+<p>from kivy.app import App
+from kivy.clock import Clock
+from kivy.lang import Builder
+from kivy.uix.widget import Widget
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.label import Label
+from kivy.graphics import Color, Line
+from kivy.properties import ObjectProperty, BooleanProperty
+from kivy.compat import PY2</p>
+<p># local libraries
+from helpers import InformationPopup
+from settings import MultistrokeSettingsContainer</p>
+<p># refuse heap permute for gestures with more strokes than 3
+# (you can increase it, but 4 strokes = 384 templates, 5 = 3840)
+MAX_PERMUTE_STROKES = 3</p>
+<p>Builder.load_file(&#8216;historymanager.kv&#8217;)</p>
+<dl class="docutils">
+<dt>class GestureHistoryManager(GridLayout):</dt>
+<dd><p class="first">selected = ObjectProperty(None, allownone=True)</p>
+<dl class="last docutils">
+<dt>def __init__(self, <a href="#id15"><span class="problematic" id="id16">**</span></a>kwargs):</dt>
+<dd>super(GestureHistoryManager, self).__init__(<a href="#id17"><span class="problematic" id="id18">**</span></a>kwargs)
+self.gesturesettingsform = GestureSettingsForm()
+rr = self.gesturesettingsform.rrdetails
+rr.bind(on_reanalyze_selected=self.reanalyze_selected)
+self.infopopup = InformationPopup()
+self.recognizer = App.get_running_app().recognizer</dd>
+<dt>def reanalyze_selected(self, <a href="#id19"><span class="problematic" id="id20">*</span></a>l):</dt>
+<dd><p class="first"># recognize() can block the UI with max_gpf=100, show a message
+self.infopopup.text = &#8216;Please wait, analyzing ..&#8217;
+self.infopopup.auto_dismiss = False
+self.infopopup.open()</p>
+<p># Get a reference to the original GestureContainer object
+gesture_obj = self.selected._result_obj._gesture_obj</p>
+<p># Reanalyze the candidate strokes using current database
+res = self.recognizer.recognize(gesture_obj.get_vectors(),</p>
+<blockquote>
+<div>max_gpf=100)</div></blockquote>
+<p># Tag the result with the gesture object (it didn&#8217;t change)
+res._gesture_obj = gesture_obj</p>
+<p class="last"># Tag the selected item with the updated ProgressTracker
+self.selected._result_obj = res
+res.bind(on_complete=self._reanalyze_complete)</p>
+</dd>
+<dt>def _reanalyze_complete(self, <a href="#id21"><span class="problematic" id="id22">*</span></a>l):</dt>
+<dd>self.gesturesettingsform.load_visualizer(self.selected)
+self.infopopup.dismiss()</dd>
+<dt>def add_selected_to_database(self, <a href="#id23"><span class="problematic" id="id24">*</span></a>l):</dt>
+<dd><dl class="first docutils">
+<dt>if self.selected is None:</dt>
+<dd>raise Exception(&#8216;add_gesture_to_database before load_visualizer?&#8217;)</dd>
+<dt>if self.gesturesettingsform.addsettings is None:</dt>
+<dd>raise Exception(&#8216;add_gesture_to_database missing addsetings?&#8217;)</dd>
+</dl>
+<p>ids = self.gesturesettingsform.addsettings.ids</p>
+<p>name = ids.name.value.strip()
+if name == &#8216;&#8217;:</p>
+<blockquote>
+<div>self.infopopup.auto_dismiss = True
+self.infopopup.text = &#8216;You must specify a name for the gesture&#8217;
+self.infopopup.open()
+return</div></blockquote>
+<p>permute = ids.permute.value
+sensitive = ids.orientation_sens.value
+strokelen = ids.stroke_sens.value
+angle_sim = ids.angle_sim.value</p>
+<p>cand = self.selected._result_obj._gesture_obj.get_vectors()</p>
+<dl class="docutils">
+<dt>if permute and len(cand) &gt; MAX_PERMUTE_STROKES:</dt>
+<dd>t = &#8220;Can&#8217;t heap permute %d-stroke gesture &#8221; % (len(cand))
+self.infopopup.text = t
+self.infopopup.auto_dismiss = True
+self.infopopup.open()
+return</dd>
+<dt>self.recognizer.add_gesture(</dt>
+<dd>name,
+cand,
+use_strokelen=strokelen,
+orientation_sensitive=sensitive,
+angle_similarity=angle_sim,
+permute=permute)</dd>
+</dl>
+<p class="last">self.infopopup.text = &#8216;Gesture added to database&#8217;
+self.infopopup.auto_dismiss = True
+self.infopopup.open()</p>
+</dd>
+<dt>def clear_history(self, <a href="#id25"><span class="problematic" id="id26">*</span></a>l):</dt>
+<dd><dl class="first docutils">
+<dt>if self.selected:</dt>
+<dd>self.visualizer_deselect()</dd>
+</dl>
+<p class="last">self.ids.history.clear_widgets()</p>
+</dd>
+<dt>def visualizer_select(self, visualizer, <a href="#id27"><span class="problematic" id="id28">*</span></a>l):</dt>
+<dd><dl class="first docutils">
+<dt>if self.selected is not None:</dt>
+<dd>self.selected.selected = False</dd>
+<dt>else:</dt>
+<dd>self.add_widget(self.gesturesettingsform)</dd>
+</dl>
+<p class="last">self.gesturesettingsform.load_visualizer(visualizer)
+self.selected = visualizer</p>
+</dd>
+<dt>def visualizer_deselect(self, <a href="#id29"><span class="problematic" id="id30">*</span></a>l):</dt>
+<dd>self.selected = None
+self.remove_widget(self.gesturesettingsform)</dd>
+<dt>def add_recognizer_result(self, result, <a href="#id31"><span class="problematic" id="id32">*</span></a>l):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;The result object is a ProgressTracker with additional
+data; in main.py it is tagged with the original GestureContainer
+that was analyzed (._gesture_obj)&#8217;&#8216;&#8217;</p>
+<p># Create a GestureVisualizer that draws the gesture on canvas
+visualizer = GestureVisualizer(result._gesture_obj,</p>
+<blockquote>
+<div>size_hint=(None, None), size=(150, 150))</div></blockquote>
+<p># Tag it with the result object so AddGestureForm.load_visualizer
+# has the results to build labels in the scrollview
+visualizer._result_obj = result</p>
+<p>visualizer.bind(on_select=self.visualizer_select)
+visualizer.bind(on_deselect=self.visualizer_deselect)</p>
+<p class="last"># Add the visualizer to the list of gestures in &#8216;history&#8217; screen
+self.ids.history.add_widget(visualizer)
+self._trigger_layout()
+self.ids.scrollview.update_from_scroll()</p>
+</dd>
+</dl>
+</dd>
+<dt>class RecognizerResultLabel(Label):</dt>
+<dd>&#8216;&#8217;&#8216;This Label subclass is used to show a single result from the
+gesture matching process (is a child of GestureHistoryManager)&#8217;&#8216;&#8217;
+pass</dd>
+<dt>class RecognizerResultDetails(BoxLayout):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;Contains a ScrollView of RecognizerResultLabels, ie the list of
+matched gestures and their score/distance (is a child of
+GestureHistoryManager)&#8217;&#8216;&#8217;
+def __init__(self, <a href="#id33"><span class="problematic" id="id34">**</span></a>kwargs):</p>
+<blockquote>
+<div>super(RecognizerResultDetails, self).__init__(<a href="#id35"><span class="problematic" id="id36">**</span></a>kwargs)
+self.register_event_type(&#8216;on_reanalyze_selected&#8217;)</div></blockquote>
+<dl class="last docutils">
+<dt>def on_reanalyze_selected(self, <a href="#id37"><span class="problematic" id="id38">*</span></a>l):</dt>
+<dd>pass</dd>
+</dl>
+</dd>
+<dt>class AddGestureSettings(MultistrokeSettingsContainer):</dt>
+<dd>pass</dd>
+<dt>class GestureSettingsForm(BoxLayout):</dt>
+<dd><p class="first">&#8216;&#8217;&#8216;This is the main content of the GestureHistoryManager, the form for
+adding a new gesture to the recognizer. It is added to the widget tree
+when a GestureVisualizer is selected.&#8217;&#8216;&#8217;</p>
+<dl class="last docutils">
+<dt>def __init__(self, <a href="#id39"><span class="problematic" id="id40">**</span></a>kwargs):</dt>
+<dd>super(GestureSettingsForm, self).__init__(<a href="#id41"><span class="problematic" id="id42">**</span></a>kwargs)
+self.infopopup = InformationPopup()
+self.rrdetails = RecognizerResultDetails()
+self.addsettings = None
+self.app = App.get_running_app()</dd>
+<dt>def load_visualizer(self, visualizer):</dt>
+<dd><dl class="first docutils">
+<dt>if self.addsettings is None:</dt>
+<dd>self.addsettings = AddGestureSettings()
+self.ids.settings.add_widget(self.addsettings)</dd>
+</dl>
+<p>self.visualizer = visualizer
+analysis = self.ids.analysis
+analysis.clear_widgets()
+analysis.add_widget(self.rrdetails)</p>
+<p>scrollv = self.rrdetails.ids.result_scrollview
+resultlist = self.rrdetails.ids.result_list
+resultlist.clear_widgets()</p>
+<p>r = visualizer._result_obj.results</p>
+<dl class="docutils">
+<dt>if not len(r):</dt>
+<dd>lbl = RecognizerResultLabel(text=&#8217;[b]No match[/b]&#8217;)
+resultlist.add_widget(lbl)
+scrollv.scroll_y = 1
+return</dd>
+<dt>if PY2:</dt>
+<dd>d = r.iteritems</dd>
+<dt>else:</dt>
+<dd>d = r.items</dd>
+<dt>for one in sorted(d(), key=lambda x: x[1][&#8216;score&#8217;],</dt>
+<dd><blockquote class="first">
+<div>reverse=True):</div></blockquote>
+<p>data = one[1]
+lbl = RecognizerResultLabel(</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>text=&#8217;Name: [b]&#8217; + data[&#8216;name&#8217;] + &#8216;[/b]&#8217; +</dt>
+<dd>&#8216;n      Score: &#8216; + str(data[&#8216;score&#8217;]) +
+&#8216;n      Distance: &#8216; + str(data[&#8216;dist&#8217;]))</dd>
+</dl>
+</div></blockquote>
+<p class="last">resultlist.add_widget(lbl)</p>
+</dd>
+</dl>
+<p class="last"># Make sure the top is visible
+scrollv.scroll_y = 1</p>
+</dd>
+</dl>
+</dd>
+<dt>class GestureVisualizer(Widget):</dt>
+<dd><p class="first">selected = BooleanProperty(False)</p>
+<dl class="docutils">
+<dt>def __init__(self, gesturecontainer, <a href="#id43"><span class="problematic" id="id44">**</span></a>kwargs):</dt>
+<dd><p class="first">super(GestureVisualizer, self).__init__(<a href="#id45"><span class="problematic" id="id46">**</span></a>kwargs)</p>
+<p>self._gesture_container = gesturecontainer</p>
+<p>self._trigger_draw = Clock.create_trigger(self._draw_item, 0)
+self.bind(pos=self._trigger_draw, size=self._trigger_draw)
+self._trigger_draw()</p>
+<p class="last">self.register_event_type(&#8216;on_select&#8217;)
+self.register_event_type(&#8216;on_deselect&#8217;)</p>
+</dd>
+<dt>def on_touch_down(self, touch):</dt>
+<dd><dl class="first docutils">
+<dt>if not self.collide_point(touch.x, touch.y):</dt>
+<dd>return</dd>
+</dl>
+<p class="last">self.selected = not self.selected
+self.dispatch(self.selected and &#8216;on_select&#8217; or &#8216;on_deselect&#8217;)</p>
+</dd>
+</dl>
+<p># FIXME: This seems inefficient, is there a better way??
+def _draw_item(self, dt):</p>
+<blockquote>
+<div><p>g = self._gesture_container
+bb = g.bbox
+minx, miny, maxx, maxy = bb[&#8216;minx&#8217;], bb[&#8216;miny&#8217;], bb[&#8216;maxx&#8217;], bb[&#8216;maxy&#8217;]
+width, height = self.size
+xpos, ypos = self.pos</p>
+<dl class="docutils">
+<dt>if g.height &gt; g.width:</dt>
+<dd>to_self = (height * 0.85) / g.height</dd>
+<dt>else:</dt>
+<dd>to_self = (width * 0.85) / g.width</dd>
+</dl>
+<p>self.canvas.remove_group(&#8216;gesture&#8217;)</p>
+<p>cand = g.get_vectors()
+col = g.color
+for stroke in cand:</p>
+<blockquote>
+<div><p>out = []
+append = out.append
+for vec in stroke:</p>
+<blockquote>
+<div><p>x, y = vec
+x = (x - minx) * to_self
+w = (maxx - minx) * to_self
+append(x + xpos + (width - w) * .85 / 2)</p>
+<p>y = (y - miny) * to_self
+h = (maxy - miny) * to_self
+append(y + ypos + (height - h) * .85 / 2)</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>with self.canvas:</dt>
+<dd>Color(col[0], col[1], col[2], mode=&#8217;rgb&#8217;)
+Line(points=out, group=&#8217;gesture&#8217;, width=2)</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<dl class="last docutils">
+<dt>def on_select(self, <a href="#id47"><span class="problematic" id="id48">*</span></a>l):</dt>
+<dd>pass</dd>
+<dt>def on_deselect(self, <a href="#id49"><span class="problematic" id="id50">*</span></a>l):</dt>
+<dd>pass</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="id51">
+<h1>demo/multistroke/historymanager.py ファイル<a class="headerlink" href="#id51" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>&lt;GestureHistoryManager&gt;:</dt>
+<dd><p class="first">rows: 1
+spacing: 10
+GridLayout:</p>
+<blockquote class="last">
+<div><p>cols: 1
+size_hint_x: None
+width: 150
+canvas:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Color:</dt>
+<dd>rgba: 1, 1, 1, .1</dd>
+<dt>Rectangle:</dt>
+<dd>size: self.size
+pos: self.pos</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>Button:</dt>
+<dd>text: &#8216;Clear History&#8217;
+size_hint_y: None
+height: 50
+on_press: root.clear_history()</dd>
+<dt>ScrollView:</dt>
+<dd><p class="first">id: scrollview
+scroll_type: [&#8216;bars&#8217;, &#8216;content&#8217;]
+bar_width: 4
+GridLayout:</p>
+<blockquote class="last">
+<div>id: history
+cols: 1
+size_hint: 1, None
+height: self.minimum_height</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+</dd>
+<dt>&lt;GestureSettingsForm&gt;:</dt>
+<dd><p class="first">orientation: &#8216;vertical&#8217;
+spacing: 10
+GridLayout:</p>
+<blockquote class="last">
+<div><p>id: settings
+cols: 1
+top: root.top
+Label:</p>
+<blockquote>
+<div><p>text: &#8216;[b]Results (scroll for more)[/b]&#8217;
+markup: True
+size_hint_y: None
+height: 30
+halign: &#8216;left&#8217;
+valign: &#8216;middle&#8217;
+text_size: self.size
+canvas:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Color:</dt>
+<dd>rgba: 47 / 255., 167 / 255., 212 / 255., .4</dd>
+<dt>Rectangle:</dt>
+<dd>pos: self.x, self.y + 1
+size: self.size</dd>
+<dt>Color:</dt>
+<dd>rgb: .5, .5, .5</dd>
+<dt>Rectangle:</dt>
+<dd>pos: self.x, self.y - 2
+size: self.width, 1</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<dl class="docutils">
+<dt>GridLayout:</dt>
+<dd>id: analysis
+top: root.top
+rows: 1</dd>
+</dl>
+</div></blockquote>
+</dd>
+<dt>&lt;GestureVisualizer&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: 1, 1, 1, self.selected and .3 or .1</dd>
+<dt>Rectangle:</dt>
+<dd>pos: self.pos
+size: self.size</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>&lt;RecognizerResultDetails&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: 1, 0, 0, .1</dd>
+<dt>Rectangle:</dt>
+<dd>size: self.size
+pos: self.pos</dd>
+</dl>
+</dd>
+<dt>ScrollView:</dt>
+<dd><p class="first">id: result_scrollview
+scroll_type: [&#8216;bars&#8217;, &#8216;content&#8217;]
+bar_width: 4
+GridLayout:</p>
+<blockquote class="last">
+<div>id: result_list
+cols: 1
+size_hint: 1, None
+height: self.minimum_height</div></blockquote>
+</dd>
+<dt>Button:</dt>
+<dd>size_hint: None, None
+width: 150
+height: 70
+text: &#8216;Re-analyze&#8217;
+on_press: root.dispatch(&#8216;on_reanalyze_selected&#8217;)</dd>
+</dl>
+</dd>
+<dt>&lt;RecognizerResultLabel&gt;:</dt>
+<dd>size_hint_y: None
+height: 70
+markup: True
+halign: &#8216;left&#8217;
+valign: &#8216;top&#8217;
+text_size: self.size</dd>
+<dt>&lt;AddGestureSettings&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>MultistrokeSettingTitle:</dt>
+<dd>title: &#8216;New gesture settings&#8217;
+desc: &#8216;Affects how to future input is matched against new gesture&#8217;</dd>
+<dt>MultistrokeSettingBoolean:</dt>
+<dd><p class="first">id: permute
+title: &#8216;Use Heap Permute algorithm?&#8217;
+desc:</p>
+<blockquote>
+<div>(&#8216;This will generate all possible stroke orders from the &#8216; +
+&#8216;input. Only suitable for gestures with 1-3 strokes (or &#8216; +
+&#8216;the number of templates will be huge)&#8217;)</div></blockquote>
+<p class="last">button_text: &#8216;Heap Permute?&#8217;
+value: True</p>
+</dd>
+<dt>MultistrokeSettingBoolean:</dt>
+<dd><p class="first">id: stroke_sens
+title: &#8216;Require same number of strokes?&#8217;
+desc:</p>
+<blockquote>
+<div>(&#8216;When enabled, the new gesture will only match candidates &#8216; +
+&#8216;with exactly the same stroke count. Enable if possible.&#8217;)</div></blockquote>
+<p class="last">button_text: &#8216;Stroke sensitive?&#8217;
+value: True</p>
+</dd>
+<dt>MultistrokeSettingBoolean:</dt>
+<dd><p class="first">id: orientation_sens
+title: &#8216;Is gesture orientation sensitive?&#8217;
+desc:</p>
+<blockquote>
+<div>(&#8216;Enable to differentiate gestures that differ only by &#8216; +
+&#8216;orientation (d/p, b/q, w/m), disable for gestures that &#8216; +
+&#8216;look the same in any orientation (like a circle)&#8217;)</div></blockquote>
+<p class="last">button_text: &#8216;Orientationnsensitive?&#8217;
+value: True</p>
+</dd>
+<dt>MultistrokeSettingSlider:</dt>
+<dd><p class="first">id: angle_sim
+title: &#8216;Angle similarity threshold&#8217;
+type: &#8216;float&#8217;
+desc:</p>
+<blockquote>
+<div>(&#8216;Use a low number to distinguish similar gestures, higher &#8216; +
+&#8216;number to match similar gestures (with differing angle)&#8217;)</div></blockquote>
+<p class="last">value: 30.
+min: 1.0
+max: 179.0</p>
+</dd>
+<dt>MultistrokeSettingString:</dt>
+<dd><p class="first">id: name
+title: &#8216;Gesture name&#8217;
+type: &#8216;float&#8217;
+desc:</p>
+<blockquote class="last">
+<div>(&#8216;Name of new gesture (including all generated templates). &#8216; +
+&#8216;You can have as many gestures with the same name as you need&#8217;)</div></blockquote>
+</dd>
+<dt>Button:</dt>
+<dd>size_hint_y: None
+height: 40
+text: &#8216;Add to database&#8217;
+on_press: root.parent.parent.parent.add_selected_to_database()</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="demo-multistroke-gesturedatabase-py">
+<h1>demo/multistroke/gestureDatabase.py ファイル<a class="headerlink" href="#demo-multistroke-gesturedatabase-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+</div>
+<div class="section" id="demo-multistroke-gesturedatabase-kv">
+<h1>demo/multistroke/gestureDatabase.kv ファイル<a class="headerlink" href="#demo-multistroke-gesturedatabase-kv" title="このヘッドラインへのパーマリンク">¶</a></h1>
+</div>
+<div class="section" id="demo-multistroke-settings-py">
+<h1>demo/multistroke/settings.py ファイル<a class="headerlink" href="#demo-multistroke-settings-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>__all__ = (&#8216;MultistrokeSettingsContainer&#8217;, &#8216;MultistrokeSettingItem&#8217;,</dt>
+<dd>&#8216;MultistrokeSettingBoolean&#8217;, &#8216;MultistrokeSettingSlider&#8217;,
+&#8216;MultistrokeSettingString&#8217;, &#8216;MultistrokeSettingTitle&#8217;)</dd>
+</dl>
+<p>from kivy.factory import Factory
+from kivy.lang import Builder
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.label import Label
+from kivy.properties import (StringProperty, NumericProperty, OptionProperty,</p>
+<blockquote>
+<div>BooleanProperty)</div></blockquote>
+<p>from kivy.uix.popup import Popup</p>
+<p>Builder.load_file(&#8216;settings.kv&#8217;)</p>
+<dl class="docutils">
+<dt>class MultistrokeSettingsContainer(GridLayout):</dt>
+<dd>pass</dd>
+<dt>class MultistrokeSettingBoolean(MultistrokeSettingItem):</dt>
+<dd>button_text = StringProperty(&#8216;&#8217;)
+value = BooleanProperty(False)</dd>
+<dt>class MultistrokeSettingString(MultistrokeSettingItem):</dt>
+<dd>value = StringProperty(&#8216;&#8217;)</dd>
+<dt>class EditSettingPopup(Popup):</dt>
+<dd><dl class="first last docutils">
+<dt>def __init__(self, <a href="#id52"><span class="problematic" id="id53">**</span></a>kwargs):</dt>
+<dd>super(EditSettingPopup, self).__init__(<a href="#id54"><span class="problematic" id="id55">**</span></a>kwargs)
+self.register_event_type(&#8216;on_validate&#8217;)</dd>
+<dt>def on_validate(self, <a href="#id56"><span class="problematic" id="id57">*</span></a>l):</dt>
+<dd>pass</dd>
+</dl>
+</dd>
+<dt>class MultistrokeSettingSlider(MultistrokeSettingItem):</dt>
+<dd><p class="first">min = NumericProperty(0)
+max = NumericProperty(100)
+type = OptionProperty(&#8216;int&#8217;, options=[&#8216;float&#8217;, &#8216;int&#8217;])
+value = NumericProperty(0)</p>
+<dl class="last docutils">
+<dt>def __init__(self, <a href="#id58"><span class="problematic" id="id59">**</span></a>kwargs):</dt>
+<dd>super(MultistrokeSettingSlider, self).__init__(<a href="#id60"><span class="problematic" id="id61">**</span></a>kwargs)
+self._popup = EditSettingPopup()
+self._popup.bind(on_validate=self._validate)
+self._popup.bind(on_dismiss=self._dismiss)</dd>
+<dt>def _to_numtype(self, v):</dt>
+<dd><dl class="first last docutils">
+<dt>try:</dt>
+<dd><dl class="first last docutils">
+<dt>if self.type == &#8216;float&#8217;:</dt>
+<dd>return round(float(v), 1)</dd>
+<dt>else:</dt>
+<dd>return int(v)</dd>
+</dl>
+</dd>
+<dt>except ValueError:</dt>
+<dd>return self.min</dd>
+</dl>
+</dd>
+<dt>def _dismiss(self, <a href="#id62"><span class="problematic" id="id63">*</span></a>l):</dt>
+<dd>self._popup.ids.input.focus = False</dd>
+<dt>def _validate(self, instance, value):</dt>
+<dd><p class="first">self._popup.dismiss()
+val = self._to_numtype(self._popup.ids.input.text)
+if val &lt; self.min:</p>
+<blockquote>
+<div>val = self.min</div></blockquote>
+<dl class="docutils">
+<dt>elif val &gt; self.max:</dt>
+<dd>val = self.max</dd>
+</dl>
+<p class="last">self.value = val</p>
+</dd>
+<dt>def on_touch_down(self, touch):</dt>
+<dd><dl class="first docutils">
+<dt>if not self.ids.sliderlabel.collide_point(<a href="#id64"><span class="problematic" id="id65">*</span></a>touch.pos):</dt>
+<dd>return super(MultistrokeSettingSlider, self).on_touch_down(touch)</dd>
+</dl>
+<p class="last">ids = self._popup.ids
+ids.value = str(self.value)
+ids.input.text = str(self._to_numtype(self.value))
+self._popup.open()
+ids.input.focus = True
+ids.input.select_all()</p>
+</dd>
+</dl>
+</dd>
+<dt>Factory.register(&#8216;MultistrokeSettingsContainer&#8217;,</dt>
+<dd>cls=MultistrokeSettingsContainer)</dd>
+</dl>
+<p>Factory.register(&#8216;MultistrokeSettingTitle&#8217;, cls=MultistrokeSettingTitle)
+Factory.register(&#8216;MultistrokeSettingBoolean&#8217;, cls=MultistrokeSettingBoolean)
+Factory.register(&#8216;MultistrokeSettingSlider&#8217;, cls=MultistrokeSettingSlider)
+Factory.register(&#8216;MultistrokeSettingString&#8217;, cls=MultistrokeSettingString)</p>
+</div>
+<div class="section" id="demo-multistroke-multistroke-py">
+<h1>demo/multistroke/multistroke.py ファイル<a class="headerlink" href="#demo-multistroke-multistroke-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>&lt;MainMenu&gt;:</dt>
+<dd><p class="first">rows: 1
+size_hint: (1, None)
+height: 50
+spacing: 5
+padding: 5
+ToggleButton:</p>
+<blockquote>
+<div><p>group: &#8216;mainmenu&#8217;
+state: &#8216;down&#8217;
+text: &#8216;Gesture Surface&#8217;
+on_press:</p>
+<blockquote>
+<div>app.manager.current = &#8216;surface&#8217;
+if self.state == &#8216;normal&#8217;: self.state = &#8216;down&#8217;</div></blockquote>
+</div></blockquote>
+<dl class="last docutils">
+<dt>ToggleButton:</dt>
+<dd><p class="first">group: &#8216;mainmenu&#8217;
+text: &#8216;History&#8217;
+on_press:</p>
+<blockquote class="last">
+<div>app.manager.current = &#8216;history&#8217;
+if self.state == &#8216;normal&#8217;: self.state = &#8216;down&#8217;</div></blockquote>
+</dd>
+<dt>ToggleButton:</dt>
+<dd><p class="first">group: &#8216;mainmenu&#8217;
+text: &#8216;Database&#8217;
+on_press:</p>
+<blockquote class="last">
+<div>app.goto_database_screen()
+if self.state == &#8216;normal&#8217;: self.state = &#8216;down&#8217;</div></blockquote>
+</dd>
+<dt>ToggleButton:</dt>
+<dd><p class="first">group: &#8216;mainmenu&#8217;
+text: &#8216;Settings&#8217;
+on_press:</p>
+<blockquote class="last">
+<div>app.manager.current = &#8216;settings&#8217;
+if self.state == &#8216;normal&#8217;: self.state = &#8216;down&#8217;</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>&lt;MultistrokeAppSettings&gt;:</dt>
+<dd><p class="first">pos_hint: {&#8216;top&#8217;: 1}</p>
+<dl class="last docutils">
+<dt>MultistrokeSettingTitle:</dt>
+<dd>title: &#8216;GestureSurface behavior&#8217;
+desc: &#8216;Affects how gestures are detected and cleaned up&#8217;</dd>
+<dt>MultistrokeSettingSlider:</dt>
+<dd><p class="first">id: max_strokes
+title: &#8216;Max strokes&#8217;
+type: &#8216;int&#8217;
+desc:</p>
+<blockquote>
+<div>(&#8216;Max number of strokes for a single gesture. If 0, the &#8216; +
+&#8216;gesture will only be analyzed once the temporal window has &#8216; +
+&#8216;expired since the last strokes touch up event&#8217;)</div></blockquote>
+<p class="last">value: 4
+min: 0
+max: 15</p>
+</dd>
+<dt>MultistrokeSettingSlider:</dt>
+<dd><p class="first">id: temporal_win
+title: &#8216;Temporal Window&#8217;
+type: &#8216;float&#8217;
+desc:</p>
+<blockquote>
+<div>(&#8216;Time to wait from last touch up in a gesture before analyzing &#8216; +
+&#8216;the input. If 0, only analyzed once Max Strokes is reached&#8217;)</div></blockquote>
+<p class="last">value: 2.
+min: 0
+max: 60.</p>
+</dd>
+<dt>MultistrokeSettingTitle:</dt>
+<dd>title: &#8216;Drawing&#8217;
+desc: &#8216;Affects how gestures are visualized on the GestureSurface&#8217;</dd>
+<dt>MultistrokeSettingSlider:</dt>
+<dd><p class="first">id: timeout
+title: &#8216;Draw Timeout&#8217;
+type: &#8216;float&#8217;
+desc:</p>
+<blockquote>
+<div>(&#8216;How long to display the gesture (and result label) on the &#8216; +
+&#8216;gesture surface once analysis has completed&#8217;)</div></blockquote>
+<p class="last">value: 2.
+min: 0
+max: 60.</p>
+</dd>
+<dt>MultistrokeSettingSlider:</dt>
+<dd><p class="first">id: line_width
+title: &#8216;Line width&#8217;
+type: &#8216;int&#8217;
+desc:</p>
+<blockquote>
+<div>(&#8216;Width of lines on the gesture surface; 0 does not draw &#8216; +
+&#8216;anything; 1 uses OpenGL line, &gt;1 uses custom drawing method.&#8217;)</div></blockquote>
+<p class="last">value: 2
+min: 0
+max: 10</p>
+</dd>
+<dt>MultistrokeSettingBoolean:</dt>
+<dd>id: use_random_color
+title: &#8216;Use random color?&#8217;
+desc: &#8216;Use random color for each gesture? If disabled, white is used.&#8217;
+button_text: &#8216;Random color?&#8217;
+value: True</dd>
+<dt>MultistrokeSettingBoolean:</dt>
+<dd>id: draw_bbox
+title: &#8216;Draw gesture bounding box?&#8217;
+desc: &#8216;Enable to draw a bounding box around the gesture&#8217;
+button_text: &#8216;Draw bbox?&#8217;
+value: True</dd>
+</dl>
+</dd>
+</dl>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

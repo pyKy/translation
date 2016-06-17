@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Line (SmoothLine) Experiment &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Line (SmoothLine) Experiment</a></li>
+<li><a class="reference internal" href="#canvas-lines-py">canvas/lines.pyファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-line-smoothline-experiment">
+<h1>Gallery of Examples » Line (SmoothLine) Experiment<a class="headerlink" href="#gallery-of-examples-line-smoothline-experiment" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Line (SmoothLine) Experimentを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__canvas__lines__py.html">https://kivy.org/docs/examples/gen__canvas__lines__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/canvas__lines__py1.png" src="https://kivy.org/docs/_images/canvas__lines__py1.png" />
+<p>高速な線の描画の実験と未完成なSmoothLine機能のデモです。
+画面の上部分にパスが、下部分にマルチセグメントスライダーやボタンが表示されます。
+クリックして、セグメントに新しいポイントを追加したりラインの透明性と幅を変更できたり、「Animate」をおしてサインとコサインアニメーションのセットを表示できます、
+SmoothLineはまだ機能を実装していないためCapとJointのボタンは動作しません。</p>
+</div>
+<div class="section" id="canvas-lines-py">
+<h1>canvas/lines.pyファイル<a class="headerlink" href="#canvas-lines-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Line (SmoothLine) Experiment
+============================</p>
+<p>This demonstrates the experimental and unfinished SmoothLine feature
+for fast line drawing. You should see a multi-segment
+path at the top of the screen, and sliders and buttons along the bottom.
+You can click to add new points to the segment, change the transparency
+and width of the line, or hit &#8216;Animate&#8217; to see a set of sine and cosine
+animations. The Cap and Joint buttons don&#8217;t work: SmoothLine has not
+implemented these features yet.
+&#8216;&#8217;&#8216;</p>
+<p>from kivy.app import App
+from kivy.properties import OptionProperty, NumericProperty, ListProperty, </p>
+<blockquote>
+<div>BooleanProperty</div></blockquote>
+<p>from kivy.uix.floatlayout import FloatLayout
+from kivy.lang import Builder
+from kivy.clock import Clock
+from math import cos, sin</p>
+<p>Builder.load_string(&#8216;&#8217;&#8217;
+&lt;LinePlayground&gt;:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: .4, .4, 1, root.alpha</dd>
+<dt>SmoothLine:</dt>
+<dd>points: self.points
+joint: self.joint
+cap: self.cap
+width: self.linewidth
+close: self.close</dd>
+<dt>Color:</dt>
+<dd>rgba: .8, .8, .8, root.alpha_controlline</dd>
+<dt>SmoothLine:</dt>
+<dd>points: self.points
+close: self.close</dd>
+<dt>Color:</dt>
+<dd>rgba: 1, .4, .4, root.alpha</dd>
+<dt>SmoothLine:</dt>
+<dd>points: self.points2
+joint: self.joint
+cap: self.cap
+width: self.linewidth
+close: self.close</dd>
+</dl>
+</dd>
+<dt>GridLayout:</dt>
+<dd><p class="first">cols: 2
+size_hint: 1, None
+height: 44 * 5</p>
+<dl class="last docutils">
+<dt>GridLayout:</dt>
+<dd><p class="first">cols: 2</p>
+<dl class="last docutils">
+<dt>Label:</dt>
+<dd>text: &#8216;Alpha&#8217;</dd>
+<dt>Slider:</dt>
+<dd>value: root.alpha
+on_value: root.alpha = float(args[1])
+min: 0.
+max: 1.</dd>
+<dt>Label:</dt>
+<dd>text: &#8216;Alpha Control Line&#8217;</dd>
+<dt>Slider:</dt>
+<dd>value: root.alpha_controlline
+on_value: root.alpha_controlline = float(args[1])
+min: 0.
+max: 1.</dd>
+<dt>Label:</dt>
+<dd>text: &#8216;Width&#8217;</dd>
+<dt>Slider:</dt>
+<dd>value: root.linewidth
+on_value: root.linewidth = args[1]
+min: 1
+max: 40</dd>
+<dt>Label:</dt>
+<dd>text: &#8216;Cap&#8217;</dd>
+<dt>GridLayout:</dt>
+<dd><p class="first">rows: 1
+ToggleButton:</p>
+<blockquote>
+<div>group: &#8216;cap&#8217;
+text: &#8216;none&#8217;
+on_press: root.cap = self.text</div></blockquote>
+<dl class="last docutils">
+<dt>ToggleButton:</dt>
+<dd>group: &#8216;cap&#8217;
+text: &#8216;round&#8217;
+on_press: root.cap = self.text</dd>
+<dt>ToggleButton:</dt>
+<dd>group: &#8216;cap&#8217;
+text: &#8216;square&#8217;
+on_press: root.cap = self.text</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>text: &#8216;Joint&#8217;</dd>
+<dt>GridLayout:</dt>
+<dd><p class="first">rows: 1
+ToggleButton:</p>
+<blockquote>
+<div>group: &#8216;joint&#8217;
+text: &#8216;none&#8217;
+on_press: root.joint = self.text</div></blockquote>
+<dl class="last docutils">
+<dt>ToggleButton:</dt>
+<dd>group: &#8216;joint&#8217;
+text: &#8216;round&#8217;
+on_press: root.joint = self.text</dd>
+<dt>ToggleButton:</dt>
+<dd>group: &#8216;joint&#8217;
+text: &#8216;miter&#8217;
+on_press: root.joint = self.text</dd>
+<dt>ToggleButton:</dt>
+<dd>group: &#8216;joint&#8217;
+text: &#8216;bevel&#8217;
+on_press: root.joint = self.text</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>text: &#8216;Close&#8217;</dd>
+<dt>ToggleButton:</dt>
+<dd>text: &#8216;Close line&#8217;
+on_press: root.close = self.state == &#8216;down&#8217;</dd>
+</dl>
+</dd>
+<dt>AnchorLayout:</dt>
+<dd><dl class="first last docutils">
+<dt>GridLayout:</dt>
+<dd><p class="first">cols: 1
+size_hint: None, None
+size: self.minimum_size
+ToggleButton:</p>
+<blockquote>
+<div>size_hint: None, None
+size: 100, 44
+text: &#8216;Animate&#8217;
+on_state: root.animate(self.state == &#8216;down&#8217;)</div></blockquote>
+<dl class="last docutils">
+<dt>Button:</dt>
+<dd>size_hint: None, None
+size: 100, 44
+text: &#8216;Clear&#8217;
+on_press: root.points = root.points2 = []</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>&#8216;&#8217;&#8216;)</p>
+<dl class="docutils">
+<dt>class LinePlayground(FloatLayout):</dt>
+<dd><p class="first">alpha_controlline = NumericProperty(1.0)
+alpha = NumericProperty(0.5)
+close = BooleanProperty(False)
+points = ListProperty([(500, 500),</p>
+<blockquote>
+<div>[300, 300, 500, 300],
+[500, 400, 600, 400]])</div></blockquote>
+<p>points2 = ListProperty([])
+joint = OptionProperty(&#8216;none&#8217;, options=(&#8216;round&#8217;, &#8216;miter&#8217;, &#8216;bevel&#8217;, &#8216;none&#8217;))
+cap = OptionProperty(&#8216;none&#8217;, options=(&#8216;round&#8217;, &#8216;square&#8217;, &#8216;none&#8217;))
+linewidth = NumericProperty(10.0)
+dt = NumericProperty(0)</p>
+<dl class="last docutils">
+<dt>def on_touch_down(self, touch):</dt>
+<dd><dl class="first docutils">
+<dt>if super(LinePlayground, self).on_touch_down(touch):</dt>
+<dd>return True</dd>
+</dl>
+<p class="last">touch.grab(self)
+self.points.append(touch.pos)
+return True</p>
+</dd>
+<dt>def on_touch_move(self, touch):</dt>
+<dd><dl class="first docutils">
+<dt>if touch.grab_current is self:</dt>
+<dd>self.points[-1] = touch.pos
+return True</dd>
+</dl>
+<p class="last">return super(LinePlayground, self).on_touch_move(touch)</p>
+</dd>
+<dt>def on_touch_up(self, touch):</dt>
+<dd><dl class="first docutils">
+<dt>if touch.grab_current is self:</dt>
+<dd>touch.ungrab(self)
+return True</dd>
+</dl>
+<p class="last">return super(LinePlayground, self).on_touch_up(touch)</p>
+</dd>
+<dt>def animate(self, do_animation):</dt>
+<dd><dl class="first last docutils">
+<dt>if do_animation:</dt>
+<dd>Clock.schedule_interval(self.update_points_animation, 0)</dd>
+<dt>else:</dt>
+<dd>Clock.unschedule(self.update_points_animation)</dd>
+</dl>
+</dd>
+<dt>def update_points_animation(self, dt):</dt>
+<dd><p class="first">cy = self.height * 0.6
+cx = self.width * 0.1
+w = self.width * 0.8
+step = 20
+points = []
+points2 = []
+self.dt += dt
+for i in range(int(w / step)):</p>
+<blockquote>
+<div>x = i * step
+points.append(cx + x)
+points.append(cy + cos(x / w * 8. + self.dt) * self.height * 0.2)
+points2.append(cx + x)
+points2.append(cy + sin(x / w * 8. + self.dt) * self.height * 0.2)</div></blockquote>
+<p class="last">self.points = points
+self.points2 = points2</p>
+</dd>
+</dl>
+</dd>
+<dt>class TestLineApp(App):</dt>
+<dd><dl class="first last docutils">
+<dt>def build(self):</dt>
+<dd>return LinePlayground()</dd>
+</dl>
+</dd>
+<dt>if __name__ == &#8216;__main__&#8217;:</dt>
+<dd>TestLineApp().run()</dd>
+</dl>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

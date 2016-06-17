@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Circle Example &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Circle Example</a></li>
+<li><a class="reference internal" href="#canvas-circle-py">canvas/circle.pyファイル</a><ul>
+<li><a class="reference internal" href="#id1">&#8216;&#8217;&#8216;</a><ul>
+<li><a class="reference internal" href="#circle-example">Circle Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-circle-example">
+<h1>Gallery of Examples » Circle Example<a class="headerlink" href="#gallery-of-examples-circle-example" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Circle Exampleを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__canvas__circle__py.html">https://kivy.org/docs/examples/gen__canvas__circle__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/canvas__circle__py1.png" src="https://kivy.org/docs/_images/canvas__circle__py1.png" />
+<p>この例では、円（楕円）図面を動かします。
+画面の上部にスライダーが、その下にKivyロゴが表示されます。
+スライダーは、表示開始と停止の角度と高さと幅のスケールを制御します。
+スライダーをリセットするためのボタンがあります。
+サークルの背景画像に使用されるロゴはkivy/data ディレクトリからです。
+全体の例はKV言語で記述しています。</p>
+</div>
+<div class="section" id="canvas-circle-py">
+<h1>canvas/circle.pyファイル<a class="headerlink" href="#canvas-circle-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="section" id="id1">
+<h2>&#8216;&#8217;&#8216;<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="circle-example">
+<h3>Circle Example<a class="headerlink" href="#circle-example" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>This example exercises circle (ellipse) drawing. You should see sliders at the
+top of the screen with the Kivy logo below it. The sliders control the
+angle start and stop and the height and width scales. There is a button
+to reset the sliders. The logo used for the circle&#8217;s background image is
+from the kivy/data directory. The entire example is coded in the
+kv language description.
+&#8216;&#8217;&#8216;</p>
+<p>from kivy.app import App
+from kivy.lang import Builder</p>
+<p>kv = &#8216;&#8217;&#8217;
+BoxLayout:</p>
+<blockquote>
+<div><p>orientation: &#8216;vertical&#8217;
+BoxLayout:</p>
+<blockquote>
+<div><p>size_hint_y: None
+height: sp(100)
+BoxLayout:</p>
+<blockquote>
+<div><p>orientation: &#8216;vertical&#8217;
+Slider:</p>
+<blockquote>
+<div>id: e1
+min: -360.
+max: 360.</div></blockquote>
+<dl class="docutils">
+<dt>Label:</dt>
+<dd>text: &#8216;angle_start = {}&#8217;.format(e1.value)</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">orientation: &#8216;vertical&#8217;
+Slider:</p>
+<blockquote>
+<div>id: e2
+min: -360.
+max: 360.
+value: 360</div></blockquote>
+<dl class="last docutils">
+<dt>Label:</dt>
+<dd>text: &#8216;angle_end = {}&#8217;.format(e2.value)</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">size_hint_y: None
+height: sp(100)
+BoxLayout:</p>
+<blockquote>
+<div><p>orientation: &#8216;vertical&#8217;
+Slider:</p>
+<blockquote>
+<div>id: wm
+min: 0
+max: 2
+value: 1</div></blockquote>
+<dl class="docutils">
+<dt>Label:</dt>
+<dd>text: &#8216;Width mult. = {}&#8217;.format(wm.value)</dd>
+</dl>
+</div></blockquote>
+<dl class="last docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">orientation: &#8216;vertical&#8217;
+Slider:</p>
+<blockquote>
+<div>id: hm
+min: 0
+max: 2
+value: 1</div></blockquote>
+<dl class="last docutils">
+<dt>Label:</dt>
+<dd>text: &#8216;Height mult. = {}&#8217;.format(hm.value)</dd>
+</dl>
+</dd>
+<dt>Button:</dt>
+<dd>text: &#8216;Reset ratios&#8217;
+on_press: wm.value = 1; hm.value = 1</dd>
+</dl>
+</dd>
+<dt>FloatLayout:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgb: 1, 1, 1</dd>
+<dt>Ellipse:</dt>
+<dd>pos: 100, 100
+size: 200 * wm.value, 201 * hm.value
+source: &#8216;data/logo/kivy-icon-512.png&#8217;
+angle_start: e1.value
+angle_end: e2.value</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>&#8216;&#8217;&#8216;</p>
+<dl class="docutils">
+<dt>class CircleApp(App):</dt>
+<dd><dl class="first last docutils">
+<dt>def build(self):</dt>
+<dd>return Builder.load_string(kv)</dd>
+</dl>
+</dd>
+</dl>
+<p>CircleApp().run()</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

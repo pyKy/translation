@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Tesselate Demonstration &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Tesselate Demonstration</a></li>
+<li><a class="reference internal" href="#canvas-tesselate-py">canvas/tesselate.py</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-tesselate-demonstration">
+<h1>Gallery of Examples » Tesselate Demonstration<a class="headerlink" href="#gallery-of-examples-tesselate-demonstration" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Tesselate Demonstrationを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__canvas__tesselate__py.html">https://kivy.org/docs/examples/gen__canvas__tesselate__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/canvas__tesselate__py1.png" src="https://kivy.org/docs/_images/canvas__tesselate__py1.png" />
+<p>ポリゴンをテセレーション (tesselating)するための実験的なライブラリのデモです。
+中空の四角形と、画面下にいくつかのボタンが表示されます。
+画面の上部に頂点と要素の数を観察し、クリックとドラッグすることで追加の図形を作成できます。
+「デバッグ」ボタンは、異なる色でのメッシュ表示に切り替えます。</p>
+</div>
+<div class="section" id="canvas-tesselate-py">
+<h1>canvas/tesselate.py<a class="headerlink" href="#canvas-tesselate-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Tesselate Demonstration
+=======================</p>
+<p>This demonstrates the experimental library for tesselating polygons. You
+should see a hollow square with some buttons below it. You can click and
+drag to create additional shapes, watching the number of vertexes and elements
+at the top of the screen. The &#8216;debug&#8217; button toggles showing the mesh in
+different colors.
+&#8216;&#8217;&#8216;</p>
+<p>from kivy.app import App
+from kivy.graphics import Mesh, Color
+from kivy.graphics.tesselator import Tesselator, WINDING_ODD, TYPE_POLYGONS
+from kivy.uix.floatlayout import FloatLayout
+from kivy.lang import Builder
+from kivy.logger import Logger</p>
+<p>Builder.load_string(&#8220;&#8221;&#8221;
+&lt;ShapeBuilder&gt;:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>BoxLayout:</dt>
+<dd><p class="first">size_hint_y: None
+height: &#8220;48dp&#8221;
+spacing: &#8220;2dp&#8221;
+padding: &#8220;2dp&#8221;</p>
+<dl class="last docutils">
+<dt>ToggleButton:</dt>
+<dd>text: &#8220;Debug&#8221;
+id: debug
+on_release: root.build()</dd>
+<dt>Button:</dt>
+<dd>text: &#8220;New shape&#8221;
+on_release: root.push_shape()</dd>
+<dt>Button:</dt>
+<dd>text: &#8220;Build&#8221;
+on_release: root.build()</dd>
+<dt>Button:</dt>
+<dd>text: &#8220;Reset&#8221;
+on_release: root.reset()</dd>
+</dl>
+</dd>
+<dt>BoxLayout:</dt>
+<dd><p class="first">size_hint_y: None
+height: &#8220;48dp&#8221;
+top: root.top
+spacing: &#8220;2dp&#8221;
+padding: &#8220;2dp&#8221;
+Label:</p>
+<blockquote class="last">
+<div>id: status
+text: &#8220;Status&#8221;</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>&#8220;&#8221;&#8221;)</p>
+<dl class="docutils">
+<dt>class ShapeBuilder(FloatLayout):</dt>
+<dd><dl class="first last docutils">
+<dt>def __init__(self, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs):</dt>
+<dd><p class="first">super(ShapeBuilder, self).__init__(<a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs)
+self.shapes = [</p>
+<blockquote>
+<div>[100, 100, 300, 100, 300, 300, 100, 300],
+[150, 150, 250, 150, 250, 250, 150, 250]</div></blockquote>
+<p class="last">]  # the &#8216;hollow square&#8217; shape
+self.shape = []
+self.build()</p>
+</dd>
+<dt>def on_touch_down(self, touch):</dt>
+<dd><dl class="first docutils">
+<dt>if super(ShapeBuilder, self).on_touch_down(touch):</dt>
+<dd>return True</dd>
+</dl>
+<p class="last">Logger.info(&#8216;tesselate: on_touch_down (%5.2f, %5.2f)&#8217; % touch.pos)
+self.shape.extend(touch.pos)
+self.build()
+return True</p>
+</dd>
+<dt>def on_touch_move(self, touch):</dt>
+<dd><dl class="first docutils">
+<dt>if super(ShapeBuilder, self).on_touch_move(touch):</dt>
+<dd>return True</dd>
+</dl>
+<p class="last">Logger.info(&#8216;tesselate: on_touch_move (%5.2f, %5.2f)&#8217; % touch.pos)
+self.shape.extend(touch.pos)
+self.build()
+return True</p>
+</dd>
+<dt>def on_touch_up(self, touch):</dt>
+<dd><dl class="first docutils">
+<dt>if super(ShapeBuilder, self).on_touch_up(touch):</dt>
+<dd>return True</dd>
+</dl>
+<p class="last">Logger.info(&#8216;tesselate: on_touch_up (%5.2f, %5.2f)&#8217; % touch.pos)
+self.push_shape()
+self.build()</p>
+</dd>
+<dt>def push_shape(self):</dt>
+<dd>self.shapes.append(self.shape)
+self.shape = []</dd>
+<dt>def build(self):</dt>
+<dd><p class="first">tess = Tesselator()
+count = 0
+for shape in self.shapes:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>if len(shape) &gt;= 3:</dt>
+<dd>tess.add_contour(shape)
+count += 1</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>if self.shape and len(self.shape) &gt;= 3:</dt>
+<dd>tess.add_contour(self.shape)
+count += 1</dd>
+<dt>if not count:</dt>
+<dd>return</dd>
+</dl>
+<p>ret = tess.tesselate(WINDING_ODD, TYPE_POLYGONS)
+Logger.info(&#8216;tesselate: build: tess.tesselate returns {}&#8217;.format(ret))
+self.canvas.after.clear()</p>
+<p>debug = self.ids.debug.state == &#8220;down&#8221;
+if debug:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>with self.canvas.after:</dt>
+<dd><p class="first">c = 0
+for vertices, indices in tess.meshes:</p>
+<blockquote class="last">
+<div><p>Color(c, 1, 1, mode=&#8221;hsv&#8221;)
+c += 0.3
+indices = [0]
+for i in range(1, len(vertices) // 4):</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>if i &gt; 0:</dt>
+<dd>indices.append(i)</dd>
+</dl>
+<p>indices.append(i)
+indices.append(0)
+indices.append(i)</p>
+</div></blockquote>
+<p>indices.pop(-1)
+Mesh(vertices=vertices, indices=indices, mode=&#8221;lines&#8221;)</p>
+</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="last docutils">
+<dt>else:</dt>
+<dd><dl class="first last docutils">
+<dt>with self.canvas.after:</dt>
+<dd><p class="first">Color(1, 1, 1, 1)
+for vertices, indices in tess.meshes:</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>Mesh(vertices=vertices, indices=indices,</dt>
+<dd>mode=&#8221;triangle_fan&#8221;)</dd>
+</dl>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>self.ids.status.text = &#8220;Shapes: {} - Vertex: {} - Elements: {}&#8221;.format(</dt>
+<dd>count, tess.vertex_count, tess.element_count)</dd>
+</dl>
+</dd>
+<dt>def reset(self):</dt>
+<dd><p class="first">self.shapes = []
+self.shape = []
+self.ids.status.text = &#8220;Shapes: {} - Vertex: {} - Elements: {}&#8221;.format(</p>
+<blockquote>
+<div>0, 0, 0)</div></blockquote>
+<p class="last">self.canvas.after.clear()</p>
+</dd>
+</dl>
+</dd>
+<dt>class TessApp(App):</dt>
+<dd><dl class="first last docutils">
+<dt>def build(self):</dt>
+<dd>return ShapeBuilder()</dd>
+</dl>
+</dd>
+</dl>
+<p>TessApp().run()</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

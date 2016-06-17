@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gallery of Examples » Lines Extended Demo &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Gallery of Examples » Lines Extended Demo</a></li>
+<li><a class="reference internal" href="#canvas-lines-py">canvas/lines.pyファイル</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="gallery-of-examples-lines-extended-demo">
+<h1>Gallery of Examples » Lines Extended Demo<a class="headerlink" href="#gallery-of-examples-lines-extended-demo" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはGallery of Examples » Line (SmoothLine) Experimentを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/examples/gen__canvas__lines_extended__py.html">https://kivy.org/docs/examples/gen__canvas__lines_extended__py.html</a></p>
+<img alt="https://kivy.org/docs/_images/canvas__lines__py1.png" src="https://kivy.org/docs/_images/canvas__lines__py1.png" />
+<p>描画ルーチンを使用して円、楕円、長方形を描画する方法のデモです。
+ラベルされた形状の静止画像が画面に表示されます。</p>
+</div>
+<div class="section" id="canvas-lines-py">
+<h1>canvas/lines.pyファイル<a class="headerlink" href="#canvas-lines-py" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>&#8216;&#8217;&#8217;
+Lines Extended Demo
+===================</p>
+<p>This demonstrates how to use the extended line drawing routines such
+as circles, elipses, and rectangles. You should see a static image of
+labelled shapes on the screen.
+&#8216;&#8217;&#8216;</p>
+<p>from kivy.app import App
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.widget import Widget
+from kivy.lang import Builder</p>
+<p>Builder.load_string(&#8216;&#8217;&#8217;
+&lt;LineEllipse1&gt;:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: 1, .1, .1, .9</dd>
+<dt>Line:</dt>
+<dd>width: 2.
+ellipse: (self.x, self.y, self.width, self.height)</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Ellipse&#8217;</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>&lt;LineEllipse2&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: 1, .1, .1, .9</dd>
+<dt>Line:</dt>
+<dd>width: 2.
+ellipse: (self.x, self.y, self.width, self.height, 90, 180)</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Ellipse from 90 to 180&#8217;</dd>
+</dl>
+</dd>
+</dl>
+<p># fun result with low segments!
+&lt;LineEllipse3&gt;:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: 1, .1, .1, .9</dd>
+<dt>Line:</dt>
+<dd>width: 2.
+ellipse: (self.x, self.y, self.width, self.height, 90, 720, 10)</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Ellipse from 90 to 720\n10 segments&#8217;
+halign: &#8216;center&#8217;</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>&lt;LineCircle1&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: .1, 1, .1, .9</dd>
+<dt>Line:</dt>
+<dd><p class="first">width: 2.
+circle:</p>
+<blockquote class="last">
+<div>(self.center_x, self.center_y, min(self.width, self.height)
+/ 2)</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Circle&#8217;</dd>
+</dl>
+</dd>
+<dt>&lt;LineCircle2&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: .1, 1, .1, .9</dd>
+<dt>Line:</dt>
+<dd><p class="first">width: 2.
+circle:</p>
+<blockquote class="last">
+<div>(self.center_x, self.center_y, min(self.width, self.height)
+/ 2, 90, 180)</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Circle from 90 to 180&#8217;</dd>
+</dl>
+</dd>
+<dt>&lt;LineCircle3&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: .1, 1, .1, .9</dd>
+<dt>Line:</dt>
+<dd><p class="first">width: 2.
+circle:</p>
+<blockquote class="last">
+<div>(self.center_x, self.center_y, min(self.width, self.height)
+/ 2, 90, 180, 10)</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Circle from 90 to 180\n10 segments&#8217;
+halign: &#8216;center&#8217;</dd>
+</dl>
+</dd>
+<dt>&lt;LineCircle4&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: .1, 1, .1, .9</dd>
+<dt>Line:</dt>
+<dd><p class="first">width: 2.
+circle:</p>
+<blockquote class="last">
+<div>(self.center_x, self.center_y, min(self.width, self.height)
+/ 2, 0, 360)</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Circle from 0 to 360&#8217;
+halign: &#8216;center&#8217;</dd>
+</dl>
+</dd>
+<dt>&lt;LineRectangle&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: .1, .1, 1, .9</dd>
+<dt>Line:</dt>
+<dd>width: 2.
+rectangle: (self.x, self.y, self.width, self.height)</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Rectangle&#8217;</dd>
+</dl>
+</dd>
+<dt>&lt;LineBezier&gt;:</dt>
+<dd><dl class="first last docutils">
+<dt>canvas:</dt>
+<dd><dl class="first last docutils">
+<dt>Color:</dt>
+<dd>rgba: .1, .1, 1, .9</dd>
+<dt>Line:</dt>
+<dd><p class="first">width: 2.
+bezier:</p>
+<blockquote class="last">
+<div>(self.x, self.y, self.center_x - 40, self.y + 100,
+self.center_x + 40, self.y - 100, self.right, self.y)</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>Label:</dt>
+<dd>center: root.center
+text: &#8216;Bezier&#8217;</dd>
+</dl>
+</dd>
+</dl>
+<p>&#8216;&#8217;&#8216;)</p>
+<dl class="docutils">
+<dt>class LineEllipse1(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineEllipse2(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineEllipse3(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineCircle1(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineCircle2(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineCircle3(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineCircle4(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineRectangle(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineBezier(Widget):</dt>
+<dd>pass</dd>
+<dt>class LineExtendedApp(App):</dt>
+<dd><dl class="first last docutils">
+<dt>def build(self):</dt>
+<dd>root = GridLayout(cols=2, padding=50, spacing=50)
+root.add_widget(LineEllipse1())
+root.add_widget(LineEllipse2())
+root.add_widget(LineEllipse3())
+root.add_widget(LineCircle1())
+root.add_widget(LineCircle2())
+root.add_widget(LineCircle3())
+root.add_widget(LineCircle4())
+root.add_widget(LineRectangle())
+root.add_widget(LineBezier())
+return root</dd>
+</dl>
+</dd>
+<dt>if __name__ == &#8216;__main__&#8217;:</dt>
+<dd>LineExtendedApp().run()</dd>
+</dl>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

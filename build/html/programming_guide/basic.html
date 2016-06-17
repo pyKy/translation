@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Kivyの基礎 &mdash; kivy-intro-jp 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Kivy Japanese Translation</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Kivyの基礎</a></li>
+<li><a class="reference internal" href="#id1">Kivy環境のインストール</a></li>
+<li><a class="reference internal" href="#id2">アプリケーションを作る</a></li>
+<li><a class="reference internal" href="#id3">Kivyアプリのライフサイクル</a></li>
+<li><a class="reference internal" href="#id4">アプリケーションの実行</a></li>
+<li><a class="reference internal" href="#id5">アプリケーションのカスタマイズ</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/pong_game_tutorial.html">ポンゲームチューtリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial/simple_paint_app.html">シンプルなペイントアプリケーション</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="kivy">
+<h1>Kivyの基礎<a class="headerlink" href="#kivy" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このドキュメンテーションはKivyのProgramming Guide » Kivy Basicsを日本語訳したものです。
+<a class="reference external" href="https://kivy.org/docs/gettingstarted/layouts.html">https://kivy.org/docs/gettingstarted/layouts.html</a></p>
+</div>
+<div class="section" id="id1">
+<h1>Kivy環境のインストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>Kivyは、pygame、gstreameの、PIL、Cairo、その他多くのPythonライブラリに依存します。これらは、すべてが必要ではありませんが、取り組んでいるプラットフォームにインストールするには、面倒です。 WindowsやMacOS Xで解凍して使用することができるポータブルなパッケージを提供します。</p>
+<ul class="simple">
+<li>Windowsでのインストール</li>
+<li>OS Xでのインストール</li>
+<li>Linuxでのインストール</li>
+</ul>
+<p>すべてのライブラリを自分でインストールする場合は、少なくともPythonとpygameのを持っていることを確認してください。典型的なpipでのインストールは次のようになります。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">cython</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">hg</span><span class="o">+</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">bitbucket</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">pygame</span><span class="o">/</span><span class="n">pygame</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">kivy</span>
+</pre></div>
+</div>
+<p>開発バージョンは、gitからインストールできます。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kivy</span><span class="o">/</span><span class="n">kivy</span>
+<span class="n">make</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h1>アプリケーションを作る<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>kivyアプリケーションを作成するのは簡単です。</p>
+<ul class="simple">
+<li>Appクラスをサブクラス化</li>
+<li>Widgetのインスタンス（自分のWidgetツリーのルート）を返すように、そのbuild（）メソッドを実装します</li>
+<li>クラスをインスタンス化し、run（）メソッドを呼び出します。</li>
+</ul>
+<p>最小限のアプリケーションの例は次のとおりです</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">kivy</span>
+<span class="n">kivy</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="s1">&#39;1.0.6&#39;</span><span class="p">)</span> <span class="c1"># replace with your current kivy version !</span>
+
+<span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
+<span class="kn">from</span> <span class="nn">kivy.uix.label</span> <span class="kn">import</span> <span class="n">Label</span>
+
+
+<span class="k">class</span> <span class="nc">MyApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">MyApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>例をmain.pyとしてテキストファイルに保存し、実行できます。</p>
+</div>
+<div class="section" id="id3">
+<h1>Kivyアプリのライフサイクル<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>最初に、Kivyアプリのライフサイクルについて詳しくなってみましょう。</p>
+<p>お分かりのように、すべての意図や目的のために、Appのエントリポイントは、run()メソッドで、私たちの場合には「MyApp().run()”」です。三行目で改めてこれを宣言することで開始できるようになります：</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
+</pre></div>
+</div>
+<p>あなたのAppのベースクラスはAppクラスを継承することが必須です。それはkivy_installation_dir/ kivy/ app.pyに存在します。</p>
+<p>ノート
+KivyAppクラスが何をするのかをより深く掘り下げたい場合は、そのファイルを開きます。コードを開いて、ファイルを読むことをお勧めします。 Kivyは、Pythonベースで、ドキュメントのためにSphinを使用していますので、各クラスのドキュメントは、実際のファイルになっています。</p>
+<p>2行目付近</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.uix.label</span> <span class="kn">import</span> <span class="n">Label</span>
+</pre></div>
+</div>
+<p>ここで注意すべき重要な点は、パッケージ/クラスがレイアウトされている方法です。 UNIXモジュールは、レイアウトやウィジェットなどのユーザーインターフェイス要素を保持している部分です。</p>
+<p>5行目に移動して、</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>KivyAppの基本クラスを定義しているところです。アプリでMyAppの名前を変更する必要がありますする。</p>
+<p>さらに7行目に、</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>KivyAppのLife Cycleを図で強調されているように、これは初期化しRoot Widgetを返す関数です。</p>
+<p>8行目は何をすべきかです：</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">return</span> <span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>ここでは、テキストが「Hello World」となるLabelを初期化し、そのインスタンスを返します。このラベルは、このAppのRoot Widgetになります。</p>
+<p>ノート</p>
+<p>Pythonはにインデントを使用しコードブロックを表しています。したがって、9行目のクラスと関数定義の終わりに、上記のコード内容であることに注意してください。</p>
+<p>11行目と12行目でアプリの実行を行います。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>    <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="n">MyApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>MyAppクラスは初期化され、そのrun（）メソッドが呼び出されます。Kivyアプリケーションを初期化し、起動します。</p>
+</div>
+<div class="section" id="id4">
+<h1>アプリケーションの実行<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>アプリケーションを実行するには、使用しているオペレーティングシステムの指示に従ってください。</p>
+<p>Linux</p>
+<p>Linux上でKivyアプリケーションを実行するための指示に従ってください。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>$ python main.py
+</pre></div>
+</div>
+<p>Linux</p>
+<p>Linux上でKivyアプリケーションを実行するための指示に従ってください。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>$ python main.py
+</pre></div>
+</div>
+<p>Windows</p>
+<p>Windows上でKivyアプリケーションを実行するための指示に従ってください。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>$ python main.py
+# or
+C:\appdir&gt;kivy.bat main.py
+</pre></div>
+</div>
+<p>Mac OS X</p>
+<p>Mac OS X上でKivyアプリケーションを実行するための指示に従ってください。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>$ kivy main.py
+</pre></div>
+</div>
+<p>Android</p>
+<p>アプリケーションをAndroid上で実行できるようにするには、いくつかの補完的なファイルを必要とします。
+参考のためにAndroid用のパッケージの作成を参照してください。</p>
+<p>一つのラベル（テキスト「こんにちは世界で）でウィンドウ全体を占めているウィンドウが開きます。
+これで設定は完了です。</p>
+<img alt="https://kivy.org/docs/_images/quickstart.png" src="https://kivy.org/docs/_images/quickstart.png" />
+</div>
+<div class="section" id="id5">
+<h1>アプリケーションのカスタマイズ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>ユーザー名/パスワードを入力するシンプルなページを加えて、アプリケーションを少し拡張しましょう。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
+<span class="kn">from</span> <span class="nn">kivy.uix.gridlayout</span> <span class="kn">import</span> <span class="n">GridLayout</span>
+<span class="kn">from</span> <span class="nn">kivy.uix.label</span> <span class="kn">import</span> <span class="n">Label</span>
+<span class="kn">from</span> <span class="nn">kivy.uix.textinput</span> <span class="kn">import</span> <span class="n">TextInput</span>
+
+
+<span class="k">class</span> <span class="nc">LoginScreen</span><span class="p">(</span><span class="n">GridLayout</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">LoginScreen</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cols</span> <span class="o">=</span> <span class="mi">2</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;User Name&#39;</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">TextInput</span><span class="p">(</span><span class="n">multiline</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;password&#39;</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">TextInput</span><span class="p">(</span><span class="n">password</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">multiline</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">password</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">MyApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">LoginScreen</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">MyApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>2行目でGridlayoutをインポートします。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.uix.gridlayout</span> <span class="kn">import</span> <span class="n">GridLayout</span>
+</pre></div>
+</div>
+<p>このクラスは9行目で定義された Root Widget（LoginScreen）のベースとして使用されます。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LoginScreen</span><span class="p">(</span><span class="n">GridLayout</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>12行目のLoginScreenクラスで、メソッド__init __（）はwidgetを追加するには、それらのビヘイビアを定義するようにオーバーロードします。</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">LoginScreen</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>一つ忘れてはいけないのは、オーバーロードされた元のクラスの機能を実装するためには、superを呼び出すことです。
+また、時々はsuperの内部的な呼び出しの中に** kwargsからは省略しない良い方法があることに注意してほしいです。</p>
+<p>15行めに移動して、枠の上から、</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">cols</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;User Name&#39;</span><span class="p">))</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">TextInput</span><span class="p">(</span><span class="n">multiline</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;password&#39;</span><span class="p">))</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">TextInput</span><span class="p">(</span><span class="n">password</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">multiline</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">password</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>GridLayoutの2つの列にラベルと、ユーザー名とパスワードのTextInput を追加し、子として管理します。</p>
+<p>上記のコードを実行すると、以下のようなウィンドウが得られます。</p>
+<img alt="https://kivy.org/docs/_images/guide_customize_step1.png" src="https://kivy.org/docs/_images/guide_customize_step1.png" />
+<p>ウィンドウリサイズを試してみると、画面上のwidgetは何もしなくても、ウィンドウのサイズに応じてサイズ調整していることがわかります。widgetはデフォルトでサイズ変更を使用しているためです。</p>
+<p>上記のコードは、ユーザからの入力を処理しないと、バリデーションや何らかの動作を行いません。
+今後のセクションではこれらとwidgetのサイズや位置をより深く掘り下げていきます。</p>
+<p>ターミナルアプリケーションを開くとkivy環境変数を設定します。</p>
+<p>Windowsでは、kivy.batをダブルクリックすると、端末は既に設定されている必要なすべての変数で開かれます。</p>
+<p>nix*システムでは、kivyがグローバルにインストールされていない場合はお好みのターミナルを開き、</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>export python=$PYTHONPATH:/path/to/kivy_installation
+</pre></div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Daisuke Saito.<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
