@@ -31,6 +31,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+    <link rel="up" title="プログラミングガイド(Programming Guide)" href="index.html" />
+    <link rel="next" title="構造的概要" href="architectural_overview.html" />
+    <link rel="prev" title="プログラミングガイド(Programming Guide)" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -65,8 +68,11 @@
      href="../index.html">Site Contents <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery_of_examples/index.html">実例集(Gallery of Examples)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../users_guide/index.html">ユーザーガイド(User’s Guide)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">プログラミングガイド(Programming Guide)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
 </ul>
 </ul>
@@ -81,12 +87,17 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Kivyの基礎</a></li>
+<li><a class="reference internal" href="#">Kivyの基礎</a><ul>
 <li><a class="reference internal" href="#id1">Kivy環境のインストール</a></li>
-<li><a class="reference internal" href="#id2">アプリケーションを作る</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id2">アプリケーションを作る</a><ul>
 <li><a class="reference internal" href="#id3">Kivyアプリのライフサイクル</a></li>
 <li><a class="reference internal" href="#id4">アプリケーションの実行</a></li>
 <li><a class="reference internal" href="#id5">アプリケーションのカスタマイズ</a></li>
+<li><a class="reference internal" href="#id6">特異なプラットフォーム</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -95,6 +106,14 @@
             
               
                 
+  <li>
+    <a href="index.html" title="Previous Chapter: プログラミングガイド(Programming Guide)"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; プログラミングガイド(Pr...</span>
+    </a>
+  </li>
+  <li>
+    <a href="architectural_overview.html" title="Next Chapter: 構造的概要"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">構造的概要 &raquo;</span>
+    </a>
+  </li>
               
             
             
@@ -121,8 +140,60 @@
 <div class="container">
   <div class="row">
       <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/introduction.html">導入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/installation.html">インストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/installation.html#id2">開発バージョン</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/first_app.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/properties.html">入門</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/event.html">イベント</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/Non-widget_stuff.html">Non-widget stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/layouts.html">導入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/drawing.html">入門</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery_of_examples/index.html">実例集(Gallery of Examples)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gallery.html">Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__3Drendering__main__py.html">3Dのサルの頭を回転する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__animation__animate__py.html">ウィジェットアニメーション</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__application__app_suite__py.html">Suite of Application Builders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__application__app_with_build__py.html">build() と return を使用したアプリケーションの例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__application__app_with_kv_in_template1__py.html">Application from a .kv in a Template Directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__application__app_with_kv__py.html">アプリケーションを.kv fileからビルドする</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__camera__main__py.html">Gallery of Examples » Camera Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__bezier__py.html">Bezier Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__canvas_stress__py.html">Canvas stress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__circle__py.html">Circle Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__fbo_canvas__py.html">FBO Canvas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__fbo_canvas__py.html#canvas-fbo-canvas-py">canvas/fbo_canvas.pyファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__lines_extended__py.html">Lines Extended Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__lines__py.html">Line (SmoothLine) Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__mesh__py.html">Mesh test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__multitexture__py.html">Multitexture Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__repeat_texture__py.html">Gallery of Examples » Repeat Texture on Resize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__rotation__py.html">Rotation Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__stencil_canvas__py.html">Gallery of Examples » Stencil demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__tesselate__py.html">Gallery of Examples » Tesselate Demonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__texture__py.html">Gallery of Examples » Texture Wrapping and Coordinates Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__camera_puzzle__py..html">Shuffled Camera Feed Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__kivycatalog__main__py.html">Kivy Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__multistroke__main__py.html">Multistroke Recognition Database Demonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__pictures__main__py.html">Gallery of Examples » Kivy Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__shadereditor__main__py.html">Live Shader Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__showcase__main__py.html">Showcase of Kivy Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__touchtracer__main__py.html">Gallery of Examples » Touch Tracer Line Drawing Demonstration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../users_guide/index.html">ユーザーガイド(User’s Guide)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../users_guide/philosophy.html">フィロソフィ</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">プログラミングガイド(Programming Guide)</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Kivyの基礎</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">アプリケーションを作る</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architectural_overview.html">構造的概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packaging-windows.html">Widowsでのパッケージの方法</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
@@ -147,9 +218,8 @@
 <h1>Kivyの基礎<a class="headerlink" href="#kivy" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>このドキュメンテーションはKivyのProgramming Guide » Kivy Basicsを日本語訳したものです。
 <a class="reference external" href="https://kivy.org/docs/gettingstarted/layouts.html">https://kivy.org/docs/gettingstarted/layouts.html</a></p>
-</div>
 <div class="section" id="id1">
-<h1>Kivy環境のインストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>Kivy環境のインストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Kivyは、pygame、gstreameの、PIL、Cairo、その他多くのPythonライブラリに依存します。これらは、すべてが必要ではありませんが、取り組んでいるプラットフォームにインストールするには、面倒です。 WindowsやMacOS Xで解凍して使用することができるポータブルなパッケージを提供します。</p>
 <ul class="simple">
 <li>Windowsでのインストール</li>
@@ -166,6 +236,7 @@
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kivy</span><span class="o">/</span><span class="n">kivy</span>
 <span class="n">make</span>
 </pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="id2">
@@ -195,9 +266,8 @@
 </pre></div>
 </div>
 <p>例をmain.pyとしてテキストファイルに保存し、実行できます。</p>
-</div>
 <div class="section" id="id3">
-<h1>Kivyアプリのライフサイクル<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>Kivyアプリのライフサイクル<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>最初に、Kivyアプリのライフサイクルについて詳しくなってみましょう。</p>
 <p>お分かりのように、すべての意図や目的のために、Appのエントリポイントは、run()メソッドで、私たちの場合には「MyApp().run()”」です。三行目で改めてこれを宣言することで開始できるようになります：</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
@@ -236,7 +306,7 @@ KivyAppクラスが何をするのかをより深く掘り下げたい場合は�
 <p>MyAppクラスは初期化され、そのrun（）メソッドが呼び出されます。Kivyアプリケーションを初期化し、起動します。</p>
 </div>
 <div class="section" id="id4">
-<h1>アプリケーションの実行<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>アプリケーションの実行<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>アプリケーションを実行するには、使用しているオペレーティングシステムの指示に従ってください。</p>
 <p>Linux</p>
 <p>Linux上でKivyアプリケーションを実行するための指示に従ってください。</p>
@@ -268,7 +338,7 @@ C:\appdir&gt;kivy.bat main.py
 <img alt="https://kivy.org/docs/_images/quickstart.png" src="https://kivy.org/docs/_images/quickstart.png" />
 </div>
 <div class="section" id="id5">
-<h1>アプリケーションのカスタマイズ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>アプリケーションのカスタマイズ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>ユーザー名/パスワードを入力するシンプルなページを加えて、アプリケーションを少し拡張しましょう。</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
 <span class="kn">from</span> <span class="nn">kivy.uix.gridlayout</span> <span class="kn">import</span> <span class="n">GridLayout</span>
@@ -330,11 +400,15 @@ C:\appdir&gt;kivy.bat main.py
 <p>ウィンドウリサイズを試してみると、画面上のwidgetは何もしなくても、ウィンドウのサイズに応じてサイズ調整していることがわかります。widgetはデフォルトでサイズ変更を使用しているためです。</p>
 <p>上記のコードは、ユーザからの入力を処理しないと、バリデーションや何らかの動作を行いません。
 今後のセクションではこれらとwidgetのサイズや位置をより深く掘り下げていきます。</p>
+</div>
+<div class="section" id="id6">
+<h2>特異なプラットフォーム<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>ターミナルアプリケーションを開くとkivy環境変数を設定します。</p>
 <p>Windowsでは、kivy.batをダブルクリックすると、端末は既に設定されている必要なすべての変数で開かれます。</p>
 <p>nix*システムでは、kivyがグローバルにインストールされていない場合はお好みのターミナルを開き、</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>export python=$PYTHONPATH:/path/to/kivy_installation
 </pre></div>
+</div>
 </div>
 </div>
 
@@ -351,7 +425,7 @@ C:\appdir&gt;kivy.bat main.py
     </p>
     <p>
         &copy; Copyright 2016, Daisuke Saito.<br/>
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.2 で生成しました。<br/>
     </p>
   </div>
 </footer>

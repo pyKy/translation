@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Repeat Texture on Resize
-------------------
+------------------------------------------------------
+Repeat Texture on Resize
+------------------------------------------------------
 
 このドキュメンテーションはGallery of Examples » Repeat Texture on Resizeを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__repeat_texture__py.html
@@ -17,9 +17,9 @@ https://kivy.org/docs/examples/gen__canvas__repeat_texture__py.html
 
 注：mtexture1.pngは白色で'K'で背景が透明なので目視が難しいです。
 
-------------------
+
 canvas/repeat_texture.py
-------------------
+-------------------------
 
 .. code-block:: python
 '''
@@ -87,9 +87,10 @@ class RepeatTexture(App):
 
 RepeatTexture().run()
     
-------------------
+
 Image canvas/mtexture1.png　画像ファイル
-------------------
+----------------------------------------
+
 .. image:: https://kivy.org/docs/_images/mtexture1.png
 
 

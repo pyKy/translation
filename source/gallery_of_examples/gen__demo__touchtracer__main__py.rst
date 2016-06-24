@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Touch Tracer Line Drawing Demonstration
-------------------
+------------------------------------------------------------------------
+Touch Tracer Line Drawing Demonstration
+------------------------------------------------------------------------
 
 このドキュメンテーションはGallery of Examples » Touch Tracer Line Drawing Demonstrationを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__demo__touchtracer__main__py.html
@@ -20,9 +20,9 @@ touchtracer.kvファイルは、アプリケーションを記述しています
 android.txtファイルはKivyランチャーAndroi dのアプリケーションで使用するためのアプリケーションをパッケージ化するために使用されます。
 Androidデバイスでは、デバイス上の/sdcard/kivy/touchtracer にこのディレクトリをコピー/ペーストします。
 
-------------------
+
 demo/touchtracer/main.py ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 '''
@@ -175,15 +175,14 @@ class TouchtracerApp(App):
 if __name__ == '__main__':
     TouchtracerApp().run()
 
-------------------
+
 demo/showcase/data/background.png
-------------------
+------------------------------------
 
 .. https://kivy.org/docs/_images/icon.png
 
-------------------
 demo/touchtracer/touchtracer.kv ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 #:kivy 1.0
@@ -217,9 +216,8 @@ demo/touchtracer/touchtracer.kv ファイル
             
 
 
-------------------
 demo/showcase/android.txt ファイル
-------------------
+------------------------------------------------------
 .. code-block:: python
 title=Showcase
 author=Kivy team

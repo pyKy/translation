@@ -1,7 +1,7 @@
 .. 翻訳者: Jun Okazaki
 
 ------------------
-Gallery of Examples » Rotation Example
+Rotation Example
 ------------------
 
 このドキュメンテーションはGallery of Examples » Rotation Exampleを日本語訳したものです。  
@@ -13,9 +13,9 @@ https://kivy.org/docs/examples/gen__canvas__rotation__py.html
 ボタン「hello world」を45度の角度で回転させて表示します。
 
 
-------------------
+
 canvas/rotation.pyファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 '''

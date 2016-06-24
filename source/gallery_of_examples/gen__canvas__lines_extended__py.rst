@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Lines Extended Demo
-------------------
+---------------------
+Lines Extended Demo
+---------------------
 
 このドキュメンテーションはGallery of Examples » Line (SmoothLine) Experimentを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__lines_extended__py.html
@@ -12,9 +12,8 @@ https://kivy.org/docs/examples/gen__canvas__lines_extended__py.html
 描画ルーチンを使用して円、楕円、長方形を描画する方法のデモです。
 ラベルされた形状の静止画像が画面に表示されます。
 
-------------------
 canvas/lines.pyファイル
-------------------
+---------------------------
 
 .. code-block:: python
 '''

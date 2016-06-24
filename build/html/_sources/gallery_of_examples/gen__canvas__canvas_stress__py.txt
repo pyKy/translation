@@ -1,7 +1,7 @@
 .. 翻訳者: Jun Okazaki
 
 ------------------
-Gallery of Examples » Canvas stress
+Canvas stress
 ------------------
 
 このドキュメンテーションはGallery of Examples » Canvas stressを日本語訳したものです。  
@@ -13,9 +13,8 @@ https://kivy.org/docs/examples/gen__canvas__canvas_stress__py.html
 黒色のキャンバスと下部にボタンとラベルが表示されます。
 ボタンを押すと、キャンバスに小さな色のついた正方形を追加します。
 
-------------------
 canvas/canvas_stress.pyファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 '''

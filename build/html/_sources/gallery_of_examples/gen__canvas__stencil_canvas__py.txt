@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Stencil demo
-------------------
+----------------------------------
+Stencil demo
+----------------------------------
 
 このドキュメンテーションはGallery of Examples » Stencil demoを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__stencil_canvas__py.html
@@ -14,9 +14,8 @@ stencilを使用すると、バウンディングボックスの外側には何�
 
 あなたはタッチ＆ドローによってstencil viewを「描く」ことができます。タッチダウンは、位置を設定し、ドラッグしてサイズを設定します
 
-------------------
 canvas/stencil_canvas.pyファイル
-------------------
+----------------------------------
 
 .. code-block:: python
 '''

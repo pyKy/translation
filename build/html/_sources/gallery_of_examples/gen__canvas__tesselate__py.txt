@@ -1,7 +1,7 @@
 .. 翻訳者: Jun Okazaki
 
 ------------------
-Gallery of Examples » Tesselate Demonstration
+Tesselate Demonstration
 ------------------
 
 このドキュメンテーションはGallery of Examples » Tesselate Demonstrationを日本語訳したものです。  
@@ -14,9 +14,9 @@ https://kivy.org/docs/examples/gen__canvas__tesselate__py.html
 画面の上部に頂点と要素の数を観察し、クリックとドラッグすることで追加の図形を作成できます。
 「デバッグ」ボタンは、異なる色でのメッシュ表示に切り替えます。
 
-------------------
+
 canvas/tesselate.py
-------------------
+------------------------------------
 
 .. code-block:: python
 '''

@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Multistroke Recognition Database Demonstration
-------------------
+------------------------------------------------------------------------
+Multistroke Recognition Database Demonstration
+------------------------------------------------------------------------
 
 このドキュメンテーションはGallery of Examples » Multistroke Recognition Database Demonstrationを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__demo__multistroke__main__py.html
@@ -23,9 +23,9 @@ https://kivy.org/docs/examples/gen__demo__multistroke__main__py.html
 スライダーやボタンの一般的なロジックは、settings.pyファイルにあり、settings.kvで説明します。
 実際の設定ペインは、multistroke.kvファイルに記載されており、このファイルから管理されています。
 
-------------------
+
 demo/multistroke/main.py ファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 '''
@@ -173,9 +173,8 @@ class MultistrokeApp(App):
 if __name__ in ('__main__', '__android__'):
     MultistrokeApp().run()
 
-------------------
 demo/multistroke/helpers.py ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 __all__ = ('InformationPopup', )
@@ -209,9 +208,8 @@ class InformationPopup(Popup):
 
 Factory.register('InformationPopup', cls=InformationPopup)
 
-------------------
 demo/multistroke/historymanager.py ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 __all__ = ('GestureHistoryManager', 'GestureVisualizer')
@@ -491,9 +489,9 @@ class GestureVisualizer(Widget):
     def on_deselect(self, *l):
         pass
         
-------------------
+
 demo/multistroke/historymanager.py ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 <GestureHistoryManager>:
@@ -661,17 +659,13 @@ demo/multistroke/historymanager.py ファイル
         text: 'Add to database'
         on_press: root.parent.parent.parent.add_selected_to_database()
 
-------------------
-demo/multistroke/gestureDatabase.py ファイル
-------------------
 
-------------------
 demo/multistroke/gestureDatabase.kv ファイル
-------------------
+------------------------------------------------------
 
-------------------
+
 demo/multistroke/settings.py ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 __all__ = ('MultistrokeSettingsContainer', 'MultistrokeSettingItem',
@@ -762,9 +756,9 @@ Factory.register('MultistrokeSettingBoolean', cls=MultistrokeSettingBoolean)
 Factory.register('MultistrokeSettingSlider', cls=MultistrokeSettingSlider)
 Factory.register('MultistrokeSettingString', cls=MultistrokeSettingString)
 
-------------------
+
 demo/multistroke/multistroke.py ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 <MainMenu>:

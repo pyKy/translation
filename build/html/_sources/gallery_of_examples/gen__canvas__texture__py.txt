@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Texture Wrapping and Coordinates Example
-------------------
+-----------------------------------------
+Texture Wrapping and Coordinates Example
+-----------------------------------------
 
 このドキュメンテーションはGallery of Examples » Texture Wrapping and Coordinates Exampleを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__texture__py.html
@@ -14,7 +14,7 @@ https://kivy.org/docs/examples/gen__canvas__texture__py.html
 画像texture_example_image.pngは矩形にレンダリングされます。
 ボタンが複数のコピーが長方形（texture_wrap）にある場合、スライダーはテクスチャがレンダリングされる方法を変更しながら、テクスチャ（tex_coords）のコピー数を変更します。
 
-------------------
+
 canvas/texture.py
 ------------------
 
@@ -161,7 +161,8 @@ BoxLayout:
 
 runTouchApp(root)
 
-------------------
+
 画像ファイル　canvas/texture_example_image.png
-------------------
+------------------------------------------------------
+
 .. image:: https://kivy.org/docs/_images/texture_example_image.png

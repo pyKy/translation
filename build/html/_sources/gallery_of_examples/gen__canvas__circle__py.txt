@@ -1,7 +1,7 @@
 .. 翻訳者: Jun Okazaki
 
 ------------------
-Gallery of Examples » Circle Example
+Circle Example
 ------------------
 
 このドキュメンテーションはGallery of Examples » Circle Exampleを日本語訳したものです。  
@@ -16,9 +16,9 @@ https://kivy.org/docs/examples/gen__canvas__circle__py.html
 サークルの背景画像に使用されるロゴはkivy/data ディレクトリからです。
 全体の例はKV言語で記述しています。
 
-------------------
+
 canvas/circle.pyファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 '''

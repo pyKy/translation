@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Showcase of Kivy Features
-------------------
+------------------------------------------------------------------------
+Showcase of Kivy Features
+------------------------------------------------------------------------
 
 このドキュメンテーションはGallery of Examples » Showcase of Kivy Featuresを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__demo__showcase__main__py.html
@@ -25,9 +25,8 @@ data/faust_github.jpgファイルをScatter ペインに使用されています
 android.txtはKivyランチャーAndroidのアプリケーションで使用するためのアプリケーションをパッケージ化するために使用されます。 
 Androidデバイスでは、あなたのAndroidデバイス上で /sdcard/kivy/showcase の中に、このディレクトリをコピー/ペーストすることができます
 
-------------------
 demo/showcase/main.py ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 '''
@@ -268,10 +267,11 @@ Button:
 
 if __name__ == '__main__':
     ShowcaseApp().run()
-    
-------------------
+
+
+
 demo/showcase/showcase.kv ファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 #:kivy 1.8.0
@@ -375,21 +375,20 @@ BoxLayout:
             idx = app.screen_names.index(args[1].name)
             if idx > -1: app.hierarchy.append(idx)
             
-------------------
 demo/showcase/data/background.png
-------------------
+------------------------------------------------------
 
 .. image:: https://kivy.org/docs/_images/background.png
 
-------------------
+
 demo/showcase/data/faust_github.jpg
-------------------
+------------------------------------------------------
 
 .. image:: https://kivy.org/docs/_images/faust_github.jpg
 
-------------------
+
 demo/showcase/android.txt ファイル
-------------------
+------------------------------------------------------
 .. code-block:: python
 title=Showcase
 author=Kivy team

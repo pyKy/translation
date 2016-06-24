@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Kivy Catalog
-------------------
+------------------------------------------------------
+Basic Picture Viewer
+------------------------------------------------------
 
 このドキュメンテーションはGallery of Examples » Basic Picture Viewerを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__demo__pictures__main__py.html
@@ -21,9 +21,9 @@ android.txtはKivyランチャーAndroidのアプリケーションで使用す�
 
 Androidデバイスでは、あなたのAndroidデバイス上で /sdcard/kivy/showcase の中に、このディレクトリをコピー/ペーストすることができます
 
-------------------
+
 demo/pictures/main.py ファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 '''
@@ -101,9 +101,8 @@ if __name__ == '__main__':
     PicturesApp().run()
 
 
-------------------
 demo/pictures/pictures.kv ファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 #:kivy 1.0
@@ -161,16 +160,15 @@ FloatLayout:
                 size:(self.width+72, self.height+72)
                 pos: (-36,-36)
                 
-------------------
+
 画像demo/pictures/shadow32.png
-------------------
+------------------------------------
 
 
 .. image:: https://kivy.org/docs/_images/shadow32.png
 
-------------------
 demo/pictures/android.txt ファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 title=Pictures

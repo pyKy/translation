@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Application from a .kv in a Template Directory
-------------------
+--------------------------------------------------
+Application from a .kv in a Template Directory
+--------------------------------------------------
 
 このドキュメンテーションはApplication from a .kv in a Template Directoryを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__application__app_with_kv_in_template1__py.html
@@ -17,9 +17,9 @@ kivyはのAppのサブクラスTestAppをインスタンス化するように、
 その後、Kivyはディレクトリ内のサブクラスの名前に一致する.kvファイルを暗黙的に検索し、template1/ test.kvファイルを見付けます。
 ファイルにはroot widgetが含まれています。
 
-------------------
+
 application/app_with_kv_in_template1.pyファイル
-------------------
+--------------------------------------------------
 
 .. code-block:: python
 '''
@@ -50,9 +50,8 @@ if __name__ == '__main__':
     TestApp().run()
 
 
-------------------
 application/template1/test.kvファイル
-------------------
+----------------------------------------------
 
 .. code-block:: python
 	#:kivy 1.0

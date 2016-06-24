@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Multitexture Example
-------------------
+------------------------------------
+Multitexture Example
+------------------------------------
 
 このドキュメンテーションはGallery of Examples » Multitexture Exampleを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__multitexture__py.html
@@ -16,9 +16,9 @@ Kが円にクリップされオレンジ色に表示されますす。
 
 注：mtexture1.pngは白色で'K'で背景が透明なので目視が難しいです。
 
-------------------
+
 canvas/multitexture.py
-------------------
+------------------------------------
 
 .. code-block:: python
 '''
@@ -131,14 +131,15 @@ class MultitextureApp(App):
 
 if __name__ == '__main__':
     MultitextureApp().run()
-    
-------------------
+
+
 Image canvas/mtexture1.png　画像ファイル
-------------------
+------------------------------------------------------
+
 .. image:: https://kivy.org/docs/_images/mtexture1.png
 
 
-------------------
 canvas/mtexture2.png　画像ファイル
-------------------
+----------------------------------
+
 .. image:: https://kivy.org/docs/_images/mtexture2.png

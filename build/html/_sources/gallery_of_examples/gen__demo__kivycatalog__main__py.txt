@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Kivy Catalog
-------------------
+------------------------------------
+Kivy Catalog
+------------------------------------
 
 このドキュメンテーションはGallery of Examples » Kivy Catalogを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__demo__kivycatalog__main__py.html
@@ -18,9 +18,9 @@ Kivy CatalogビューアーはKivyで利用可能なウィジェットを表示�
 Kivy Catalogに新しい.kvファイルを追加するには、kivycatalog.kvのScreenManagerファイルのセクションとcontainer_kvsディレクトリとリファレンス、.kvファイルを追加します。
 既知のバグは、ドロップといくつかの問題を含みます
 
-------------------
+
 demo/kivycatalog/main.py ファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 '''
@@ -212,9 +212,8 @@ if __name__ == "__main__":
     KivyCatalogApp().run()
 
 
-------------------
 demo/kivycatalog/kivycatalog.kv ファイル
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 #:kivy 1.4

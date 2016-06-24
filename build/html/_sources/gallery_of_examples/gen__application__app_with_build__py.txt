@@ -1,8 +1,9 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-事例のギャラリー >> build() と return を使用したアプリケーションの例
-------------------
+---------------------------------------------------------------------
+build() と return を使用したアプリケーションの例
+---------------------------------------------------------------------
+
 
 このドキュメンテーションはApplication example using build() + returnを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__application__app_with_build__py.html
@@ -12,9 +13,8 @@ https://kivy.org/docs/examples/gen__application__app_with_build__py.html
 self.rootを設定した場合、アプリケーションのウィジェットはbuild()にreturnを設定してビルドできます。
 
 
-------------------
 application/app_with_build.py ファイル
-------------------
+---------------------------------------------------------
 
 .. code-block:: python
 	'''

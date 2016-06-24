@@ -31,6 +31,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="kivy-intro-jp 1.0 ドキュメント" href="../index.html" />
+    <link rel="up" title="プログラミングガイド(Programming Guide)" href="index.html" />
+    <link rel="next" title="&lt;no title&gt;" href="lang.html" />
+    <link rel="prev" title="Kivyの基礎" href="basic.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -65,8 +68,11 @@
      href="../index.html">Site Contents <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery_of_examples/index.html">実例集(Gallery of Examples)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../users_guide/index.html">ユーザーガイド(User’s Guide)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">プログラミングガイド(Programming Guide)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a></li>
 </ul>
 </ul>
@@ -81,7 +87,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">構造的概要</a></li>
+<li><a class="reference internal" href="#">構造的概要</a><ul>
 <li><a class="reference internal" href="#core-providers-input-providers">Core Providers と Input Providers</a></li>
 <li><a class="reference internal" href="#graphics">Graphics</a></li>
 <li><a class="reference internal" href="#core">Core</a></li>
@@ -90,6 +96,8 @@
 <li><a class="reference internal" href="#input-events-touches">Input Events (Touches)</a></li>
 <li><a class="reference internal" href="#widgets-event-dispatching">Widgets と Event Dispatching</a></li>
 </ul>
+</li>
+</ul>
 </ul>
 </li>
               
@@ -97,6 +105,14 @@
             
               
                 
+  <li>
+    <a href="basic.html" title="Previous Chapter: Kivyの基礎"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Kivyの基礎</span>
+    </a>
+  </li>
+  <li>
+    <a href="lang.html" title="Next Chapter: <no title>"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet"><no title> &raquo;</span>
+    </a>
+  </li>
               
             
             
@@ -123,8 +139,60 @@
 <div class="container">
   <div class="row">
       <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul class="simple">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">入門(Getting Started)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/introduction.html">導入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/installation.html">インストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/installation.html#id2">開発バージョン</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/first_app.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/properties.html">入門</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/event.html">イベント</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/Non-widget_stuff.html">Non-widget stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/layouts.html">導入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/drawing.html">入門</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery_of_examples/index.html">実例集(Gallery of Examples)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gallery.html">Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__3Drendering__main__py.html">3Dのサルの頭を回転する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__animation__animate__py.html">ウィジェットアニメーション</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__application__app_suite__py.html">Suite of Application Builders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__application__app_with_build__py.html">build() と return を使用したアプリケーションの例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__application__app_with_kv_in_template1__py.html">Application from a .kv in a Template Directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__application__app_with_kv__py.html">アプリケーションを.kv fileからビルドする</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__camera__main__py.html">Gallery of Examples » Camera Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__bezier__py.html">Bezier Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__canvas_stress__py.html">Canvas stress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__circle__py.html">Circle Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__fbo_canvas__py.html">FBO Canvas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__fbo_canvas__py.html#canvas-fbo-canvas-py">canvas/fbo_canvas.pyファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__lines_extended__py.html">Lines Extended Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__lines__py.html">Line (SmoothLine) Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__mesh__py.html">Mesh test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__multitexture__py.html">Multitexture Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__repeat_texture__py.html">Gallery of Examples » Repeat Texture on Resize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__rotation__py.html">Rotation Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__stencil_canvas__py.html">Gallery of Examples » Stencil demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__tesselate__py.html">Gallery of Examples » Tesselate Demonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__texture__py.html">Gallery of Examples » Texture Wrapping and Coordinates Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__camera_puzzle__py..html">Shuffled Camera Feed Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__kivycatalog__main__py.html">Kivy Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__multistroke__main__py.html">Multistroke Recognition Database Demonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__pictures__main__py.html">Gallery of Examples » Kivy Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__shadereditor__main__py.html">Live Shader Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__showcase__main__py.html">Showcase of Kivy Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__touchtracer__main__py.html">Gallery of Examples » Touch Tracer Line Drawing Demonstration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../users_guide/index.html">ユーザーガイド(User’s Guide)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../users_guide/philosophy.html">フィロソフィ</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">プログラミングガイド(Programming Guide)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="basic.html">Kivyの基礎</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#id2">アプリケーションを作る</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">構造的概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packaging-windows.html">Widowsでのパッケージの方法</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/index.html">チュートリアル(Tutorial)</a><ul>
@@ -158,9 +226,8 @@
 <p>Kivyは、後で説明しますいくつかのビルディングブロックで構成されています。
 アーキテクチャのグラフィカルな概要は次のとおりです。</p>
 <img alt="https://kivy.org/docs/_images/architecture.png" src="https://kivy.org/docs/_images/architecture.png" />
-</div>
 <div class="section" id="core-providers-input-providers">
-<h1>Core Providers と Input Providers<a class="headerlink" href="#core-providers-input-providers" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>Core Providers と Input Providers<a class="headerlink" href="#core-providers-input-providers" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Kivyの内部を理解する鍵であるひとつのアイデアは、モジュール性と抽象化です。
 私たちは、ウィンドウを開き、画像やテキストを表示するやカメラから画像を取得するやスペル修正や再生などの抽象的で基本的なタスクを試みてください。
 これらの機能はコアタスクを呼び出します。APIは使用しやすく、拡張が簡単という両方を兼ね備えています。
@@ -177,7 +244,7 @@ Androidのポートは、ここから大幅に恩恵を受けました。
 新しい入力デバイスのサポートを追加する必要がある場合は、デバイスからの入力データを読み込んでKivyの基本的なイベントに変換しした新しいクラスを提供できます。</p>
 </div>
 <div class="section" id="graphics">
-<h1>Graphics<a class="headerlink" href="#graphics" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>Graphics<a class="headerlink" href="#graphics" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>KivyGraphicsAPIは、OpenGLの私達の抽象化したものです。
 最下層レベルでは、Kivyのハードウェアアクセラレータの描画コマンドissueは、OpenGLを使用しました。
 しかし、OpenGLコードを書くのは初心者は特に少し混乱するかもしれません。
@@ -189,7 +256,7 @@ OpenGLのチューニングの専門家でないのならば特に便利です�
 私たちのターゲットバージョンは、すべてのデバイス上でOpenGL2.0 ES（GLES2）なので、クロスプラットフォームの互換性を保ちたいのならばGLES2機能を使用することをお勧めします。</p>
 </div>
 <div class="section" id="core">
-<h1>Core<a class="headerlink" href="#core" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>Core<a class="headerlink" href="#core" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Coreパッケージ内のコードは、次のような一般的に使用される機能を提供します：</p>
 <dl class="docutils">
 <dt>Clock</dt>
@@ -207,7 +274,7 @@ OpenGLのチューニングの専門家でないのならば特に便利です�
 </dl>
 </div>
 <div class="section" id="uix-widgets-layouts">
-<h1>UIX (Widgets &amp; Layouts)<a class="headerlink" href="#uix-widgets-layouts" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>UIX (Widgets &amp; Layouts)<a class="headerlink" href="#uix-widgets-layouts" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>UIXモジュールはユーザー・インターフェースを直ぐに作成するために再利用できる一般的に使用されるwidgetとlayoutsが含まれています。</p>
 <dl class="docutils">
 <dt>Widgets</dt>
@@ -218,14 +285,14 @@ OpenGLのチューニングの専門家でないのならば特に便利です�
 </dl>
 </div>
 <div class="section" id="modules">
-<h1>Modules<a class="headerlink" href="#modules" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>Modules<a class="headerlink" href="#modules" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>最新のWebブラウザを使用し、いくつかのアドオンでカスタマイズしたことがある場合は、モジュールクラスの背後にある基本的な考え方を知っています。
 moduleは、オリジナルの作者がmoduleを含まれていない場合でも、Kivyプログラムに機能を加えるのに使用できます。</p>
 <p>例えば、いくつかのグラフのFPSを元のアププリケーションを描画する時間をFPSで表示したmoduleです。</p>
 <p>また、独自のmoduleを作成することができます。</p>
 </div>
 <div class="section" id="input-events-touches">
-<h1>Input Events (Touches)<a class="headerlink" href="#input-events-touches" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>Input Events (Touches)<a class="headerlink" href="#input-events-touches" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Kivyは、タッチ、マウス、TUIOまたは類似の異なる入力タイプとソースを抽象化します。
 これらの入力タイプのすべてに共通しているのは、任意の個々の入力イベントと2D画面上の座標を関連付けることができるということです。
 （例えばこのような簡単にあなたのデバイスの傾きを測定する、加速度計のような入力デバイスのインプットはこの種の入力が個別に処理されるめ2D座標を見つけることができません。
@@ -247,7 +314,7 @@ Move
 　ユーザーが使用する入力ソースを知っている場合、状態が入力に依存するこかどうかを知ることが出来ます。</p>
 </div>
 <div class="section" id="widgets-event-dispatching">
-<h1>Widgets と Event Dispatching<a class="headerlink" href="#widgets-event-dispatching" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h2>Widgets と Event Dispatching<a class="headerlink" href="#widgets-event-dispatching" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>用語widgetは、多くの場合、ユーザが対話するプログラムの一部を記述するために、GUIプログラミングコンテキストで使用されています。
 Kivyでは、widgetは、入力イベントを受け取るのが目的です。
 それは必ずしも画面上に表示表現を持っている必要はありません。
@@ -268,11 +335,12 @@ on_touch_moveまたはon_touch_upイベントハンドラでon_touch_down対応�
             <span class="k">return</span> <span class="bp">True</span>
 </pre></div>
 </div>
-<p>実際は最初に思つってぃたよりもはるかに簡単です。ナイスなアプリケーションを迅速に作成するために使用できる方法の例を次のセクションで説明します。</p>
+<p>実際は最初に思っていたよりもはるかに簡単です。ナイスなアプリケーションを迅速に作成するために使用できる方法の例を次のセクションで説明します。</p>
 <p>しばしば、widgetがtouchを監視する画面の領域を制限することになるでしょう。
 実現するために、ウィジェットのcollide_point()メソッドを使用することができます。
 単にtouchの座標を通過するとTouchのTrueが、一方「watch」またはFalseの範囲内にある場合にはTrueを返します。</p>
 <p>デフォルトでは、画面上のwidgetの座標（X＆Y）とサイズ（幅＆高さ）によって記述されている矩形領域をチェックしていますが、独自のクラスでこのビヘイビアをオーバーライドすることができます。</p>
+</div>
 </div>
 
 
@@ -288,7 +356,7 @@ on_touch_moveまたはon_touch_upイベントハンドラでon_touch_down対応�
     </p>
     <p>
         &copy; Copyright 2016, Daisuke Saito.<br/>
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4 で生成しました。<br/>
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.2 で生成しました。<br/>
     </p>
   </div>
 </footer>

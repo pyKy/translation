@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Bezier Example
-------------------
+---------------------------------------------
+Bezier Example
+---------------------------------------------
 
 このドキュメンテーションはGallery of Examples » Bezier Exampleを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__bezier__py.html
@@ -14,9 +14,9 @@ https://kivy.org/docs/examples/gen__canvas__bezier__py.html
 曲線を再計算するポリゴン上の点をドラッグできます。
 2つのスライダーは、2つの形状を構成する破線のダッシュの長さを制御します。
 
-------------------
+
 canvas/bezier.pyファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 '''

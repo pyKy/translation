@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » FBO Canvas
-------------------
+----------------
+FBO Canvas
+----------------
 
 このドキュメンテーションはGallery of Examples » FBO Canvasを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__fbo_canvas__py.html
@@ -13,13 +13,11 @@ FBO（バッファオフスクリーンフレーム）の代わりにプレー�
 黒色のキャンバスと左下隅に「FBO」と書かれたボタン表示されます。
 クリックすると左から右にボタンが移動します。
 
-------------------
+
 canvas/fbo_canvas.pyファイル
-------------------
+------------------------------------
 
 .. code-block:: python
-'''
-'''
 '''
 FBO Canvas
 ==========

@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
+------------------------------------
 Gallery of Examples » Camera Example
-------------------
+------------------------------------
 
 このドキュメンテーションはGallery of Examples » Camera Exampleを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__camera__main__py.html
@@ -13,9 +13,9 @@ https://kivy.org/docs/examples/gen__camera__main__py.html
 「Play」ボタンでウィンドウでのカメラ表示オンとオフに切り替えます。
 カメラを見つけていない、またはgstreamerのがインストールされていない場合は、KV言語処理中に例外をスローすることに注意してください。
 
-------------------
+
 camera/main.pyファイル
-------------------
+-----------------------------
 
 .. code-block:: python
 '''

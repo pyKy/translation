@@ -12,6 +12,9 @@ Kivy入門!
    :maxdepth: 2
    
    getting_started/index
+   gallery_of_examples/index
+   users_guide/index
+   programming_guide/index
    tutorial/index
    
    

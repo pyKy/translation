@@ -1,7 +1,7 @@
 .. 翻訳者: Jun Okazaki
 
 ------------------
-Gallery of Examples » Mesh test
+Mesh test
 ------------------
 
 このドキュメンテーションはGallery of Examples » Mesh testを日本語訳したものです。  
@@ -13,9 +13,8 @@ https://kivy.org/docs/examples/gen__canvas__mesh__py.html
 キャンバスの下部分にボタンの行が表示されます。
 ボタンを押すと、別のmesh.mode設定でメッシュ、ポイントの小さな円が表示されます。
 
-------------------
 canvas/mesh.pyファイル
-------------------
+------------------------------------
 
 .. code-block:: python
 '''

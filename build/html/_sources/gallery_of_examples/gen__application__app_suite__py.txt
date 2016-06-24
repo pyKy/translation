@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Suite of Application Builders
-------------------
+--------------------------------------------------------
+Suite of Application Builders
+--------------------------------------------------------
 
 このドキュメンテーションはSuite of Application Buildersを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__application__app_suite__py.html
@@ -19,9 +19,8 @@ https://kivy.org/docs/examples/gen__application__app_suite__py.html
 
 testkvfile.kvファイルとapp_suite_data/ testkvdir.kvファイルを使用しています。
 
-------------------
 application/app_suite.pyファイル
-------------------
+-----------------------------------
 
 .. code-block:: python
 '''
@@ -177,9 +176,8 @@ Try using one of these:
     print("This program is gratified to be of use.")
 
 
-------------------
 application/testkvfile.kvファイル
-------------------
+--------------------------------------
 
 .. code-block:: python
 	#:kivy 1.0
@@ -189,9 +187,8 @@ application/testkvfile.kvファイル
 
 
 
-------------------
 application/app_suite_data/testkvdir.kvファイル
-------------------
+--------------------------------------------------
 
 .. code-block:: python
 	#:kivy 1.0

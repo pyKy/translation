@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Line (SmoothLine) Experiment
-------------------
+------------------------------------
+Line (SmoothLine) Experiment
+------------------------------------
 
 このドキュメンテーションはGallery of Examples » Line (SmoothLine) Experimentを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__canvas__lines__py.html
@@ -14,9 +14,9 @@ https://kivy.org/docs/examples/gen__canvas__lines__py.html
 クリックして、セグメントに新しいポイントを追加したりラインの透明性と幅を変更できたり、「Animate」をおしてサインとコサインアニメーションのセットを表示できます、
 SmoothLineはまだ機能を実装していないためCapとJointのボタンは動作しません。
 
-------------------
+
 canvas/lines.pyファイル
-------------------
+---------------------------------
 
 .. code-block:: python
 '''

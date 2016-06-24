@@ -1,8 +1,8 @@
 .. 翻訳者: Jun Okazaki
 
-------------------
-Gallery of Examples » Shuffled Camera Feed Puzzle
-------------------
+------------------------------------------------------
+Shuffled Camera Feed Puzzle
+------------------------------------------------------
 
 このドキュメンテーションはGallery of Examples » Shuffled Camera Feed Puzzleを日本語訳したものです。  
 https://kivy.org/docs/examples/gen__demo__camera_puzzle__py.html
@@ -13,9 +13,9 @@ https://kivy.org/docs/examples/gen__demo__camera_puzzle__py.html
 カメラフィードを構成するシャッフルされた長方形のグリッドが表示されます。
 グリッドをダブルクリックすることを繰り返して張り替えるか、四角形をドラッグすることでカメラフィードを元にもどせます。
 
-------------------
+
 demo/camera_puzzle.py
-------------------
+------------------------------------------------------
 
 .. code-block:: python
 '''
