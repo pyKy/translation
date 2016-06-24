@@ -156,23 +156,22 @@
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__canvas_stress__py.html">Canvas stress</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__circle__py.html">Circle Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__fbo_canvas__py.html">FBO Canvas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__fbo_canvas__py.html#canvas-fbo-canvas-py">canvas/fbo_canvas.pyファイル</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__lines_extended__py.html">Lines Extended Demo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__lines__py.html">Line (SmoothLine) Experiment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__mesh__py.html">Mesh test</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__multitexture__py.html">Multitexture Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__repeat_texture__py.html">Gallery of Examples » Repeat Texture on Resize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__repeat_texture__py.html">Repeat Texture on Resize</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__rotation__py.html">Rotation Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__stencil_canvas__py.html">Gallery of Examples » Stencil demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__tesselate__py.html">Gallery of Examples » Tesselate Demonstration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__texture__py.html">Gallery of Examples » Texture Wrapping and Coordinates Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__stencil_canvas__py.html">Stencil demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__tesselate__py.html">Tesselate Demonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__canvas__texture__py.html">Texture Wrapping and Coordinates Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__camera_puzzle__py..html">Shuffled Camera Feed Puzzle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__kivycatalog__main__py.html">Kivy Catalog</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__multistroke__main__py.html">Multistroke Recognition Database Demonstration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__pictures__main__py.html">Gallery of Examples » Kivy Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__pictures__main__py.html">Basic Picture Viewer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__shadereditor__main__py.html">Live Shader Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__showcase__main__py.html">Showcase of Kivy Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__touchtracer__main__py.html">Gallery of Examples » Touch Tracer Line Drawing Demonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gallery_of_examples/gen__demo__touchtracer__main__py.html">Touch Tracer Line Drawing Demonstration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../users_guide/index.html">ユーザーガイド(User’s Guide)</a><ul>
@@ -208,18 +207,28 @@
 <h1>Non-widget stuff<a class="headerlink" href="#non-widget-stuff" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>このドキュメンテーションはKivyのGetting Started » Non-widget stuffを日本語訳したものです。
 <a class="reference external" href="https://kivy.org/docs/gettingstarted/layouts.html">https://kivy.org/docs/gettingstarted/layouts.html</a></p>
-<dl class="docutils">
-<dt>, .. image:: <a class="reference external" href="https://kivy.org/docs/_images/gs-animation.gif">https://kivy.org/docs/_images/gs-animation.gif</a></dt>
-<dd>Atlas はテクスチャマップを管理するためのクラスです（例；1枚の画像に複数のテクスチャをパッキングする）。これはロードされたイメージの数を減らすため、アプリケーションの起動を高速化することができます。</dd>
-<dt>, .. image:: <a class="reference external" href="https://kivy.org/docs/_images/gs-atlas.png">https://kivy.org/docs/_images/gs-atlas.png</a></dt>
-<dd>Clockは設定された時間間隔でジョブをスケジュールするために便利な方法を提供します。kivyイベントループをブロックするsleep（）より好ましいです。これらの間隔の前または後に、OpenGLの描画命令に対して設定できます。またClockは、次のフレームの前に一度だけ呼ばれる組み合わさったトリガーイベントを作成する方法を提供します。</dd>
-</dl>
-<p>, | <a href="#id1"><span class="problematic" id="id2">*</span></a>schedule_once()
-| <a href="#id3"><span class="problematic" id="id4">*</span></a>schedule_interval()
-| <a href="#id5"><span class="problematic" id="id6">*</span></a>unschedule()
-| <a href="#id7"><span class="problematic" id="id8">*</span></a>create_trigger()</p>
-<blockquote>
-<div>URLRequestはイベントループをブロックせず、コールバックの結果と進捗状況を、管理していない非同期リクエストのために有用です。,</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Animation は、目標時間内に目標の値にWidgetのプロパティ（サイズ/ 位置/センター等）を変更するのに使用されます。様々なtransitionが設けられています。Widgetをアニメーション化し、非常に滑らかなUIビヘイビアを構築するために使用することができます。</td>
+<td><img alt="https://kivy.org/docs/_images/gs-animation.gif" class="first last" src="https://kivy.org/docs/_images/gs-animation.gif" />
+</td>
+</tr>
+<tr class="row-even"><td>Atlas はテクスチャマップを管理するためのクラスです（例；1枚の画像に複数のテクスチャをパッキングする）。これはロードされたイメージの数を減らすため、アプリケーションの起動を高速化することができます。</td>
+<td><img alt="https://kivy.org/docs/_images/gs-atlas.png" class="first last" src="https://kivy.org/docs/_images/gs-atlas.png" />
+</td>
+</tr>
+<tr class="row-odd"><td>Clockは設定された時間間隔でジョブをスケジュールするために便利な方法を提供します。kivyイベントループをブロックするsleep（）より好ましいです。これらの間隔の前または後に、OpenGLの描画命令に対して設定できます。またClockは、次のフレームの前に一度だけ呼ばれる組み合わさったトリガーイベントを作成する方法を提供します。</td>
+<td>schedule_once()  schedule_interval()  unschedule()  create_rigger()&#8221;</td>
+</tr>
+<tr class="row-even"><td>URLRequestはイベントループをブロックせず、コールバックの結果と進捗状況を、管理していない非同期リクエストのために有用です。</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
