@@ -3,6 +3,8 @@
 
 ## リポジトリについて
 **2016年8月現在、リポジトリを  https://github.com/pyKy/kivy-doc-ja に移動しそこで作業しております**
+
+
 **公開ページも https://pyky.github.io/kivy-doc-ja/ になっております。 **
 
 
